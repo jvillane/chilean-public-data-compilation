@@ -1,4 +1,6 @@
 import {Government} from "./government.model";
+import {writeFile} from "fs";
+import {publicFigures} from "./public_figures";
 
 export const government: Government[] = [
   {
@@ -45,3 +47,9 @@ export const government: Government[] = [
     }
   }
 ];
+
+writeFile("./data/government.json", JSON.stringify(publicFigures), function(err) {
+  if (err) {
+    console.log(err);
+  }
+});

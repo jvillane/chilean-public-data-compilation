@@ -1,0 +1,18 @@
+### Linux ###
+*~
+
+.idea
+
+node_modules/
+
+.npm
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# logs
+*.log
+
+source/**/~*

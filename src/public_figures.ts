@@ -1,4 +1,5 @@
 import {PublicFigure} from "./public_figures.model";
+import {writeFile} from "fs";
 
 export const publicFigures: PublicFigure[] = [
   {
@@ -126,3 +127,9 @@ export const publicFigures: PublicFigure[] = [
     Birthday: "1956-08-04"
   }
 ];
+
+writeFile("./data/public_figures.json", JSON.stringify(publicFigures), function(err) {
+  if (err) {
+    console.log(err);
+  }
+});

@@ -1,0 +1,21 @@
+{
+  "name": "tgr-automated-test-suite-mocks",
+  "version": "1.0.0",
+  "description": "Automated testing application for mocking TGR apps",
+  "main": "index.ts",
+  "scripts": {
+    "public_figures": "npx ts-node src/public_figures.ts",
+    "government": "npx ts-node src/government.ts",
+    "census": "npx ts-node src/census.ts"
+  },
+  "author": "Patagonia IT - Julio Villane",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "xlsx": "^0.16.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.10",
+    "typescript": "^3.9.3"
+  }
+}
