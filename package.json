@@ -1,14 +1,14 @@
 {
-  "name": "tgr-automated-test-suite-mocks",
+  "name": "chilean-public-data-compilation",
   "version": "1.0.0",
-  "description": "Automated testing application for mocking TGR apps",
-  "main": "index.ts",
+  "description": "chilean-public-data-compilation",
   "scripts": {
     "public_figures": "npx ts-node src/public_figures.ts",
     "government": "npx ts-node src/government.ts",
-    "census": "npx ts-node src/census.ts"
+    "census": "npx ts-node src/census.ts",
+    "elections": "npx ts-node src/elections.ts"
   },
-  "author": "Patagonia IT - Julio Villane",
+  "author": "Julio Villane",
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security",

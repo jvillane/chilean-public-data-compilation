@@ -58,7 +58,6 @@ function processRow(row: Row): ProcessedRow | undefined {
   }
 }
 
-let i = 0;
 export const census: Census = {
   Results: {
     Total: 0,
