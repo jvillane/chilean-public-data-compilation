@@ -18,6 +18,7 @@ node_modules/
 source/**/~*
 
 data/persons.json
+data/persons.*.json
 src/persons.ts
 src/persons.model.ts
 
