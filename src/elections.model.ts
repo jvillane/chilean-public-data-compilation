@@ -1,11 +1,11 @@
 export interface CandidatesResult {
-  blank: number
-  null: number
+  Blank: number
+  Null: number
   [candidate: string]: number
 }
 
 export interface ElectionCommune {
-  Code: number
+  Code: number | null
   Name: string
   Results: CandidatesResult
 }

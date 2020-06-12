@@ -16,3 +16,10 @@ node_modules/
 *.log
 
 source/**/~*
+
+data/persons.json
+src/persons.ts
+src/persons.model.ts
+
+src/**/*.js
+src/**/*.js.map

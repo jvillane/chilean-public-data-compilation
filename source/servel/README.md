@@ -18,11 +18,13 @@ File: `resultados_elecciones_presidenciales_ce_1989_2017_Chile.xlsx`
 
 From: https://www.servel.cl/elecciones-presidenciales-1989-al-2013-por-circunscripcion-electoral/
 
----
 
-Data: `Elección 2017 - Elecciones Presidenciales 1989 al 2017 por Circunscripción Electoral Extranjero`
+### Date: 2020-06-11
 
-File: `resultados_elecciones_presidenciales_ce_2017_Extranjero.xlsx`
+Data: `Elecciones de Senadores 1989 al 2017`
 
-From: https://www.servel.cl/elecciones-presidenciales-1989-al-2013-por-circunscripcion-electoral/
+File: `resultados_elecciones_senadores_ce_1989_2017.xlsx`
+
+From: https://www.servel.cl/elecciones-de-senadores-1989-al-2013-por-circunscripcion-electoral/
+
 

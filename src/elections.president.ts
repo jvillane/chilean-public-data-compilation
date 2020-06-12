@@ -39,7 +39,7 @@ const workbook = readFile('./source/servel/resultados_elecciones_presidenciales_
 const data: Data = utils.sheet_to_json(workbook.Sheets['Presidenciales Chile']);
 
 function xlsNumberToDateFormat(xlsNumber: number) {
-  const date = new Date(Math.round((xlsNumber - 25569)*86400*1000));
+  const date = new Date(Math.round((xlsNumber - 25569) * 86400 * 1000));
   const year = date.getFullYear();
   const month = (1 + date.getMonth()).toString().padStart(2, '0');
   const day = date.getDate().toString().padStart(2, '0');
@@ -84,10 +84,11 @@ function processRow(row: Row): ProcessedRow | undefined {
     Electo: row['Electo(a)'] as string,
     Partido: row['Partido'] as string,
     SiglaPartido: row['Sigla Partido'] as string,
-    Votos: row['Votos Totales'] as number,
+    Votos: row['Votos Totales'] as number
   }
 }
 
+const candidateArray: string[] = [];
 const electionMap = new Map<string, Election>();
 const regionMap = new Map<string, ElectionRegion>();
 const provinceMap = new Map<string, ElectionProvince>();
@@ -96,6 +97,9 @@ for (const rawRow of data) {
   const row = processRow(rawRow);
   if (row === undefined) {
     continue;
+  }
+  if (row.Candidato && !['Blank', 'Null'].includes(row.Candidato) && !candidateArray.includes(row.Candidato)) {
+    candidateArray.push(row.Candidato);
   }
 
   const electionId = `${row.TipoEleccion}_${row.EleccionFecha}`;
@@ -112,8 +116,8 @@ for (const rawRow of data) {
       },
       Instance: row.TipoVotacion,
       Results: {
-        blank: 0,
-        null: 0
+        Blank: 0,
+        Null: 0
       },
       Regions: []
     };
@@ -134,8 +138,8 @@ for (const rawRow of data) {
       Code: row.RegionId,
       Name: row.RegionNombre,
       Results: {
-        blank: 0,
-        null: 0
+        Blank: 0,
+        Null: 0
       },
       Provinces: []
     };
@@ -157,8 +161,8 @@ for (const rawRow of data) {
       Code: row.ProvinciaId,
       Name: row.ProvinciaNombre,
       Results: {
-        blank: 0,
-        null: 0
+        Blank: 0,
+        Null: 0
       },
       Communes: []
     };
@@ -177,11 +181,11 @@ for (const rawRow of data) {
     commune = communeMap.get(communeId) as ElectionCommune;
   } else {
     commune = {
-      Code: -1,
+      Code: null,
       Name: row.ComunaNombre,
       Results: {
-        blank: 0,
-        null: 0
+        Blank: 0,
+        Null: 0
       }
     };
     communeMap.set(communeId, commune);
@@ -194,8 +198,10 @@ for (const rawRow of data) {
   }
 }
 
-writeFile("./data/elections.json", JSON.stringify(Array.from(electionMap.values())), function (err) {
+writeFile("./data/elections.president.json", JSON.stringify(Array.from(electionMap.values())), function (err) {
   if (err) {
     console.log(err);
   }
 });
+
+console.log(candidateArray);

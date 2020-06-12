@@ -6,11 +6,13 @@
     "public_figures": "npx ts-node src/public_figures.ts",
     "government": "npx ts-node src/government.ts",
     "census": "npx ts-node src/census.ts",
-    "elections": "npx ts-node src/elections.ts"
+    "elections": "npx ts-node src/elections.ts",
+    "persons": "npx ts-node src/persons.ts"
   },
   "author": "Julio Villane",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "fs": "^0.0.1-security",
     "xlsx": "^0.16.2"
   },

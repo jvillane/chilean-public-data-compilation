@@ -105,7 +105,7 @@ export const publicFigures: PublicFigure[] = [
         },
         {
           Id: "MTU5NjAyMDAtMQ==",
-          Name: "Piñera Morel Cristobal"
+          Name: "Cristobal Piñera Morel"
         }
       ]
     },
@@ -125,6 +125,14 @@ export const publicFigures: PublicFigure[] = [
     Id: "Njk5MjkyOS1L",
     Name: "Alfredo German Moreno Charme",
     Birthday: "1956-08-04"
+  }, {
+    Id: "NDM0NDQ2OC05",
+    Name: "Francisco Javier Errázuriz Talavera",
+    Birthday: "1942-05-07"
+  }, {
+    Id: "",
+    Name: "Hernán Alberto Büchi Buc",
+    Birthday: "1949-03-06"
   }
 ];
 
