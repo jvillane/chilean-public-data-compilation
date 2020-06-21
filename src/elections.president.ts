@@ -1,6 +1,7 @@
 import {readFile, utils} from "xlsx";
 import {writeFile} from "fs";
-import {Election, ElectionCommune, ElectionProvince, ElectionRegion} from "./elections.model";
+import {CandidatesResult, Election, ElectionCommune, ElectionProvince, ElectionRegion} from "./elections.model";
+import {findPublicFigureByAlias} from "./public_figures";
 
 export interface Row {
   [index: string]: string | number
@@ -88,120 +89,136 @@ function processRow(row: Row): ProcessedRow | undefined {
   }
 }
 
-const candidateArray: string[] = [];
-const electionMap = new Map<string, Election>();
-const regionMap = new Map<string, ElectionRegion>();
-const provinceMap = new Map<string, ElectionProvince>();
-const communeMap = new Map<string, ElectionCommune>();
-for (const rawRow of data) {
-  const row = processRow(rawRow);
-  if (row === undefined) {
-    continue;
+function updateCandidates(row: ProcessedRow, candidatesResult: CandidatesResult) {
+  if(row.Candidato === 'Blank' || row.Candidato === 'Null' ) {
+    candidatesResult[row.Candidato] += row.Votos;
+    return;
   }
-  if (row.Candidato && !['Blank', 'Null'].includes(row.Candidato) && !candidateArray.includes(row.Candidato)) {
-    candidateArray.push(row.Candidato);
+  const publicFigure = findPublicFigureByAlias(row.Candidato);
+  if (publicFigure === undefined) {
+    throw new Error(`No se encontró figura pública para el alias '${row.Candidato}'`);
   }
-
-  const electionId = `${row.TipoEleccion}_${row.EleccionFecha}`;
-  let election: Election;
-  if (electionMap.has(electionId)) {
-    election = electionMap.get(electionId) as Election;
+  if (candidatesResult.Candidates[publicFigure.Id]) {
+    const candidate = candidatesResult.Candidates[publicFigure.Id];
+    candidate.Votes += row.Votos;
+    if (!candidate.Alias.includes(row.Candidato)) {
+      candidate.Alias.push(row.Candidato);
+    }
   } else {
-    election = {
-      Position: row.Cargo,
-      Date: row.EleccionFecha,
-      Period: {
-        FromYear: row.PeriodoInicio,
-        ToYear: row.PeriodoTermino,
-      },
-      Instance: row.TipoVotacion,
-      Results: {
-        Blank: 0,
-        Null: 0
-      },
-      Regions: []
+    candidatesResult.Candidates[publicFigure.Id] = {
+      Name: publicFigure.Name,
+      Alias: [row.Candidato],
+      Votes: row.Votos
     };
-    electionMap.set(electionId, election);
-  }
-  if (election.Results[row.Candidato]) {
-    election.Results[row.Candidato] += row.Votos;
-  } else {
-    election.Results[row.Candidato] = row.Votos;
-  }
-
-  const regionId = `${electionId}_${row.RegionId}`;
-  let region: ElectionRegion;
-  if (regionMap.has(regionId)) {
-    region = regionMap.get(regionId) as ElectionRegion;
-  } else {
-    region = {
-      Code: row.RegionId,
-      Name: row.RegionNombre,
-      Results: {
-        Blank: 0,
-        Null: 0
-      },
-      Provinces: []
-    };
-    regionMap.set(regionId, region);
-    election.Regions.push(region);
-  }
-  if (region.Results[row.Candidato]) {
-    region.Results[row.Candidato] += row.Votos;
-  } else {
-    region.Results[row.Candidato] = row.Votos;
-  }
-
-  const provinceId = `${regionId}_${row.ProvinciaId}`;
-  let province: ElectionProvince;
-  if (provinceMap.has(provinceId)) {
-    province = provinceMap.get(provinceId) as ElectionProvince;
-  } else {
-    province = {
-      Code: row.ProvinciaId,
-      Name: row.ProvinciaNombre,
-      Results: {
-        Blank: 0,
-        Null: 0
-      },
-      Communes: []
-    };
-    provinceMap.set(provinceId, province);
-    region.Provinces.push(province);
-  }
-  if (province.Results[row.Candidato]) {
-    province.Results[row.Candidato] += row.Votos;
-  } else {
-    province.Results[row.Candidato] = row.Votos;
-  }
-
-  const communeId = `${provinceId}_${row.ComunaNombre}`;
-  let commune: ElectionCommune;
-  if (communeMap.has(communeId)) {
-    commune = communeMap.get(communeId) as ElectionCommune;
-  } else {
-    commune = {
-      Code: null,
-      Name: row.ComunaNombre,
-      Results: {
-        Blank: 0,
-        Null: 0
-      }
-    };
-    communeMap.set(communeId, commune);
-    province.Communes.push(commune);
-  }
-  if (commune.Results[row.Candidato]) {
-    commune.Results[row.Candidato] += row.Votos;
-  } else {
-    commune.Results[row.Candidato] = row.Votos;
   }
 }
 
-writeFile("./data/elections.president.json", JSON.stringify(Array.from(electionMap.values())), function (err) {
-  if (err) {
-    console.log(err);
-  }
-});
+function main() {
+  //const candidateArray: string[] = [];
+  const electionMap = new Map<string, Election>();
+  const regionMap = new Map<string, ElectionRegion>();
+  const provinceMap = new Map<string, ElectionProvince>();
+  const communeMap = new Map<string, ElectionCommune>();
+  for (const rawRow of data) {
+    const row = processRow(rawRow);
+    if (row === undefined) {
+      continue;
+    }
+    //if (row.Candidato && !['Blank', 'Null'].includes(row.Candidato) && !candidateArray.includes(row.Candidato)) {
+    //  candidateArray.push(row.Candidato);
+    //}
 
-console.log(candidateArray);
+    const electionId = `${row.TipoEleccion}_${row.EleccionFecha}`;
+    let election: Election;
+    if (electionMap.has(electionId)) {
+      election = electionMap.get(electionId) as Election;
+    } else {
+      election = {
+        Position: row.Cargo,
+        Date: row.EleccionFecha,
+        Period: {
+          FromYear: row.PeriodoInicio,
+          ToYear: row.PeriodoTermino,
+        },
+        Instance: row.TipoVotacion,
+        Results: {
+          Blank: 0,
+          Null: 0,
+          Candidates: {}
+        },
+        Regions: []
+      };
+      electionMap.set(electionId, election);
+    }
+    updateCandidates(row, election.Results);
+
+    const regionId = `${electionId}_${row.RegionId}`;
+    let region: ElectionRegion;
+    if (regionMap.has(regionId)) {
+      region = regionMap.get(regionId) as ElectionRegion;
+    } else {
+      region = {
+        Code: row.RegionId,
+        Name: row.RegionNombre,
+        Results: {
+          Blank: 0,
+          Null: 0,
+          Candidates: {}
+        },
+        Provinces: []
+      };
+      regionMap.set(regionId, region);
+      election.Regions.push(region);
+    }
+    updateCandidates(row, region.Results);
+
+    const provinceId = `${regionId}_${row.ProvinciaId}`;
+    let province: ElectionProvince;
+    if (provinceMap.has(provinceId)) {
+      province = provinceMap.get(provinceId) as ElectionProvince;
+    } else {
+      province = {
+        Code: row.ProvinciaId,
+        Name: row.ProvinciaNombre,
+        Results: {
+          Blank: 0,
+          Null: 0,
+          Candidates: {}
+        },
+        Communes: []
+      };
+      provinceMap.set(provinceId, province);
+      region.Provinces.push(province);
+    }
+    updateCandidates(row, province.Results);
+
+    const communeId = `${provinceId}_${row.ComunaNombre}`;
+    let commune: ElectionCommune;
+    if (communeMap.has(communeId)) {
+      commune = communeMap.get(communeId) as ElectionCommune;
+    } else {
+      commune = {
+        Code: null,
+        Name: row.ComunaNombre,
+        Results: {
+          Blank: 0,
+          Null: 0,
+          Candidates: {}
+        }
+      };
+      communeMap.set(communeId, commune);
+      province.Communes.push(commune);
+    }
+    updateCandidates(row, commune.Results);
+  }
+
+  writeFile("./data/elections.president.json", JSON.stringify(Array.from(electionMap.values())), function (err) {
+    if (err) {
+      console.log(err);
+    }
+  });
+
+  //console.log(candidateArray);
+}
+
+main();

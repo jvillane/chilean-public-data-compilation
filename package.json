@@ -5,7 +5,7 @@
   "scripts": {
     "public_figures": "npx ts-node src/public_figures.ts",
     "government": "npx ts-node src/government.ts",
-    "census": "npx ts-node src/census.ts",
+    "census2017": "npx ts-node src/census.2017.ts",
     "elections.president": "npx ts-node src/elections.president.ts",
     "persons": "npx ts-node src/persons.ts"
   },

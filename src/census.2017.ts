@@ -58,7 +58,7 @@ function processRow(row: Row): ProcessedRow | undefined {
   }
 }
 
-export const census: Census = {
+export const census2017: Census = {
   Results: {
     Total: 0,
     Men: 0,
@@ -81,15 +81,15 @@ for (const rawRow of data) {
   if (row === undefined) {
     continue;
   }
-  census.Results.Total += row.Total;
-  census.Results.Men += row.Hombres;
-  census.Results.Women += row.Mujeres;
-  census.Results.Urban += row.Urbano;
-  census.Results.UrbanMen += row.UrbanoHombres;
-  census.Results.UrbanWomen += row.UrbanoMujeres;
-  census.Results.Rural += row.Rural;
-  census.Results.RuralMen += row.RuralHombres;
-  census.Results.RuralWomen += row.RuralMujeres;
+  census2017.Results.Total += row.Total;
+  census2017.Results.Men += row.Hombres;
+  census2017.Results.Women += row.Mujeres;
+  census2017.Results.Urban += row.Urbano;
+  census2017.Results.UrbanMen += row.UrbanoHombres;
+  census2017.Results.UrbanWomen += row.UrbanoMujeres;
+  census2017.Results.Rural += row.Rural;
+  census2017.Results.RuralMen += row.RuralHombres;
+  census2017.Results.RuralWomen += row.RuralMujeres;
 
   let region: CensusRegion;
   if (regionMap.has(row.RegionCodigo)) {
@@ -122,7 +122,7 @@ for (const rawRow of data) {
       Provinces: []
     };
     regionMap.set(row.RegionCodigo, region);
-    census.Regions.push(region);
+    census2017.Regions.push(region);
   }
 
   let province: CensusProvince;
@@ -192,18 +192,18 @@ for (const rawRow of data) {
     province.Communes.push(commune);
   }
 
-  if (census.Details[row.GrupoEdad]) {
-    census.Details[row.GrupoEdad].Total += row.Total;
-    census.Details[row.GrupoEdad].Men += row.Hombres;
-    census.Details[row.GrupoEdad].Women += row.Mujeres;
-    census.Details[row.GrupoEdad].Urban += row.Urbano;
-    census.Details[row.GrupoEdad].UrbanMen += row.UrbanoHombres;
-    census.Details[row.GrupoEdad].UrbanWomen += row.UrbanoMujeres;
-    census.Details[row.GrupoEdad].Rural += row.Rural;
-    census.Details[row.GrupoEdad].RuralMen += row.RuralHombres;
-    census.Details[row.GrupoEdad].RuralWomen += row.RuralMujeres;
+  if (census2017.Details[row.GrupoEdad]) {
+    census2017.Details[row.GrupoEdad].Total += row.Total;
+    census2017.Details[row.GrupoEdad].Men += row.Hombres;
+    census2017.Details[row.GrupoEdad].Women += row.Mujeres;
+    census2017.Details[row.GrupoEdad].Urban += row.Urbano;
+    census2017.Details[row.GrupoEdad].UrbanMen += row.UrbanoHombres;
+    census2017.Details[row.GrupoEdad].UrbanWomen += row.UrbanoMujeres;
+    census2017.Details[row.GrupoEdad].Rural += row.Rural;
+    census2017.Details[row.GrupoEdad].RuralMen += row.RuralHombres;
+    census2017.Details[row.GrupoEdad].RuralWomen += row.RuralMujeres;
   } else {
-    census.Details[row.GrupoEdad] = {
+    census2017.Details[row.GrupoEdad] = {
       Total: row.Total,
       Men: row.Hombres,
       Women: row.Mujeres,
@@ -289,7 +289,7 @@ for (const rawRow of data) {
   }
 }
 
-writeFile("./data/census.json", JSON.stringify(census), function(err) {
+writeFile("./data/census.2017.json", JSON.stringify(census2017), function(err) {
   if (err) {
     console.log(err);
   }

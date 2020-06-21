@@ -1,7 +1,15 @@
+export interface Candidates {
+  [Id: string]: {
+    Name: string
+    Votes: number
+    Alias: string[]
+  }
+}
+
 export interface CandidatesResult {
   Blank: number
   Null: number
-  [candidate: string]: number
+  Candidates: Candidates
 }
 
 export interface ElectionCommune {
