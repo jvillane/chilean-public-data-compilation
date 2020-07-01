@@ -3,10 +3,10 @@ export interface PublicFigureReference {
   Name: string
 }
 
-export interface WifeReference {
+export interface PartnerReference {
   Id: string
   Name: string
-  From: string
+  From?: string
   To?: string
 }
 
@@ -17,10 +17,12 @@ export interface PublicFigure {
   Birthday: string
   Death?: string
   Family?: {
-    Wife?: WifeReference[]
+    Wife?: PartnerReference[]
+    Husband?: PartnerReference[]
     Children?: PublicFigureReference[]
   }
   Biography?: {
     [source: string]: string
   }
+  DeputyId?: number
 }

@@ -7,16 +7,20 @@
     "government": "npx ts-node src/government.ts",
     "census2017": "npx ts-node src/census.2017.ts",
     "elections.president": "npx ts-node src/elections.president.ts",
-    "persons": "npx ts-node src/persons.ts"
+    "persons": "npx ts-node src/persons.ts",
+    "deputies": "npx ts-node src/deputies.ts",
+    "deputies.sessions": "npx ts-node src/deputies.sessions.ts"
   },
   "author": "Julio Villane",
   "license": "ISC",
   "dependencies": {
     "@types/sha1": "^1.1.2",
+    "@types/xml2js": "^0.4.5",
     "axios": "^0.19.2",
     "fs": "^0.0.1-security",
     "sha1": "^1.1.1",
-    "xlsx": "^0.16.2"
+    "xlsx": "^0.16.2",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "@types/node": "^14.0.10",
