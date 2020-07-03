@@ -851,7 +851,13 @@ export const publicFigures: PublicFigure[] = [
     Id: 'f1ae04fac2e4b153570222f954e0c11c5907225a',
     Name: 'Cristián Monckeberg Bruner',
     Birthday: '1968-05-12',
-    DeputyId: 867
+    DeputyId: 867,
+    Family: {
+      Wife: [{
+        Id: '74c950490073348916b9dc5977bb086e41c4ba47',
+        Name: 'Paulina Andrea Núñez Urrutia'
+      }]
+    }
   }, {
     Id: 'e700be824ab5bf0d0a3575b05c746a02723ab3f3',
     Name: 'Manuel Zacarías Monsalve Benavides',
@@ -2038,579 +2044,631 @@ export const publicFigures: PublicFigure[] = [
     Birthday: '1955-06-15',
     DeputyId: 982
   }, {
-    Id: '',
+    Id: '2221dbebad9181f9c81d7007e810f011828e2d36',
     Name: 'Juan Enrique Morano Cornejo',
-    Birthday: '',
+    Birthday: '1952-09-10',
     DeputyId: 992
   }, {
-    Id: '',
-    Name: 'Marcela Hernando Pérez',
-    Birthday: '',
+    Id: '3904534b62fa2fb99d9fbaefa359f5287a2116b7',
+    Name: 'Marcela Ximena Hernando Pérez',
+    Birthday: '1960-02-12',
     DeputyId: 986
   }, {
-    Id: '',
-    Name: 'Paulina Núñez Urrutia',
-    Birthday: '',
-    DeputyId: 994
+    Id: '74c950490073348916b9dc5977bb086e41c4ba47',
+    Name: 'Paulina Andrea Núñez Urrutia',
+    Birthday: '1982-12-30',
+    DeputyId: 994,
+    Family: {
+      Husband: [{
+        Id: 'f1ae04fac2e4b153570222f954e0c11c5907225a',
+        Name: 'Cristián Monckeberg Bruner',
+      }]
+    }
   }, {
-    Id: '',
+    Id: 'd4750b7f5aac4c2bc392d74e09c0fb825fdb068e',
     Name: 'Yasna Provoste Campillay',
-    Birthday: '',
+    Birthday: '1969-12-16',
     DeputyId: 998
   }, {
-    Id: '',
-    Name: 'Sergio Gahona Salazar',
-    Birthday: '',
+    Id: 'c8b7aafb00dc7f0db1ace246a76e6e5b1590c1f8',
+    Name: 'Sergio Alfredo Gahona Salazar',
+    Birthday: '1965-09-15',
     DeputyId: 985
   }, {
-    Id: '',
-    Name: 'Daniel Núñez Arancibia',
-    Birthday: '',
+    Id: '28a86da8570ad798a6948108f26ddb8f2f120c7e',
+    Name: 'Daniel Ignacio Núñez Arancibia',
+    Birthday: '1971-01-07',
     DeputyId: 993
   }, {
-    Id: '',
-    Name: 'Christian Urízar Muñoz',
-    Birthday: '',
+    Id: '66455c68b97643086f759d504c3de9b66939930e',
+    Name: 'Christian Erwin Urízar Muñoz',
+    Birthday: '1968-05-27',
     DeputyId: 1004
   }, {
-    Id: '',
-    Name: 'Osvaldo Urrutia Soto',
-    Birthday: '',
+    Id: 'a86f647c1ff0a2cd66bd50079a3c2cd216ba2c02',
+    Name: 'Osvaldo Alejandro Nicanor Urrutia Soto',
+    Birthday: '1951-11-28',
     DeputyId: 1005
   }, {
-    Id: '',
-    Name: 'Daniel Farcas Guendelman',
-    Birthday: '',
+    Id: '729d68cac38dc848ea4d8aede349ad93adda4817',
+    Name: 'Daniel Alejandro Farcas Guendelman',
+    Birthday: '1963-11-02',
     DeputyId: 980
   }, {
-    Id: '',
+    Id: 'e8a29fecef6930b8e2a8af3e2296a1e6319956b6',
     Name: 'Karol Cariola Oliva',
-    Birthday: '',
+    Birthday: '1987-04-01',
     DeputyId: 973
   }, {
-    Id: '',
-    Name: 'Maya Fernández Allende',
-    Birthday: '',
+    Id: '1733df4e05e8eb253e6f6b21da20aa342591c6f7',
+    Name: 'Maya Alejandra Fernández Allende',
+    Birthday: '1971-11-27',
     DeputyId: 981
   }, {
-    Id: '',
-    Name: 'Giorgio Jackson Drago',
-    Birthday: '',
+    Id: 'b33cfa6501f2184011d0d49a35192c41a0e59926',
+    Name: 'Kenneth Giorgio Jackson Drago',
+    Birthday: '1987-02-06',
     DeputyId: 987
   }, {
-    Id: '',
+    Id: '404_44',
+    Name: 'Michael Kast Schindele',
+    Birthday: '1924-01-01',
+    Death: '2014-05-09',
+    Family: {
+      Children: [{
+        Id: '404_45',
+        Name: 'Miguel Kast Rist'
+      },{
+        Id: "f1383e1210cdf254263e47a4ccfb223132ac43b4",
+        Name: "José Antonio Kast Rist"
+      }]
+    }
+  }, {
+    Id: '404_45',
+    Name: 'Miguel Kast Rist',
+    Birthday: '1948-12-18',
+    Death: '1983-09-18',
+    Family: {
+      Children: [{
+        Id: '3df3793b589bd887c8c9d59d4bb5b2a3e47c9134',
+        Name: 'Felipe Kast Sommerhoff'
+      },{
+        Id: '534851c47e9d747f2fb0b46e6c8548642949f5b4',
+        Name: 'Pablo Andrés Kast Sommerhoff'
+      }]
+    }
+  }, {
+    Id: '3df3793b589bd887c8c9d59d4bb5b2a3e47c9134',
     Name: 'Felipe Kast Sommerhoff',
-    Birthday: '',
+    Birthday: '1977-06-09',
     DeputyId: 988
   }, {
-    Id: '',
-    Name: 'Jaime Pilowsky Greene',
-    Birthday: '',
+    Id: 'cbb692c38fa6b0861f6b991e6613f8a66ca73e2f',
+    Name: 'Jaime Hernán Gonzalo Pilowsky Greene',
+    Birthday: '1965-12-03',
     DeputyId: 996
   }, {
-    Id: '',
-    Name: 'Claudio Arriagada Macaya',
-    Birthday: '',
+    Id: 'f420a56aa24b98b48dae0f39ea3daa2ef4d4ddfa',
+    Name: 'Claudio Eugenio Arriagada Macaya',
+    Birthday: '1955-10-22',
     DeputyId: 969
   }, {
-    Id: '',
-    Name: 'Daniel Melo Contreras',
-    Birthday: '',
+    Id: 'fdc352e77947d91a24c88641162336085bc2793a',
+    Name: 'Daniel Alexander Melo Contreras',
+    Birthday: '1979-02-18',
     DeputyId: 990
   }, {
-    Id: '',
-    Name: 'Jaime Bellolio Avaria',
-    Birthday: '',
+    Id: '620f76c1d5b935fc0179cb906c40e79b1beb3a1c',
+    Name: 'Jaime Andrés Bellolio Avaria',
+    Birthday: '1980-11-29',
     DeputyId: 970
   }, {
-    Id: '',
+    Id: '6b10fff4fe9e676f08a37d469ced26ebe6d4713b',
     Name: 'Leonardo Soto Ferrada',
-    Birthday: '',
+    Birthday: '1966-05-15',
     DeputyId: 1002
   }, {
-    Id: '',
+    Id: '65f2d1890a37d3cd48b02f997716fe491433ba05',
     Name: 'Juan Antonio Coloma Álamos',
-    Birthday: '',
+    Birthday: '1980-03-14',
     DeputyId: 976
   }, {
-    Id: '',
+    Id: '1895da26f6472fa18b7d23bc652cce78153c917d',
     Name: 'Sergio Espejo Yaksic',
-    Birthday: '',
+    Birthday: '1967-03-15',
     DeputyId: 979
   }, {
-    Id: '',
-    Name: 'Marcelo Chávez Velásquez',
-    Birthday: '',
+    Id: 'e4c559585a8664071d28cb59d94f01c7aa965d27',
+    Name: 'Marcelo Omar Chávez Velásquez',
+    Birthday: '1975-02-19',
     DeputyId: 977
   }, {
-    Id: '',
+    Id: '33b7370abb025a3f52e7e187d14eb0b8ce3c3762',
     Name: 'Roberto Poblete Zapata',
-    Birthday: '',
+    Birthday: '1955-01-08',
     DeputyId: 997
   }, {
-    Id: '',
-    Name: 'Diego Paulsen Kehr',
-    Birthday: '',
+    Id: '6185d8916c66d3c9ba92107c548a82c872f60665',
+    Name: 'Diego Alfredo Paulsen Kehr',
+    Birthday: '1987-08-01',
     DeputyId: 995
   }, {
-    Id: '',
-    Name: 'Bernardo Berger Fett',
-    Birthday: '',
+    Id: 'a28bc9e57581b875991bbd40631f28eaf548391a',
+    Name: 'Bernardo Jose Berger Fett',
+    Birthday: '1946-10-04',
     DeputyId: 971
   }, {
-    Id: '',
-    Name: 'Gonzalo Fuenzalida Figueroa',
-    Birthday: '',
+    Id: 'c11d593b25f141f1f5e9ccb3a495f1eb4eba1546',
+    Name: 'Gonzalo Guillermo Fuenzalida Figueroa',
+    Birthday: '1973-06-18',
     DeputyId: 984
   }, {
-    Id: '',
+    Id: '1351731916727b402bbbd42f0ba6dbdfaa632499',
     Name: 'Felipe De Mussy Hiriart',
-    Birthday: '',
+    Birthday: '1982-09-28',
     DeputyId: 978
   }, {
-    Id: '',
-    Name: 'Iván Fuentes Castillo',
-    Birthday: '',
+    Id: '055f24aca33768c900c55fa3f7a2bec57cf51b6d',
+    Name: 'Iván Aladino Fuentes Castillo',
+    Birthday: '1967-07-24',
     DeputyId: 983
   }, {
-    Id: '',
+    Id: 'fb2b25556adf2646abc1d6cfdbb491018f715194',
     Name: 'Gabriel Boric Font',
-    Birthday: '',
+    Birthday: '1986-02-11',
     DeputyId: 972
   }, {
-    Id: '',
+    Id: '3d95c91970661925108d8b6d329f9663c31d5417',
     Name: 'Miguel Ángel Alvarado Ramírez',
-    Birthday: '',
+    Birthday: '1961-07-10',
     DeputyId: 1007
   }, {
-    Id: '',
-    Name: 'Florcita Alarcón Rojas',
-    Birthday: '',
+    Id: '6ec0a41d8ff13cdf50e3a1dbcc72997af4800c89',
+    Name: 'Raúl Florcita Alarcón Rojas',
+    Birthday: '1945-10-15',
     DeputyId: 1008
   }, {
-    Id: '',
+    Id: '186ff7d6d25014ce52298a30b372d415848ee95c',
     Name: 'Jorge Alessandri Vergara',
-    Birthday: '',
+    Birthday: '1979-06-08',
     DeputyId: 1009
   }, {
-    Id: '',
-    Name: 'Sebastián Álvarez Ramírez',
-    Birthday: '',
+    Id: '3251dca193705fe3395f6691a481952a850f9e3c',
+    Name: 'Sebastián Diego Álvarez Ramírez',
+    Birthday: '1970-11-13',
     DeputyId: 1010
   }, {
-    Id: '',
-    Name: 'Sandra Amar Mancilla',
-    Birthday: '',
+    Id: 'aecf1bfe4d6b5f1ba89182695dc0f8bf931c6085',
+    Name: 'Sandra Haydee Amar Mancilla',
+    Birthday: '1955-11-24',
     DeputyId: 1011
   }, {
-    Id: '',
-    Name: 'Boris Barrera Moreno',
-    Birthday: '',
+    Id: 'a1754ae62a235fdfdcc5a84ccd34af14e40358c2',
+    Name: 'Boris Anthony Barrera Moreno',
+    Birthday: '1970-05-03',
     DeputyId: 1012
   }, {
-    Id: '',
-    Name: 'Karim Bianchi Retamales',
-    Birthday: '',
+    Id: '2f8d214e04d3f11a7d529e9c771d8372f235fa51',
+    Name: 'Karim Antonio Bianchi Retamales',
+    Birthday: '1983-01-31',
     DeputyId: 1014
   }, {
-    Id: '',
+    Id: 'e2c6be59f716a66b21d18217b0351eafaf5c98db',
     Name: 'Miguel Ángel Calisto Águila',
-    Birthday: '',
+    Birthday: '1985-07-19',
     DeputyId: 1016
   }, {
-    Id: '',
-    Name: 'Álvaro Carter Fernández',
-    Birthday: '',
+    Id: 'fe8fe6dbcd0ff3fbdcd0b402dffa2b9435a145f2',
+    Name: 'Álvaro Jorge Carter Fernández',
+    Birthday: '1980-10-09',
     DeputyId: 1017
   }, {
-    Id: '',
-    Name: 'Natalia Castillo Muñoz',
-    Birthday: '',
+    Id: '5c1bf64fab54b45467af36f7033b55be4b32b802',
+    Name: 'Natalia Valentina Castillo Muñoz',
+    Birthday: '1982-08-01',
     DeputyId: 1018
   }, {
-    Id: '',
+    Id: '9ef4a96bc8594bb934f10ca09a871481229003c2',
     Name: 'Ricardo Celis Araya',
-    Birthday: '',
+    Birthday: '1955-07-11',
     DeputyId: 1020
   }, {
-    Id: '',
+    Id: '4a9d66ff647febdfcd0be84d2021435b6e76fa3b',
     Name: 'Andrés Celis Montt',
-    Birthday: '',
+    Birthday: '1975-04-08',
     DeputyId: 1021
   }, {
-    Id: '',
-    Name: 'Sofía Cid Versalovic',
-    Birthday: '',
+    Id: 'd2ec79d26dbd1546bef722eed8be210eb409ec45',
+    Name: 'Sofía Slovena Cid Versalovic',
+    Birthday: '1971-09-29',
     DeputyId: 1022
   }, {
-    Id: '',
+    Id: '2a9259110d10d0729cda41a079bea37e56f0f228',
     Name: 'Luciano Cruz-Coke Carvallo',
-    Birthday: '',
+    Birthday: '1970-07-01',
     DeputyId: 1024
   }, {
-    Id: '',
-    Name: 'Catalina Del Real Mihovilovic',
-    Birthday: '',
+    Id: 'e1d6b03690b2a256c44f9c99fc3be2cc85bdcd26',
+    Name: 'María Catalina Del Real Mihovilovic',
+    Birthday: '1968-11-07',
     DeputyId: 1025
   }, {
-    Id: '',
-    Name: 'Mario Desbordes Jiménez',
-    Birthday: '',
+    Id: '62f5adb90cc7d54cf4fd84f9cefc2dcb65f4a48f',
+    Name: 'Mario Guillermo Desbordes Jiménez',
+    Birthday: '1968-10-15',
     DeputyId: 1026
   }, {
-    Id: '',
-    Name: 'Jorge Durán Espinoza',
-    Birthday: '',
+    Id: 'a1ee83001ff55754f555c72a6ac200f482589c15',
+    Name: 'Jorge Andrés Durán Espinoza',
+    Birthday: '1980-12-17',
     DeputyId: 1027
   }, {
-    Id: '',
-    Name: 'Francisco Eguiguren Correa',
-    Birthday: '',
+    Id: '78788f3312832ccb975c435468697f89125dde0f',
+    Name: 'Francisco de Borja Eguiguren Correa',
+    Birthday: '1967-07-13',
     DeputyId: 1029
   }, {
-    Id: '',
-    Name: 'Camila Flores Oporto',
-    Birthday: '',
-    DeputyId: 1030
+    Id: '6e3254daedf71e65d35b52482f14c1bfe637ddcf',
+    Name: 'Camila Alejandra Flores Oporto',
+    Birthday: '1987-02-09',
+    DeputyId: 1030,
+    Family: {
+      Husband: [{
+        Id: '3c7cf78c5639b90636dcb312bbc3c09c58e1deb4',
+        Name: 'Percy Marín Vera',
+        From: '2017-01-01'
+      }]
+    }
   }, {
-    Id: '',
-    Name: 'Juan Fuenzalida Cobo',
-    Birthday: '',
+    Id: '3c7cf78c5639b90636dcb312bbc3c09c58e1deb4',
+    Name: 'Percy Marín Vera',
+    Birthday: '1969-09-22',
+    Family: {
+      Wife: [{
+        Id: '6e3254daedf71e65d35b52482f14c1bfe637ddcf',
+        Name: 'Camila Alejandra Flores Oporto',
+        From: '2017-01-01'
+      }]
+    }
+  }, {
+    Id: '9d96f9d4b5b092d4987d1b9dc333de264567412d',
+    Name: 'Juan Manuel Fuenzalida Cobo',
+    Birthday: '1973-07-01',
     DeputyId: 1031
   }, {
-    Id: '',
-    Name: 'Ramón Galleguillos Castillo',
-    Birthday: '',
+    Id: 'c18c7acf221e69cb950b0d40ee5848b9ab4f1eab',
+    Name: 'Ramón Ernesto Galleguillos Castillo',
+    Birthday: '1953-07-26',
     DeputyId: 1032
   }, {
-    Id: '',
-    Name: 'Renato Garín González',
-    Birthday: '',
+    Id: '5c892a483e1e66a78e0640b648269c26dedbdf40',
+    Name: 'Renato Fabrizio Garín González',
+    Birthday: '1986-05-30',
     DeputyId: 1033
   }, {
-    Id: '',
-    Name: 'Carmen Hertz Cádiz',
-    Birthday: '',
+    Id: '49fb25a927d2521189022eb52b93e1dab064645d',
+    Name: 'Carmen Adelaida Hertz Cádiz',
+    Birthday: '1945-06-19',
     DeputyId: 1035
   }, {
-    Id: '',
-    Name: 'Tomás Hirsch Goldschmidt',
-    Birthday: '',
+    Id: '2c65a090f5f8d1374e2d440ac59d958e03b335b1',
+    Name: 'Tomás René Hirsch Goldschmidt',
+    Birthday: '1956-07-19',
     DeputyId: 1036
   }, {
-    Id: '',
-    Name: 'Diego Ibáñez Cotroneo',
-    Birthday: '',
+    Id: 'dbfb1eb63bfad28a469e5385aba1f05f5c1cd1ed',
+    Name: 'Diego Eduardo Ibáñez Cotroneo',
+    Birthday: '1989-01-25',
     DeputyId: 1037
   }, {
-    Id: '',
+    Id: '60498fb3a14a2389519f092afaddd1f8a260dca8',
     Name: 'Pamela Jiles Moreno',
-    Birthday: '',
+    Birthday: '1960-11-30',
     DeputyId: 1039
   }, {
-    Id: '',
-    Name: 'Harry Jürgensen Rundshagen',
-    Birthday: '',
+    Id: 'fac6b73e5e34acdc3a635488da197d8ee00a101e',
+    Name: 'Harry Kurt Thomas Jürgensen Rundshagen',
+    Birthday: '1968-09-03',
     DeputyId: 1040
   }, {
-    Id: '',
+    Id: '786641cf735ba22b03fcfbc9bb305e4dff92d92b',
     Name: 'Sebastián Keitel Bianchi',
-    Birthday: '',
+    Birthday: '1973-02-14',
     DeputyId: 1042
   }, {
-    Id: '',
-    Name: 'Raúl Leiva Carvajal',
-    Birthday: '',
+    Id: '454e9afee3763902aa84638e4fa1794b6df6a124',
+    Name: 'Raúl Alfonso Leiva Carvajal',
+    Birthday: '1974-03-24',
     DeputyId: 1044
   }, {
-    Id: '',
-    Name: 'Aracely Leuquén Uribe',
-    Birthday: '',
+    Id: '4f656281076bb5e318d0a4ceb54dae105a08465d',
+    Name: 'Aracely Andrea Leuquén Uribe',
+    Birthday: '1980-11-24',
     DeputyId: 1045
   }, {
-    Id: '',
+    Id: '828b3d062b7100c577ac1bde6b26f38ba68b7ef1',
     Name: 'Andrés Longton Herrera',
-    Birthday: '',
+    Birthday: '1982-05-26',
     DeputyId: 1046
   }, {
-    Id: '',
-    Name: 'Karin Luck Urban',
-    Birthday: '',
+    Id: 'bfd1b69bd11c651b795d735aac31550f715edfcf',
+    Name: 'Karin Claudia Luck Urban',
+    Birthday: '1971-07-19',
     DeputyId: 1047
   }, {
-    Id: '',
-    Name: 'Carolina Marzán Pinto',
-    Birthday: '',
+    Id: 'bcbd042d33c4e84fc2ece8bbbfa653fe84995514',
+    Name: 'Marta Carolina Marzán Pinto',
+    Birthday: '1963-12-22',
     DeputyId: 1048
   }, {
-    Id: '',
-    Name: 'Cosme Mellado Pino',
-    Birthday: '',
+    Id: '95e7a8be4d3b760628729c510999610efee1ff5b',
+    Name: 'Cosme Leopoldo Mellado Pino',
+    Birthday: '1960-02-24',
     DeputyId: 1049
   }, {
-    Id: '',
-    Name: 'Miguel Mellado Suazo',
-    Birthday: '',
+    Id: 'c7323f61b2b71700c6af24cf7178512a040ca218',
+    Name: 'Miguel Alejandro Mellado Suazo',
+    Birthday: '1958-12-29',
     DeputyId: 1050
   }, {
-    Id: '',
-    Name: 'Claudia Mix Jiménez',
-    Birthday: '',
+    Id: '0a870a208f9bc4b8bed2f6a5da7d08d18723d513',
+    Name: 'Claudia Nathalie Mix Jiménez',
+    Birthday: '1969-07-13',
     DeputyId: 1051
   }, {
-    Id: '',
-    Name: 'Andrés Molina Magofke',
-    Birthday: '',
+    Id: 'ce97e00bb66bc235519161b66fcaf0df2bc7ed67',
+    Name: 'Jose Sergio Andrés Molina Magofke',
+    Birthday: '1963-11-17',
     DeputyId: 1052
   }, {
-    Id: '',
-    Name: 'Francesca Muñoz González',
-    Birthday: '',
+    Id: 'a77af3defed125bc2105310e2f25e024b77568af',
+    Name: 'Francesca Elizabeth Andrea Muñoz González',
+    Birthday: '1980-03-07',
     DeputyId: 1054
   }, {
-    Id: '',
-    Name: 'Nicolás Noman Garrido',
-    Birthday: '',
+    Id: 'e9c33a18ef2454fdfefd65ba29c4014b9da1bcba',
+    Name: 'Nicolás José Noman Garrido',
+    Birthday: '1981-05-07',
     DeputyId: 1055
   }, {
-    Id: '',
-    Name: 'Emilia Nuyado Ancapichún',
-    Birthday: '',
+    Id: '6e817a421e49ec051594ce63ba9b819824fe39da',
+    Name: 'Emilia Iris Nuyado Ancapichún',
+    Birthday: '1968-08-17',
     DeputyId: 1056
   }, {
-    Id: '',
-    Name: 'Erika Olivera De La Fuente',
-    Birthday: '',
+    Id: '7e852a037b8330e0dfb2215fbf850d08c3aaaa07',
+    Name: 'Erika Alejandra Olivera De La Fuente',
+    Birthday: '1976-01-04',
     DeputyId: 1057
   }, {
-    Id: '',
-    Name: 'Ximena Ossandón Irarrázabal',
-    Birthday: '',
+    Id: 'c8c5ff8ad19345447a0b824004bcabc19cec4dee',
+    Name: 'María Ximena Ossandón Irarrázabal',
+    Birthday: '1963-12-13',
     DeputyId: 1059
   }, {
-    Id: '',
-    Name: 'Luis Pardo Sáinz',
-    Birthday: '',
+    Id: '1581560e6d8e21d28cb576c2be6c34167bfadda7',
+    Name: 'Luis Rafael Pardo Sáinz',
+    Birthday: '1960-12-13',
     DeputyId: 1060
   }, {
-    Id: '',
-    Name: 'Andrea Parra Sauterel',
-    Birthday: '',
+    Id: '26d2778a624cf100839abe3ef7c0e9c5fbf77c08',
+    Name: 'Irle Andrea Parra Sauterel',
+    Birthday: '1967-09-02',
     DeputyId: 1061
   }, {
-    Id: '',
-    Name: 'Joanna Pérez Olea',
-    Birthday: '',
+    Id: 'c785e0c63e907a73d2046e0ad51dfdca82eaf52a',
+    Name: 'Joanna Elena Pérez Olea',
+    Birthday: '1976-04-01',
     DeputyId: 1062
   }, {
-    Id: '',
-    Name: 'Catalina Pérez Salinas',
-    Birthday: '',
+    Id: '97d2308350a2df66b6868a5f212a0f2816d093b5',
+    Name: 'Catalina Ilona Io Pérez Salinas',
+    Birthday: '1990-12-18',
     DeputyId: 1063
   }, {
-    Id: '',
-    Name: 'Pablo Prieto Lorca',
-    Birthday: '',
+    Id: '2a30bf33bd93871683b2e9b41d70dc1ddbf92546',
+    Name: 'Pablo Samuel Prieto Lorca',
+    Birthday: '1959-05-04',
     DeputyId: 1064
   }, {
-    Id: '',
-    Name: 'Guillermo Ramírez Diez',
-    Birthday: '',
+    Id: '211abb9c96ad41acf451540b9e64464e48ec67fa',
+    Name: 'Guillermo Andrés Ramírez Diez',
+    Birthday: '1979-04-16',
     DeputyId: 1065
   }, {
-    Id: '',
-    Name: 'Rolando Rentería Moller',
-    Birthday: '',
+    Id: '8d0de97b3939ee3d29e681ba1f9db0e3c2b209f4',
+    Name: 'Rolando Ramón Rentería Moller',
+    Birthday: '1968-08-19',
     DeputyId: 1066
   }, {
-    Id: '',
-    Name: 'Hugo Rey Martínez',
-    Birthday: '',
+    Id: 'c0e938fb1aec8b3ef419b7171e65a15181585323',
+    Name: 'Hugo Vicente Rey Martínez',
+    Birthday: '1973-12-06',
     DeputyId: 1067
   }, {
-    Id: '',
-    Name: 'Camila Rojas Valderrama',
-    Birthday: '',
+    Id: '3ea895fd175da7e93af8fd0b53e39b4d13d62d19',
+    Name: 'Camila Ruzlay Rojas Valderrama',
+    Birthday: '1991-03-11',
     DeputyId: 1068
   }, {
-    Id: '',
-    Name: 'Leonidas Romero Sáez',
-    Birthday: '',
+    Id: '6259e326e1d2545df582d9e6dc13724c0d51c7fc',
+    Name: 'Leonidas Andrés Romero Sáez',
+    Birthday: '1955-10-15',
     DeputyId: 1069
   }, {
-    Id: '',
-    Name: 'Patricio Rosas Barrientos',
-    Birthday: '',
+    Id: '4d8c25c4b5383c7dd31f624f547cc4ae09df841f',
+    Name: 'Patricio Eduardo Rosas Barrientos',
+    Birthday: '1968-05-06',
     DeputyId: 1070
   }, {
-    Id: '',
-    Name: 'Gastón Saavedra Chandía',
-    Birthday: '',
+    Id: 'a7efcea2eb347545c713cd894dc440d253136ef2',
+    Name: 'Gastón René Saavedra Chandía',
+    Birthday: '1955-11-22',
     DeputyId: 1071
   }, {
-    Id: '',
-    Name: 'Gustavo Sanhueza Dueñas',
-    Birthday: '',
+    Id: 'cba749c2737acba362487b621fddd431dc19977e',
+    Name: 'Gustavo Adolfo Sanhueza Dueñas',
+    Birthday: '1966-12-10',
     DeputyId: 1072
   }, {
-    Id: '',
-    Name: 'Juan Santana Castillo',
-    Birthday: '',
+    Id: '993f1791f847b959519b483c66211c000674d652',
+    Name: 'Juan Rubén Santana Castillo',
+    Birthday: '1989-09-20',
     DeputyId: 1073
   }, {
-    Id: '',
-    Name: 'Marisela Santibáñez Novoa',
-    Birthday: '',
+    Id: 'ae8acb6b389e0f549151b44a655c760210791e86',
+    Name: 'Marisela del Carmen Santibáñez Novoa',
+    Birthday: '1975-04-24',
     DeputyId: 1074
   }, {
-    Id: '',
-    Name: 'Luis Rocafull López',
-    Birthday: '',
+    Id: '89fa2938fd3634ef3be96cc3c23a2d1a2a549367',
+    Name: 'Luis Alberto Rocafull López',
+    Birthday: '1958-09-17',
     DeputyId: 1000
   }, {
-    Id: '',
-    Name: 'Alexis Sepúlveda Soto',
-    Birthday: '',
+    Id: '21edd53c438e9cb74a0335fe3d379de35465e522',
+    Name: 'Alexis Edgardo Sepúlveda Soto',
+    Birthday: '1969-12-29',
     DeputyId: 1076
   }, {
-    Id: '',
-    Name: 'Jenny Álvarez Vera',
-    Birthday: '',
+    Id: 'e455bb4c64976893199838b9cd820d1cf890fe0b',
+    Name: 'Jenny Paola Álvarez Vera',
+    Birthday: '1974-03-30',
     DeputyId: 968
   }, {
-    Id: '',
-    Name: 'Jorge Brito Hasbún',
-    Birthday: '',
+    Id: 'b9a313a9882d3e9a64ea9c1323502db6d300c5ad',
+    Name: 'Jorge Elías Brito Hasbún',
+    Birthday: '1990-01-12',
     DeputyId: 1015
   }, {
-    Id: '',
-    Name: 'Daniella Cicardini Milla',
-    Birthday: '',
+    Id: '315b8697519177e013cbd017c3975179b9e248ef',
+    Name: 'Daniella Valentina Cicardini Milla',
+    Birthday: '1987-12-31',
     DeputyId: 975
   }, {
-    Id: '',
-    Name: 'Miguel Crispi Serrano',
-    Birthday: '',
+    Id: '3d88ffd940d25acf7fb592bece5a77cf0f8ce1d5',
+    Name: 'Miguel Ernesto Crispi Serrano',
+    Birthday: '1985-04-09',
     DeputyId: 1023
   }, {
-    Id: '',
-    Name: 'Eduardo Durán Salinas',
-    Birthday: '',
+    Id: '2f93674b76c174a3d6810992ac42f7e1dee06aa1',
+    Name: 'Eduardo Alfredo Durán Salinas',
+    Birthday: '1972-01-01',
     DeputyId: 1028
   }, {
-    Id: '',
-    Name: 'Raúl Soto Mardones',
-    Birthday: '',
+    Id: '79879bee8dfb473d54de2385833bb05fc974c7e4',
+    Name: 'Raúl Humberto Soto Mardones',
+    Birthday: '1987-11-20',
     DeputyId: 1077
   }, {
-    Id: '',
-    Name: 'Jaime Tohá González',
-    Birthday: '',
+    Id: '86f42b80700730da9879fd1adc7f894ca8488fc6',
+    Name: 'Jaime Manuel Tohá González',
+    Birthday: '1938-06-16',
     DeputyId: 1078
   }, {
-    Id: '',
+    Id: '497e7fbc5f76e18e26aee8de51c489a20caf3a2c',
     Name: 'Sebastián Torrealba Alvarado',
-    Birthday: '',
+    Birthday: '1981-02-06',
     DeputyId: 1079
   }, {
-    Id: '',
-    Name: 'Virginia Troncoso Hellman',
-    Birthday: '',
+    Id: '8521ae6e3dd42bb096e14ae4e2155487c1c67c76',
+    Name: 'Virginia Eugenia Troncoso Hellman',
+    Birthday: '1951-02-18',
     DeputyId: 1080
   }, {
-    Id: '',
-    Name: 'Francisco Undurraga Gazitúa',
-    Birthday: '',
+    Id: 'c55ec6d5e472a90ef45d1823cfc49380770408db',
+    Name: 'Juan Francisco Undurraga Gazitúa',
+    Birthday: '1965-09-29',
     DeputyId: 1081
   }, {
-    Id: '',
-    Name: 'Cristóbal Urruticoechea Ríos',
-    Birthday: '',
+    Id: 'e2e87a66636766293ff36f6e2507101fd9e9eb7c',
+    Name: 'Cristóbal Ignacio de Loyola Urruticoechea Ríos',
+    Birthday: '1975-11-21',
     DeputyId: 1082
   }, {
-    Id: '',
-    Name: 'Esteban Velásquez Núñez',
-    Birthday: '',
+    Id: '366b671de54fa9f9d72d781b0152ff9c04694a59',
+    Name: 'Esteban Jorge Velásquez Núñez',
+    Birthday: '1962-12-26',
     DeputyId: 1083
   }, {
-    Id: '',
-    Name: 'Daniel Verdessi Belemmi',
-    Birthday: '',
+    Id: '84c609878b9bdfb53f57161a6b815c8d35c4dd99',
+    Name: 'Daniel Ángel Verdessi Belemmi',
+    Birthday: '1952-12-15',
     DeputyId: 1084
   }, {
-    Id: '',
-    Name: 'Pablo Vidal Rojas',
-    Birthday: '',
+    Id: '534e80c6e34ce50a5b878292486c1a72b2eeb8e8',
+    Name: 'Pablo Esteban Vidal Rojas',
+    Birthday: '1983-06-24',
     DeputyId: 1085
   }, {
-    Id: '',
-    Name: 'Gonzalo Winter Etcheberry',
-    Birthday: '',
+    Id: 'a187609375333f2f38148fc9763aa4018bf5c84f',
+    Name: 'Gonzalo Rodolfo Winter Etcheberry',
+    Birthday: '1987-01-06',
     DeputyId: 1086
   }, {
-    Id: '',
-    Name: 'Gael Yeomans Araya',
-    Birthday: '',
+    Id: 'e18e87814bf4b4afb0d1cfa64fd7b2201ddafcae',
+    Name: 'Gael Fernanda Yeomans Araya',
+    Birthday: '1988-12-04',
     DeputyId: 1087
   }, {
-    Id: '',
-    Name: 'Félix González Gatica',
-    Birthday: '',
+    Id: 'b973b5dce1d3fbce0efd2a977c050d3356f13102',
+    Name: 'Félix Marcelo González Gatica',
+    Birthday: '1972-05-26',
     DeputyId: 1034
   }, {
-    Id: '',
-    Name: 'Marcos Ilabaca Cerda',
-    Birthday: '',
+    Id: 'd13423e8310281553a8a5b4078b27adcc4e3ed9a',
+    Name: 'Marcos Artemio Ilabaca Cerda',
+    Birthday: '1970-10-05',
     DeputyId: 1038
   }, {
-    Id: '',
-    Name: 'Pablo Kast Sommerhoff',
-    Birthday: '',
+    Id: '534851c47e9d747f2fb0b46e6c8548642949f5b4',
+    Name: 'Pablo Andrés Kast Sommerhoff',
+    Birthday: '1973-08-24',
     DeputyId: 1041
   }, {
-    Id: '',
-    Name: 'Amaro Labra Sepúlveda',
-    Birthday: '',
+    Id: '894a366ad83524e8b6ffa53ddd64ad9635472c23',
+    Name: 'Amaro Jamil Jesús Labra Sepúlveda',
+    Birthday: '1949-10-25',
     DeputyId: 1043
   }, {
-    Id: '',
+    Id: '483550fa5e69ebff4f7bece7f4425ae98853063e',
     Name: 'Vlado Mirosevic Verdugo',
-    Birthday: '',
+    Birthday: '1987-05-23',
     DeputyId: 991
   }, {
-    Id: '',
+    Id: 'a7134dd1ab48f00d28a3096b6e70767dd983d624',
     Name: 'Maite Orsini Pascal',
-    Birthday: '',
+    Birthday: '1988-02-23',
     DeputyId: 1058
   }, {
-    Id: '',
-    Name: 'Jorge Rathgeb Schifferli',
-    Birthday: '',
+    Id: 'e11be9fea8e2477ffd3b25411f3a7d3833f52a04',
+    Name: 'Jorge Evaldo Rathgeb Schifferli',
+    Birthday: '1967-12-28',
     DeputyId: 999
   }, {
-    Id: '',
-    Name: 'Raúl Saldívar Auger',
-    Birthday: '',
+    Id: 'efb185c9a7e3ef170802dae0393a77587bbe347f',
+    Name: 'Raúl Fernando Saldívar Auger',
+    Birthday: '1951-06-02',
     DeputyId: 1001
   }, {
-    Id: '',
-    Name: 'Diego Schalper Sepúlveda',
-    Birthday: '',
+    Id: 'c54e2ef031e99d5ec17372eb58f25dbb0162dc83',
+    Name: 'Diego Ignacio Schalper Sepúlveda',
+    Birthday: '1985-03-14',
     DeputyId: 1075
   }, {
-    Id: '',
-    Name: 'Alejandro Bernales Maldonado',
-    Birthday: '',
+    Id: 'f957e80efafd2c96001de8ea463482b806183cf6',
+    Name: 'Alejandro Javier Bernales Maldonado',
+    Birthday: '1979-02-02',
     DeputyId: 1013
   }, {
-    Id: '',
+    Id: 'f2970a814d9aa08b583a8f99b182efc44d067b7d',
     Name: 'José Miguel Castro Bascuñán',
-    Birthday: '',
+    Birthday: '1974-08-05',
     DeputyId: 1019
   }, {
-    Id: '',
-    Name: 'Cristhian Moreira Barros',
-    Birthday: '',
+    Id: '3ac86c7211e55e354c5d67073786a1d13fd47392',
+    Name: 'Cristhian Patricio Moreira Barros',
+    Birthday: '1961-09-05',
     DeputyId: 1053
   }
 ];
