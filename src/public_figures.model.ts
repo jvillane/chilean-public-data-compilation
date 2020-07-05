@@ -11,9 +11,7 @@ export interface PartnerReference {
 }
 
 export interface PublicFigure {
-  Id: string
   Name: string
-  Alias?: string
   Born: string
   Died?: string
   Family?: {
