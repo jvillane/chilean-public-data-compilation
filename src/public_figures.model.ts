@@ -14,8 +14,8 @@ export interface PublicFigure {
   Id: string
   Name: string
   Alias?: string
-  Birthday: string
-  Death?: string
+  Born: string
+  Died?: string
   Family?: {
     Wife?: PartnerReference[]
     Husband?: PartnerReference[]
@@ -24,5 +24,10 @@ export interface PublicFigure {
   Biography?: {
     [source: string]: string
   }
-  DeputyId?: number
+  DeputyId?: number | number[]
+  Image?: string
+}
+
+export interface PublicFigureList {
+  [id: string]: PublicFigure
 }
