@@ -2677,12 +2677,17 @@ export const publicFigures: PublicFigureList = {
   }
 };
 
-export const findPublicFigureByAlias = (name: string): PublicFigure | undefined => {
+interface PublicFigureWithId extends PublicFigure {
+  Id: string
+}
+
+export const findPublicFigureByAlias = (name: string): PublicFigureWithId | undefined => {
   for (const id in aliases) {
     if (aliases[id].includes(name)) {
       for (const pfId in publicFigures) {
         if (pfId === id) {
-          return publicFigures[pfId];
+          const pf = Object.assign({Id: pfId}, publicFigures[pfId])
+          return pf;
         }
       }
     }
@@ -2690,8 +2695,12 @@ export const findPublicFigureByAlias = (name: string): PublicFigure | undefined 
   return undefined;
 }
 
-writeFile("./data/public_figures.json", JSON.stringify(publicFigures), function (err) {
-  if (err) {
-    console.log(err);
-  }
-});
+function main() {
+  writeFile("./data/public_figures.json", JSON.stringify(publicFigures), function (err) {
+    if (err) {
+      console.log(err);
+    }
+  });
+}
+
+//main();

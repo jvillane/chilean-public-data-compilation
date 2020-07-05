@@ -1,7 +1,8 @@
 import {parseStringPromise} from "xml2js";
 import axios from "axios";
 import {Affiliation, Deputy} from "./deputies.model";
-import {writeFile} from "fs";
+import {createWriteStream, writeFile} from "fs";
+import * as http from "https";
 
 interface PoliticalPartyRaw {
   Id: string[]
@@ -35,7 +36,7 @@ async function main() {
   for (const deputyRaw of deputiesRaw) {
     const affiliations: Affiliation[] = [];
     for (const affiliationRaw of deputyRaw.Militancias[0].Militancia) {
-      if(affiliationRaw.Partido){
+      if (affiliationRaw.Partido) {
         const affiliation: Affiliation = {
           Inicio: affiliationRaw.FechaInicio[0],
           Termino: affiliationRaw.FechaTermino[0],
@@ -71,4 +72,28 @@ async function main() {
   });
 }
 
-main();
+export const downloadAvatar = (id: string, deputyId: number) => {
+  return new Promise((resolve, reject) => {
+    http.get(`https://www.camara.cl/img.aspx?prmID=GRCL${deputyId}`, response => {
+      if(response.headers["content-length"] !== undefined && +response.headers["content-length"] !== 0){
+        const file = createWriteStream(`img/avatar/${id}.jpeg`);
+        response.pipe(file);
+        file.on('finish', function() {
+          file.close();
+          console.log('end', deputyId);
+          resolve();
+        });
+        file.on('error', function(err) {
+          file.close();
+          console.log('error', deputyId, err);
+          reject(err);
+        });
+      } else {
+        resolve();
+      }
+    });
+  })
+}
+
+//main();
+
