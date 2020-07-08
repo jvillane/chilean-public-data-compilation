@@ -1,7 +1,7 @@
-import {PublicFigureReference} from "./public_figures.model";
+import {Referencia} from "./figura_publica.model";
 
 export interface Authority {
-  Figure: PublicFigureReference
+  Figure: Referencia
   From: string
   To?: string
 }

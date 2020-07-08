@@ -1,7 +1,7 @@
 import {readFile, utils} from "xlsx";
 import {writeFile} from "fs";
 import {CandidatesResult, Election, ElectionCommune, ElectionProvince, ElectionRegion} from "./elections.model";
-import {findPublicFigureByAlias} from "./public_figures";
+import {findPublicFigureByAlias} from "./figura_publica.listado";
 
 export interface Row {
   [index: string]: string | number
@@ -106,7 +106,7 @@ function updateCandidates(row: ProcessedRow, candidatesResult: CandidatesResult)
     }
   } else {
     candidatesResult.Candidates[publicFigure.Id] = {
-      Name: publicFigure.Name,
+      Name: publicFigure.Nombre,
       Alias: [row.Candidato],
       Votes: row.Votos
     };

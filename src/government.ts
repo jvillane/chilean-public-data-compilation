@@ -1,6 +1,6 @@
 import {Government} from "./government.model";
 import {writeFile} from "fs";
-import {publicFigures} from "./public_figures";
+import {publicFigures} from "./figura_publica.listado";
 
 export const government: Government[] = [
   {
@@ -10,7 +10,7 @@ export const government: Government[] = [
       {
         Figure: {
           Id: "NTEyNjY2My0z",
-          Name: "Miguel Juan Sebastián Piñera Echenique"
+          Nombre: "Miguel Juan Sebastián Piñera Echenique"
         },
         From: "2010-03-11",
         To: "2014-03-11"
@@ -21,14 +21,14 @@ export const government: Government[] = [
         Ministry: [{
           Figure: {
             Id: "NzAxNjU5MS0w",
-            Name: "Rodrigo Javier Hinzpeter Kirberg"
+            Nombre: "Rodrigo Javier Hinzpeter Kirberg"
           },
           From: "2010-03-11",
           To: "2012-11-05"
         }, {
           Figure: {
             Id: "NjYxNTg1MC0w",
-            Name: "Chadwick Piñera Andres Pio Bernardino"
+            Nombre: "Chadwick Piñera Andres Pio Bernardino"
           },
           From: "2012-11-05",
           To: "2014-03-11"
@@ -38,7 +38,7 @@ export const government: Government[] = [
         Ministry: [{
           Figure: {
             Id: "Njk5MjkyOS1L",
-            Name: "Alfredo German Moreno Charme"
+            Nombre: "Alfredo German Moreno Charme"
           },
           From: "2010-03-11",
           To: "2014-03-11"

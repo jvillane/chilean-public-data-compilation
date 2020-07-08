@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "chilean-public-data-compilation",
   "scripts": {
-    "public_figures": "npx ts-node src/public_figures.ts",
+    "figura_publica": "npx ts-node src/figura_publica.listado.ts",
     "government": "npx ts-node src/government.ts",
     "census2017": "npx ts-node src/census.2017.ts",
     "elections.president": "npx ts-node src/elections.president.ts",
     "persons": "npx ts-node src/persons.ts",
-    "deputies": "npx ts-node src/deputies.ts",
-    "deputies.sessions": "npx ts-node src/deputies.sessions.ts",
+    "diputados": "npx ts-node src/diputados.listado.ts",
+    "diputados.sesiones": "npx ts-node src/diputados.sesiones.ts",
+    "diputados.votacion": "npx ts-node src/diputados.votacion.ts",
     "civil_registry": "npx ts-node src/civil_registry.ts"
   },
   "author": "Julio Villane",
