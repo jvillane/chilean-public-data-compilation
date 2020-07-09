@@ -11,6 +11,7 @@
     "diputados": "npx ts-node src/diputados.listado.ts",
     "diputados.sesiones": "npx ts-node src/diputados.sesiones.ts",
     "diputados.votacion": "npx ts-node src/diputados.votacion.ts",
+    "diputados.periodos": "npx ts-node src/diputados.periodos.ts",
     "civil_registry": "npx ts-node src/civil_registry.ts"
   },
   "author": "Julio Villane",

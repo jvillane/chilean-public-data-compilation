@@ -2695,6 +2695,15 @@ export const findPublicFigureByAlias = (name: string): PublicFigureWithId | unde
   return undefined;
 }
 
+export const findPublicFigureIdByDeputyId = (deputyId: number): string => {
+  for (const pfId in publicFigures) {
+    const dId = publicFigures[pfId].DiputadoId;
+    if((Array.isArray(dId) && dId.includes(deputyId)) || (dId === deputyId))
+      return pfId;
+  }
+  return '404404';
+}
+
 function main() {
   writeFile("./data/figura_publica.json", JSON.stringify(publicFigures), function (err) {
     if (err) {

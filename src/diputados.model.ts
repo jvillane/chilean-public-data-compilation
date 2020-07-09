@@ -1,3 +1,13 @@
+export interface Periodo {
+  Nombre: string
+  Inicio: string
+  Termino: string
+}
+
+export interface Periodos {
+  [Id: string]: Periodo
+}
+
 export interface Afiliacion {
   Inicio: string
   Termino: string
@@ -13,6 +23,7 @@ export interface Diputado {
   Nacimiento?: string
   Genero: string
   Militancia: Afiliacion[]
+  Id: string
 }
 
 export interface Diputados {

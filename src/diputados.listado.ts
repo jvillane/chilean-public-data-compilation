@@ -3,6 +3,7 @@ import axios from "axios";
 import {Afiliacion, Diputados, Diputado} from "./diputados.model";
 import {createWriteStream, writeFile} from "fs";
 import * as http from "https";
+import {findPublicFigureIdByDeputyId} from "./figura_publica.listado";
 
 interface PoliticalPartyRaw {
   Id: string[]
@@ -33,6 +34,7 @@ async function main() {
   const response = await axios.get('http://opendata.camara.cl/camaradiputados/WServices/WSDiputado.asmx/retornarDiputados?');
   const deputyCollection = await parseStringPromise(response.data);
   const deputiesRaw: DeputyRaw[] = deputyCollection['DiputadosColeccion']['Diputado'];
+
   for (const deputyRaw of deputiesRaw) {
     const affiliations: Afiliacion[] = [];
     for (const affiliationRaw of deputyRaw.Militancias[0].Militancia) {
@@ -53,7 +55,8 @@ async function main() {
       ApellidoMaterno: deputyRaw.ApellidoMaterno[0],
       Nacimiento: deputyRaw.FechaNacimiento ? deputyRaw.FechaNacimiento[0].split('T')[0] : undefined,
       Genero: deputyRaw.Sexo[0]['_'],
-      Militancia: affiliations
+      Militancia: affiliations,
+      Id: findPublicFigureIdByDeputyId(+deputyRaw.Id[0])
     }
     deputies[deputyRaw.Id[0]] = deputy;
   }
