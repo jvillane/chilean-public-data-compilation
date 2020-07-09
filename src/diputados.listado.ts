@@ -1,6 +1,6 @@
 import {parseStringPromise} from "xml2js";
 import axios from "axios";
-import {Afiliacion, Diputados, Diputado} from "./diputados.model";
+import {Afiliacion, Diputado, Diputados} from "./diputados.model";
 import {createWriteStream, writeFile} from "fs";
 import * as http from "https";
 import {findPublicFigureIdByDeputyId} from "./figura_publica.listado";
@@ -68,24 +68,23 @@ async function main() {
   });
 }
 
-export const downloadAvatar = (id: string, deputyId: number) => {
+export const downloadAvatar = (id: string, deputyId: number): Promise<string | undefined> => {
   return new Promise((resolve, reject) => {
     http.get(`https://www.camara.cl/img.aspx?prmID=GRCL${deputyId}`, response => {
-      if(response.headers["content-length"] !== undefined && +response.headers["content-length"] !== 0){
+      if (response.headers["content-length"] !== undefined && +response.headers["content-length"] !== 0) {
         const file = createWriteStream(`img/avatar/${id}.jpeg`);
         response.pipe(file);
-        file.on('finish', function() {
+        file.on('finish', function () {
           file.close();
-          console.log('end', deputyId);
-          resolve();
+          resolve(`${id}.jpeg`);
         });
-        file.on('error', function(err) {
+        file.on('error', function (err) {
           file.close();
           console.log('error', deputyId, err);
           reject(err);
         });
       } else {
-        resolve();
+        resolve(undefined);
       }
     });
   })

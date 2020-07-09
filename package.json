@@ -4,6 +4,7 @@
   "description": "chilean-public-data-compilation",
   "scripts": {
     "figura_publica": "npx ts-node src/figura_publica.listado.ts",
+    "figura_publica.media": "npx ts-node src/figura_publica.media.ts",
     "government": "npx ts-node src/government.ts",
     "census2017": "npx ts-node src/census.2017.ts",
     "elections.president": "npx ts-node src/elections.president.ts",

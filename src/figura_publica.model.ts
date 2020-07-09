@@ -1,3 +1,11 @@
+export interface MediaDetails {
+  avatar: string
+}
+
+export interface Media {
+  [id: string]: MediaDetails
+}
+
 export interface Referencia {
   Id: string
   Nombre: string
