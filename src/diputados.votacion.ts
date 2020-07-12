@@ -47,7 +47,7 @@ interface VoteRaw {
 }
 
 async function main() {
-  const from = 2015, to = 2019;
+  const from = 2020, to = 2020;
   const years = Array.from({length: (to - from + 1)}, (v, k) => k + from)
 
   for (const year of years) {
