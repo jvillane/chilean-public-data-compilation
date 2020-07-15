@@ -13,7 +13,9 @@
     "diputados.sesiones": "npx ts-node src/diputados.sesiones.ts",
     "diputados.votacion": "npx ts-node src/diputados.votacion.ts",
     "diputados.periodos": "npx ts-node src/diputados.periodos.ts",
-    "civil_registry": "npx ts-node src/civil_registry.ts"
+    "civil_registry": "npx ts-node src/civil_registry.ts",
+    "partidos.listado": "npx ts-node src/partidos.listado.ts",
+    "noticias.listado": "npx ts-node src/noticias.listado.ts"
   },
   "author": "Julio Villane",
   "license": "ISC",
