@@ -63,7 +63,8 @@ export const politicalParties: Partidos = {
     Nombre: "Renovación Nacional",
     FechaConstitucion: "2018-05-08",
     Posicion: "Centro derecha",
-    Alias: ["rn", "r.n.", "partido renovación nacional", "renovación nacional", "partido renovacion nacional", "renovacion nacional"]
+    Alias: ["rn", "r.n.", "partido renovación nacional", "renovación nacional", "partido renovacion nacional", "renovacion nacional"],
+    Logo: "rn.svg"
   },
   IAT: {
     Sigla: "IAT",
@@ -168,7 +169,8 @@ export const politicalParties: Partidos = {
     Nombre: "Unión Demócrata Independiente",
     FechaConstitucion: "1989-05-03",
     Posicion: "Derecha",
-    Alias: ["udi", "unión demócrata independiente", "union democrata independiente"]
+    Alias: ["udi", "unión demócrata independiente", "union democrata independiente"],
+    Logo: "udi.svg"
   },
   PH: {
     Sigla: "PH",

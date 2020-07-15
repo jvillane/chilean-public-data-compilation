@@ -6,6 +6,7 @@ export interface Partido {
   FechaConstitucion: string
   Posicion: Posicion
   Alias: string[]
+  Logo?: string
 }
 
 export interface Partidos {
