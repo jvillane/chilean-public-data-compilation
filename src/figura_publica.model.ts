@@ -29,6 +29,7 @@ export interface FiguraPublica {
     [fuente: string]: string
   }
   DiputadoId?: number | number[]
+  SenadorId?: number
 }
 
 export interface FigurasPublicas {

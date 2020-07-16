@@ -1,0 +1,432 @@
+{
+  "163": {
+    "Id": 163,
+    "Nombres": "Jorge",
+    "ApellidoPaterno": "Pizarro",
+    "ApellidoMaterno": "Soto",
+    "Region": "Región de Coquimbo",
+    "Circunscripcion": 5,
+    "PartidoId": "DC",
+    "FiguraPublicaId": ""
+  },
+  "687": {
+    "Id": 687,
+    "Nombres": "Juan Antonio",
+    "ApellidoPaterno": "Coloma",
+    "ApellidoMaterno": "Correa",
+    "Region": "Región del Maule",
+    "Circunscripcion": 9,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  },
+  "690": {
+    "Id": 690,
+    "Nombres": "José",
+    "ApellidoPaterno": "García",
+    "ApellidoMaterno": "Ruminot",
+    "Region": "Región de la Araucanía",
+    "Circunscripcion": 11,
+    "PartidoId": "RN",
+    "FiguraPublicaId": ""
+  },
+  "905": {
+    "Id": 905,
+    "Nombres": "Andrés",
+    "ApellidoPaterno": "Allamand",
+    "ApellidoMaterno": "Zavala",
+    "Region": "Región Metropolitana de Santiago",
+    "Circunscripcion": 7,
+    "PartidoId": "RN",
+    "FiguraPublicaId": ""
+  },
+  "907": {
+    "Id": 907,
+    "Nombres": "Carlos",
+    "ApellidoPaterno": "Bianchi",
+    "ApellidoMaterno": "Chelech",
+    "Region": "Región de Magallanes y la Antártica Chilena",
+    "Circunscripcion": 15,
+    "PartidoId": "IND",
+    "FiguraPublicaId": ""
+  },
+  "909": {
+    "Id": 909,
+    "Nombres": "Guido",
+    "ApellidoPaterno": "Girardi",
+    "ApellidoMaterno": "Lavín",
+    "Region": "Región Metropolitana de Santiago",
+    "Circunscripcion": 7,
+    "PartidoId": "PPD",
+    "FiguraPublicaId": ""
+  },
+  "912": {
+    "Id": 912,xxx
+    "Nombres": "Juan Pablo",
+    "ApellidoPaterno": "Letelier",
+    "ApellidoMaterno": "Morel",
+    "Region": "Región del Libertador General Bernardo O'Higgins",
+    "Circunscripcion": 8,
+    "PartidoId": "PS",
+    "FiguraPublicaId": ""
+  },
+  "915": {
+    "Id": 915,
+    "Nombres": "Alejandro",
+    "ApellidoPaterno": "Navarro",
+    "ApellidoMaterno": "Brain",
+    "Region": "Región del Bío-Bío",
+    "Circunscripcion": 10,
+    "PartidoId": "PR",
+    "FiguraPublicaId": ""
+  },
+  "916": {
+    "Id": 916,
+    "Nombres": "Víctor",
+    "ApellidoPaterno": "Pérez",
+    "ApellidoMaterno": "Varela",
+    "Region": "Región del Bío-Bío",
+    "Circunscripcion": 10,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  },
+  "985": {
+    "Id": 985,
+    "Nombres": "Isabel",
+    "ApellidoPaterno": "Allende",
+    "ApellidoMaterno": "Bussi",
+    "Region": "Región de Valparaíso",
+    "Circunscripcion": 6,
+    "PartidoId": "PS",
+    "FiguraPublicaId": ""
+  },
+  "986": {
+    "Id": 986,
+    "Nombres": "Francisco",
+    "ApellidoPaterno": "Chahuán",
+    "ApellidoMaterno": "Chahuán",
+    "Region": "Región de Valparaíso",
+    "Circunscripcion": 6,
+    "PartidoId": "RN",
+    "FiguraPublicaId": ""
+  },
+  "987": {
+    "Id": 987,
+    "Nombres": "Ricardo",
+    "ApellidoPaterno": "Lagos",
+    "ApellidoMaterno": "Weber",
+    "Region": "Región de Valparaíso",
+    "Circunscripcion": 6,
+    "PartidoId": "PPD",
+    "FiguraPublicaId": ""
+  },
+  "1008": {
+    "Id": 1008,
+    "Nombres": "Jaime",
+    "ApellidoPaterno": "Quintana",
+    "ApellidoMaterno": "Leal",
+    "Region": "Región de la Araucanía",
+    "Circunscripcion": 11,
+    "PartidoId": "PPD",
+    "FiguraPublicaId": ""
+  },
+  "1009": {
+    "Id": 1009,
+    "Nombres": "Ximena",
+    "ApellidoPaterno": "Rincón",
+    "ApellidoMaterno": "González",
+    "Region": "Región del Maule",
+    "Circunscripcion": 9,
+    "PartidoId": "DC",
+    "FiguraPublicaId": ""
+  },
+  "1066": {
+    "Id": 1066,
+    "Nombres": "Alejandro",
+    "ApellidoPaterno": "García Huidobro",
+    "ApellidoMaterno": "Sanfuentes",
+    "Region": "Región del Libertador General Bernardo O'Higgins",
+    "Circunscripcion": 8,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  },
+  "1067": {
+    "Id": 1067,
+    "Nombres": "Ena",
+    "ApellidoPaterno": "Von Baer",
+    "ApellidoMaterno": "Jahn",
+    "Region": "Región de Los Ríos",
+    "Circunscripcion": 12,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  },
+  "1110": {
+    "Id": 1110,
+    "Nombres": "Pedro",
+    "ApellidoPaterno": "Araya",
+    "ApellidoMaterno": "Guerrero",
+    "Region": "Región de Antofagasta",
+    "Circunscripcion": 3,
+    "PartidoId": "IND",
+    "FiguraPublicaId": ""
+  },
+  "1111": {
+    "Id": 1111,
+    "Nombres": "Alejandro",
+    "ApellidoPaterno": "Guillier",
+    "ApellidoMaterno": "Álvarez",
+    "Region": "Región de Antofagasta",
+    "Circunscripcion": 3,
+    "PartidoId": "IND",
+    "FiguraPublicaId": ""
+  },
+  "1112": {
+    "Id": 1112,
+    "Nombres": "Jacqueline",
+    "ApellidoPaterno": "Van Rysselberghe",
+    "ApellidoMaterno": "Herrera",
+    "Region": "Región del Bío-Bío",
+    "Circunscripcion": 10,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  },
+  "1113": {
+    "Id": 1113,
+    "Nombres": "Carolina",
+    "ApellidoPaterno": "Goic",
+    "ApellidoMaterno": "Boroevic",
+    "Region": "Región de Magallanes y la Antártica Chilena",
+    "Circunscripcion": 15,
+    "PartidoId": "DC",
+    "FiguraPublicaId": ""
+  },
+  "1114": {
+    "Id": 1114,
+    "Nombres": "Felipe",
+    "ApellidoPaterno": "Harboe",
+    "ApellidoMaterno": "Bascuñán",
+    "Region": "Región del Bío-Bío",
+    "Circunscripcion": 10,
+    "PartidoId": "PPD",
+    "FiguraPublicaId": ""
+  },
+  "1115": {
+    "Id": 1115,
+    "Nombres": "Alfonso",
+    "ApellidoPaterno": "De Urresti",
+    "ApellidoMaterno": "Longton",
+    "Region": "Región de Los Ríos",
+    "Circunscripcion": 12,
+    "PartidoId": "PS",
+    "FiguraPublicaId": ""
+  },
+  "1116": {
+    "Id": 1116,
+    "Nombres": "Rabindranath",
+    "ApellidoPaterno": "Quinteros",
+    "ApellidoMaterno": "Lara",
+    "Region": "Región de Los Lagos",
+    "Circunscripcion": 13,
+    "PartidoId": "PS",
+    "FiguraPublicaId": ""
+  },
+  "1117": {
+    "Id": 1117,
+    "Nombres": "Iván",
+    "ApellidoPaterno": "Moreira",
+    "ApellidoMaterno": "Barros",
+    "Region": "Región de Los Lagos",
+    "Circunscripcion": 13,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  },
+  "1118": {
+    "Id": 1118,
+    "Nombres": "Adriana",
+    "ApellidoPaterno": "Muñoz",
+    "ApellidoMaterno": "D`Albora",
+    "Region": "Región de Coquimbo",
+    "Circunscripcion": 5,
+    "PartidoId": "PPD",
+    "FiguraPublicaId": ""
+  },
+  "1119": {
+    "Id": 1119,
+    "Nombres": "Carlos",
+    "ApellidoPaterno": "Montes",
+    "ApellidoMaterno": "Cisternas",
+    "Region": "Región Metropolitana de Santiago",
+    "Circunscripcion": 7,
+    "PartidoId": "PS",
+    "FiguraPublicaId": ""
+  },
+  "1120": {
+    "Id": 1120,
+    "Nombres": "Manuel José",
+    "ApellidoPaterno": "Ossandón",
+    "ApellidoMaterno": "Irarrázabal",
+    "Region": "Región Metropolitana de Santiago",
+    "Circunscripcion": 7,
+    "PartidoId": "RN",
+    "FiguraPublicaId": ""
+  },
+  "1210": {
+    "Id": 1210,
+    "Nombres": "José Miguel ",
+    "ApellidoPaterno": "Durana",
+    "ApellidoMaterno": "Semir",
+    "Region": "Región de Arica y Parinacota",
+    "Circunscripcion": 1,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  },
+  "1211": {
+    "Id": 1211,
+    "Nombres": "José Miguel",
+    "ApellidoPaterno": "Insulza",
+    "ApellidoMaterno": "Salinas",
+    "Region": "Región de Arica y Parinacota",
+    "Circunscripcion": 1,
+    "PartidoId": "PS",
+    "FiguraPublicaId": ""
+  },
+  "1212": {
+    "Id": 1212,
+    "Nombres": "Luz Eliana",
+    "ApellidoPaterno": "Ebensperger",
+    "ApellidoMaterno": "Orrego",
+    "Region": "Región de Tarapacá",
+    "Circunscripcion": 2,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  },
+  "1213": {
+    "Id": 1213,
+    "Nombres": "Jorge",
+    "ApellidoPaterno": "Soria",
+    "ApellidoMaterno": "Quiroga",
+    "Region": "Región de Tarapacá",
+    "Circunscripcion": 2,
+    "PartidoId": "PPD",
+    "FiguraPublicaId": ""
+  },
+  "1214": {
+    "Id": 1214,
+    "Nombres": "Rafael  ",
+    "ApellidoPaterno": "Prohens",
+    "ApellidoMaterno": "Espinosa",
+    "Region": "Región de Atacama",
+    "Circunscripcion": 4,
+    "PartidoId": "RN",
+    "FiguraPublicaId": ""
+  },
+  "1215": {
+    "Id": 1215,
+    "Nombres": "Yasna",
+    "ApellidoPaterno": "Provoste",
+    "ApellidoMaterno": "Campillay",
+    "Region": "Región de Atacama",
+    "Circunscripcion": 4,
+    "PartidoId": "DC",
+    "FiguraPublicaId": ""
+  },
+  "1216": {
+    "Id": 1216,
+    "Nombres": "Juan Ignacio",
+    "ApellidoPaterno": "Latorre",
+    "ApellidoMaterno": "Riveros",
+    "Region": "Región de Valparaíso",
+    "Circunscripcion": 6,
+    "PartidoId": "RD",
+    "FiguraPublicaId": ""
+  },
+  "1217": {
+    "Id": 1217,
+    "Nombres": "Kenneth",
+    "ApellidoPaterno": "Pugh",
+    "ApellidoMaterno": "Olavarría",
+    "Region": "Región de Valparaíso",
+    "Circunscripcion": 6,
+    "PartidoId": "IND",
+    "FiguraPublicaId": ""
+  },
+  "1218": {
+    "Id": 1218,
+    "Nombres": "Juan",
+    "ApellidoPaterno": "Castro",
+    "ApellidoMaterno": "Prieto",
+    "Region": "Región del Maule",
+    "Circunscripcion": 9,
+    "PartidoId": "RN",
+    "FiguraPublicaId": ""
+  },
+  "1219": {
+    "Id": 1219,
+    "Nombres": "Alvaro",
+    "ApellidoPaterno": "Elizalde",
+    "ApellidoMaterno": "Soto",
+    "Region": "Región del Maule",
+    "Circunscripcion": 9,
+    "PartidoId": "PS",
+    "FiguraPublicaId": ""
+  },
+  "1220": {
+    "Id": 1220,
+    "Nombres": "Rodrigo",
+    "ApellidoPaterno": "Galilea",
+    "ApellidoMaterno": "Vial",
+    "Region": "Región del Maule",
+    "Circunscripcion": 9,
+    "PartidoId": "RN",
+    "FiguraPublicaId": ""
+  },
+  "1221": {
+    "Id": 1221,
+    "Nombres": "Carmen Gloria",
+    "ApellidoPaterno": "Aravena",
+    "ApellidoMaterno": "Acuña",
+    "Region": "Región de la Araucanía",
+    "Circunscripcion": 11,
+    "PartidoId": "IND",
+    "FiguraPublicaId": ""
+  },
+  "1222": {
+    "Id": 1222,
+    "Nombres": "Francisco",
+    "ApellidoPaterno": "Huenchumilla",
+    "ApellidoMaterno": "Jaramillo",
+    "Region": "Región de la Araucanía",
+    "Circunscripcion": 11,
+    "PartidoId": "DC",
+    "FiguraPublicaId": ""
+  },
+  "1223": {
+    "Id": 1223,
+    "Nombres": "Felipe ",
+    "ApellidoPaterno": "Kast",
+    "ApellidoMaterno": "Sommerhoff",
+    "Region": "Región de la Araucanía",
+    "Circunscripcion": 11,
+    "PartidoId": "EVO",
+    "FiguraPublicaId": ""
+  },
+  "1224": {
+    "Id": 1224,
+    "Nombres": "Ximena",
+    "ApellidoPaterno": "Órdenes",
+    "ApellidoMaterno": "Neira",
+    "Region": "Región de Aysén del General Carlos Ibáñez del Campo",
+    "Circunscripcion": 14,
+    "PartidoId": "IND",
+    "FiguraPublicaId": ""
+  },
+  "1225": {
+    "Id": 1225,
+    "Nombres": "David",
+    "ApellidoPaterno": "Sandoval",
+    "ApellidoMaterno": "Plaza",
+    "Region": "Región de Aysén del General Carlos Ibáñez del Campo",
+    "Circunscripcion": 14,
+    "PartidoId": "UDI",
+    "FiguraPublicaId": ""
+  }
+}

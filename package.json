@@ -15,7 +15,10 @@
     "diputados.periodos": "npx ts-node src/diputados.periodos.ts",
     "civil_registry": "npx ts-node src/civil_registry.ts",
     "partidos.listado": "npx ts-node src/partidos.listado.ts",
-    "noticias.listado": "npx ts-node src/noticias.listado.ts"
+    "noticias.listado": "npx ts-node src/noticias.listado.ts",
+    "regiones.listado": "npx ts-node src/regiones.listado.ts",
+    "distritos.listado": "npx ts-node src/distritos.listado.ts",
+    "senadores.listado": "npx ts-node src/senadores.listado.ts"
   },
   "author": "Julio Villane",
   "license": "ISC",

@@ -3,8 +3,8 @@ export type Posicion = 'Extrema Izquierda' | 'Izquierda' | 'Centro izquierda' | 
 export interface Partido {
   Sigla: string
   Nombre: string
-  FechaConstitucion: string
-  Posicion: Posicion
+  FechaConstitucion?: string
+  Posicion?: Posicion
   Alias: string[]
   Logo?: string
 }

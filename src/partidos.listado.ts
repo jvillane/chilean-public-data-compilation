@@ -1,7 +1,12 @@
 import {writeFile} from "fs";
-import {Partidos} from "./partidos.model";
+import {Partido, Partidos} from "./partidos.model";
 
 export const politicalParties: Partidos = {
+  IND: {
+    Sigla: "IND",
+    Nombre: "Independiente",
+    Alias: ["independiente"]
+  },
   COM: {
     Sigla: "COM",
     Nombre: "Comunes",
@@ -14,7 +19,7 @@ export const politicalParties: Partidos = {
     Nombre: "Partido Por la Democracia",
     FechaConstitucion: "1988-05-09",
     Posicion: "Centro izquierda",
-    Alias: ["ppd", "p.p.d", "partido por la democracia"]
+    Alias: ["ppd", "p.p.d.", "partido por la democracia"]
   },
   CIU: {
     Sigla: "CIU",
@@ -99,7 +104,7 @@ export const politicalParties: Partidos = {
     Nombre: "Nuevo Tiempo",
     FechaConstitucion: "2019-07-10",
     Posicion: "Extrema Derecha",
-    Alias: ["nt", "nuevo tiempo"]
+    Alias: ["nt", "n.t.", "nuevo tiempo"]
   },
   UPA: {
     Sigla: "UPA",
@@ -113,7 +118,7 @@ export const politicalParties: Partidos = {
     Nombre: "Partido Radical de Chile",
     FechaConstitucion: "1994-08-18",
     Posicion: "Centro izquierda",
-    Alias: ["pr", "partido radical de chile"]
+    Alias: ["pr", "p.r.", "partido radical de chile"]
   },
   PRI: {
     Sigla: "PRI",
@@ -134,42 +139,42 @@ export const politicalParties: Partidos = {
     Nombre: "Partido Progresista de Chile",
     FechaConstitucion: "2018-05-08",
     Posicion: "Izquierda",
-    Alias: ["pro", "partido progresista de chile"]
+    Alias: ["pro", "partido progresista de chile", "pais progresista", "país progresista"]
   },
   DC: {
     Sigla: "DC",
     Nombre: "Democracia Cristiana",
     FechaConstitucion: "1988-05-02",
     Posicion: "Centro izquierda",
-    Alias: ["dc", "pdc", "partido demócrata cristiano", "partido democrata cristiano", "democracia cristiana"]
+    Alias: ["dc", "d.c.", "pdc", "p.d.c.", "partido demócrata cristiano", "partido democrata cristiano", "democracia cristiana"]
   },
   PEV: {
     Sigla: "PEV",
     Nombre: "Partido Ecologista Verde",
     FechaConstitucion: "2018-07-09",
     Posicion: "Centro izquierda",
-    Alias: ["pev", "Partido Ecologista Verde"]
+    Alias: ["pev", "p.e.v.", "Partido Ecologista Verde"]
   },
   PS: {
     Sigla: "PS",
     Nombre: "Partido Socialista",
     FechaConstitucion: "1990-12-19",
     Posicion: "Centro izquierda",
-    Alias: ["ps", "Partido Socialista de Chile", "Partido Socialista"]
+    Alias: ["ps", "p.s.", "Partido Socialista de Chile", "Partido Socialista"]
   },
   PC: {
     Sigla: "PC",
     Nombre: "Partido Comunista de Chile",
     FechaConstitucion: "2010-05-28",
     Posicion: "Izquierda",
-    Alias: ["pc", "pcch", "partido comunista de chile", "partido comunista"]
+    Alias: ["pc", "p.c.", "pcch", "partido comunista de chile", "partido comunista"]
   },
   UDI: {
     Sigla: "UDI",
     Nombre: "Unión Demócrata Independiente",
     FechaConstitucion: "1989-05-03",
     Posicion: "Derecha",
-    Alias: ["udi", "unión demócrata independiente", "union democrata independiente"],
+    Alias: ["udi", "u.d.i.", "unión demócrata independiente", "union democrata independiente"],
     Logo: "udi.svg"
   },
   PH: {
@@ -177,8 +182,17 @@ export const politicalParties: Partidos = {
     Nombre: "Partido Humanista",
     FechaConstitucion: "2014-06-05",
     Posicion: "Izquierda",
-    Alias: ["ph", "partido humanista"]
+    Alias: ["ph", "p.h.", "partido humanista"]
   }
+}
+
+export function findPartyByAlias(alias: string): Partido | undefined {
+  for(const party of Object.values(politicalParties)){
+    if(party.Alias.includes(alias.toLowerCase())) {
+      return party;
+    }
+  }
+  return undefined;
 }
 
 function main() {
