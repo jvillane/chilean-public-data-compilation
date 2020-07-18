@@ -28,7 +28,7 @@ export interface Diputado {
   Nacimiento?: string
   Genero: string
   Militancia: Afiliacion[]
-  Id: string
+  FiguraPublicaId: string
 }
 
 export interface Diputados {

@@ -36,7 +36,7 @@ export interface FiguraPublica {
   }
   DiputadoId?: number | number[]
   SenadorId?: number
-  Militancias: Militancia[]
+  Militancias?: Militancia[]
 }
 
 export interface FigurasPublicas {

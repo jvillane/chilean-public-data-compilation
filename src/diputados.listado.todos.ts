@@ -56,7 +56,7 @@ async function main() {
       Nacimiento: deputyRaw.FechaNacimiento ? deputyRaw.FechaNacimiento[0].split('T')[0] : undefined,
       Genero: deputyRaw.Sexo[0]['_'],
       Militancia: affiliations,
-      Id: findPublicFigureIdByDeputyId(+deputyRaw.Id[0])
+      FiguraPublicaId: findPublicFigureIdByDeputyId(+deputyRaw.Id[0])
     }
     deputies[deputyRaw.Id[0]] = deputy;
   }
