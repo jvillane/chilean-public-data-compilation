@@ -211,7 +211,8 @@ export const publicFigures: FigurasPublicas = {
   "079eae6d5c36fed844f0b0371e3f6bd913c813b4": {
     Nombre: "Jorge Esteban Pizarro Soto",
     Nacio: "1952-04-21",
-    DiputadoId: 485
+    DiputadoId: 485,
+    SenadorId: 163
   },
   "404_04": {
     Nombre: "Sergio Pizarro Mackay",
@@ -783,7 +784,8 @@ export const publicFigures: FigurasPublicas = {
   "89108421e37a779419e7f1fafbf07fa9ebce4de1": {
     Nombre: "Guido Juan Primo Girardi Briere",
     Nacio: "1934-11-17",
-    DiputadoId: 845
+    DiputadoId: 845,
+    SenadorId: 909
   },
   "e0d34af26cbf6cf0b243f260a7583a81851b3b17": {
     Nombre: "Joaquín Godoy Ibáñez",
@@ -1128,7 +1130,8 @@ export const publicFigures: FigurasPublicas = {
   "df2e563fec34c046ac79f34ef5b57c4173315900": {
     Nombre: "Juan Antonio Coloma Correa",
     Nacio: "1956-07-15",
-    DiputadoId: 19
+    DiputadoId: 19,
+    SenadorId: 687
   },
   "7d38f3cf1f368a7d0a7932b9442ae32341a07c31": {
     Nombre: "Sergio Benedicto Elgueta Barrientos",
@@ -1143,7 +1146,8 @@ export const publicFigures: FigurasPublicas = {
   "f2a67e42a8bd881f0a2453fd1bc3b0eb53ff8292": {
     Nombre: "José Gilberto García Ruminot",
     Nacio: "1955-05-22",
-    DiputadoId: 35
+    DiputadoId: 35,
+    SenadorId: 690
   },
   "2dbfaf90f4db592bed429b97f7fa6408b47a64fe": {
     Nombre: "Juan Enrique Fernando Krauss Rusque",
@@ -1444,6 +1448,7 @@ export const publicFigures: FigurasPublicas = {
     Nombre: "Andrés Allamand Zavala",
     Nacio: "1956-02-07",
     DiputadoId: 405,
+    SenadorId: 905,
     Familia: {
       Esposa: [
         {
@@ -1760,7 +1765,8 @@ export const publicFigures: FigurasPublicas = {
   "3291162677ed8d4c17f0f579b2fce4442481015d": {
     Nombre: "Juan Pablo Letelier Morel",
     Nacio: "1961-01-07",
-    DiputadoId: 176
+    DiputadoId: 176,
+    SenadorId: 912
   },
   "3f7a80659b6e81098829d335787cb42191cb9ee2": {
     Nombre: "Felipe Rudecindo Letelier Norambuena",
@@ -2376,6 +2382,11 @@ export const publicFigures: FigurasPublicas = {
     Nombre: "Sebastián Keitel Bianchi",
     Nacio: "1973-02-14",
     DiputadoId: 1042
+  },
+  "10eaa7dbabd15539e4efd62e03bc98e71215cdd1": {
+    Nombre: "Carlos Antonio Karim Bianchi Chelech",
+    Nacio: "1960-11-04",
+    SenadorId: 907
   },
   "454e9afee3763902aa84638e4fa1794b6df6a124": {
     Nombre: "Raúl Alfonso Leiva Carvajal",
