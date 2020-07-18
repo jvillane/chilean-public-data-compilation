@@ -23,6 +23,7 @@ export interface Militancia {
 }
 
 export interface FiguraPublica {
+  Id: string
   Nombre: string
   Nacio: string
   Murio?: string
