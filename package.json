@@ -9,7 +9,7 @@
     "census2017": "npx ts-node src/census.2017.ts",
     "elections.president": "npx ts-node src/elections.president.ts",
     "persons": "npx ts-node src/persons.ts",
-    "diputados": "npx ts-node src/diputados.listado.ts",
+    "diputados.listado": "npx ts-node src/diputados.listado.ts",
     "diputados.sesiones": "npx ts-node src/diputados.sesiones.ts",
     "diputados.votacion": "npx ts-node src/diputados.votacion.ts",
     "diputados.periodos": "npx ts-node src/diputados.periodos.ts",

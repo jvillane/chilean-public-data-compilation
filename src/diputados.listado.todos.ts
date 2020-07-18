@@ -18,30 +18,25 @@ interface AffiliationRaw {
 }
 
 interface DeputyRaw {
-  Diputado: {
-    Id: string[]
-    Nombre: string[]
-    Nombre2: string[]
-    ApellidoPaterno: string[]
-    ApellidoMaterno: string[]
-    FechaNacimiento: string[]
-    Sexo: any[]
-    Militancias: { Militancia: AffiliationRaw[] } []
-  }[]
+  Id: string[]
+  Nombre: string[]
+  Nombre2: string[]
+  ApellidoPaterno: string[]
+  ApellidoMaterno: string[]
+  FechaNacimiento: string[]
+  Sexo: any[]
+  Militancias: { Militancia: AffiliationRaw[] } []
 }
 
 async function main() {
   const deputies: Diputados = {};
 
-  const response = await axios.get('http://opendata.camara.cl/camaradiputados/WServices/WSDiputado.asmx/retornarDiputadosPeriodoActual?');
+  const response = await axios.get('http://opendata.camara.cl/camaradiputados/WServices/WSDiputado.asmx/retornarDiputados?');
   const deputyCollection = await parseStringPromise(response.data);
-  const deputiesRaw: DeputyRaw[] = deputyCollection['DiputadosPeriodoColeccion']['DiputadoPeriodo'];
+  const deputiesRaw: DeputyRaw[] = deputyCollection['DiputadosColeccion']['Diputado'];
 
-  for (const deputyRawAux of deputiesRaw) {
-    const deputyRaw = deputyRawAux.Diputado[0];
+  for (const deputyRaw of deputiesRaw) {
     const affiliations: Afiliacion[] = [];
-    console.log(deputyRaw);
-    console.log(deputyRaw.Militancias);
     for (const affiliationRaw of deputyRaw.Militancias[0].Militancia) {
       if (affiliationRaw.Partido) {
         const affiliation: Afiliacion = {

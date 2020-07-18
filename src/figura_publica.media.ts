@@ -25,4 +25,6 @@ async function main() {
   });
 }
 
-main();
+//Ejecutar esto borrará la información media que se haya agregado manualmente
+//TODO: agregar lógica
+//main();
