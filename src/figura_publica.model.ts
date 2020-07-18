@@ -16,6 +16,12 @@ export interface ReferenciaPareja extends Referencia {
   Hasta?: string
 }
 
+export interface Militancia {
+  PartidoId: string
+  Desde?: string
+  Hasta?: string
+}
+
 export interface FiguraPublica {
   Nombre: string
   Nacio: string
@@ -30,6 +36,7 @@ export interface FiguraPublica {
   }
   DiputadoId?: number | number[]
   SenadorId?: number
+  Militancias: Militancia[]
 }
 
 export interface FigurasPublicas {

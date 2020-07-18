@@ -65,14 +65,14 @@ async function main() {
         Inicio: sessionRaw.FechaInicio[0],
         Termino: sessionRaw.FechaTermino[0],
         Tipo: {
-          Id: +sessionRaw.Tipo[0].$.Valor,
-          Nombre: sessionRaw.Tipo[0]._
+          Id: sessionRaw.Tipo[0].$.Valor,
+          Valor: sessionRaw.Tipo[0]._
         },
         Estado: {
-          Id: +sessionRaw.Estado[0].$.Valor,
-          Nombre: sessionRaw.Estado[0]._
+          Id: sessionRaw.Estado[0].$.Valor,
+          Valor: sessionRaw.Estado[0]._
         },
-        Asistencia: {}
+        Inasistencia: {}
       };
 
       const response2 = await axios.get(`http://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx/retornarSesionAsistencia?prmSesionId=${sessionId}`);
@@ -86,18 +86,20 @@ async function main() {
             const name = `${assRaw.Diputado[0].Nombre[0]} ${assRaw.Diputado[0].ApellidoPaterno[0]} ${assRaw.Diputado[0].ApellidoMaterno[0]}`.trim();
             deputiesSessions.Diputados[deputyId] = name;
           }
-          deputySession.Asistencia[deputyId] = {
-            TipoAsistencia: {
-              Id: assRaw.TipoAsistencia[0].$.Valor,
-              Valor: assRaw.TipoAsistencia[0]._,
-            }
-          };
-          if(assRaw.Justificacion){
-            deputySession.Asistencia[deputyId].Justificacion = {
-              Id: assRaw.Justificacion[0].$.Valor,
-              Valor: assRaw.Justificacion[0].Nombre[0],
-              RebajaAsistencia: assRaw.Justificacion[0].RebajaAsistencia[0].toLowerCase() === 'true',
-              RebajaQuorum: assRaw.Justificacion[0].RebajaQuorum[0].toLowerCase() === 'true'
+          if(assRaw.TipoAsistencia[0].$.Valor !== "1"){
+            deputySession.Inasistencia[deputyId] = {
+              TipoAsistencia: {
+                Id: assRaw.TipoAsistencia[0].$.Valor,
+                Valor: assRaw.TipoAsistencia[0]._,
+              }
+            };
+            if(assRaw.Justificacion){
+              deputySession.Inasistencia[deputyId].Justificacion = {
+                Id: assRaw.Justificacion[0].$.Valor,
+                Valor: assRaw.Justificacion[0].Nombre[0],
+                RebajaAsistencia: assRaw.Justificacion[0].RebajaAsistencia[0].toLowerCase() === 'true',
+                RebajaQuorum: assRaw.Justificacion[0].RebajaQuorum[0].toLowerCase() === 'true'
+              }
             }
           }
         }
@@ -107,7 +109,7 @@ async function main() {
     }
   }
 
-  writeFile("./data/diputados.sesiones.json", JSON.stringify(deputiesSessions), function (err) {
+  writeFile("./data/diputados.inasistencias.json", JSON.stringify(deputiesSessions), function (err) {
     if (err) {
       console.log(err);
     }

@@ -7,7 +7,7 @@
     "Region": "Región de Coquimbo",
     "Circunscripcion": 5,
     "PartidoId": "DC",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "079eae6d5c36fed844f0b0371e3f6bd913c813b4"
   },
   "687": {
     "Id": 687,
@@ -17,7 +17,7 @@
     "Region": "Región del Maule",
     "Circunscripcion": 9,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "df2e563fec34c046ac79f34ef5b57c4173315900"
   },
   "690": {
     "Id": 690,
@@ -27,7 +27,7 @@
     "Region": "Región de la Araucanía",
     "Circunscripcion": 11,
     "PartidoId": "RN",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "f2a67e42a8bd881f0a2453fd1bc3b0eb53ff8292"
   },
   "905": {
     "Id": 905,
@@ -37,7 +37,7 @@
     "Region": "Región Metropolitana de Santiago",
     "Circunscripcion": 7,
     "PartidoId": "RN",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "3887990645f3868ffc5e09772891ff4d86d650b8"
   },
   "907": {
     "Id": 907,
@@ -47,7 +47,7 @@
     "Region": "Región de Magallanes y la Antártica Chilena",
     "Circunscripcion": 15,
     "PartidoId": "IND",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "10eaa7dbabd15539e4efd62e03bc98e71215cdd1"
   },
   "909": {
     "Id": 909,
@@ -57,17 +57,17 @@
     "Region": "Región Metropolitana de Santiago",
     "Circunscripcion": 7,
     "PartidoId": "PPD",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "89108421e37a779419e7f1fafbf07fa9ebce4de1"
   },
   "912": {
-    "Id": 912,xxx
+    "Id": 912,
     "Nombres": "Juan Pablo",
     "ApellidoPaterno": "Letelier",
     "ApellidoMaterno": "Morel",
     "Region": "Región del Libertador General Bernardo O'Higgins",
     "Circunscripcion": 8,
     "PartidoId": "PS",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "3291162677ed8d4c17f0f579b2fce4442481015d"
   },
   "915": {
     "Id": 915,
@@ -77,7 +77,7 @@
     "Region": "Región del Bío-Bío",
     "Circunscripcion": 10,
     "PartidoId": "PR",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "6a31dcdcd0205c85deafe31952eafe3ed0e9638c"
   },
   "916": {
     "Id": 916,
@@ -87,7 +87,7 @@
     "Region": "Región del Bío-Bío",
     "Circunscripcion": 10,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "750e0ece12e42a4b98624599ab7673d9e6e00f9e"
   },
   "985": {
     "Id": 985,
@@ -97,7 +97,7 @@
     "Region": "Región de Valparaíso",
     "Circunscripcion": 6,
     "PartidoId": "PS",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "fd0e672d2b699e4008c15d887aaf5f989afaddc8"
   },
   "986": {
     "Id": 986,
@@ -107,7 +107,7 @@
     "Region": "Región de Valparaíso",
     "Circunscripcion": 6,
     "PartidoId": "RN",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "7c8f365b1dd473b637ffba6f9e0111304f1efed3"
   },
   "987": {
     "Id": 987,
@@ -117,7 +117,7 @@
     "Region": "Región de Valparaíso",
     "Circunscripcion": 6,
     "PartidoId": "PPD",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "4b266191e27aaa403af840804cc7e772d05db6ac"
   },
   "1008": {
     "Id": 1008,
@@ -127,7 +127,7 @@
     "Region": "Región de la Araucanía",
     "Circunscripcion": 11,
     "PartidoId": "PPD",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "f93c3509c5abe71d8bda66f16a94af42835d17f7"
   },
   "1009": {
     "Id": 1009,
@@ -137,7 +137,7 @@
     "Region": "Región del Maule",
     "Circunscripcion": 9,
     "PartidoId": "DC",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "3455d9899f8888ea5580b64835cda9f109e897be"
   },
   "1066": {
     "Id": 1066,
@@ -147,7 +147,7 @@
     "Region": "Región del Libertador General Bernardo O'Higgins",
     "Circunscripcion": 8,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "fd4d76a64774dccdd03f2e1fddd9a6e929e7520a"
   },
   "1067": {
     "Id": 1067,
@@ -157,7 +157,7 @@
     "Region": "Región de Los Ríos",
     "Circunscripcion": 12,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "30be367b938325b57d5667ceeea568c2ee47ed4b"
   },
   "1110": {
     "Id": 1110,
@@ -167,7 +167,7 @@
     "Region": "Región de Antofagasta",
     "Circunscripcion": 3,
     "PartidoId": "IND",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "8087f501a599e8682fdf57fddd2bb2200f6ca500"
   },
   "1111": {
     "Id": 1111,
@@ -177,7 +177,7 @@
     "Region": "Región de Antofagasta",
     "Circunscripcion": 3,
     "PartidoId": "IND",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "de75abe036e34fabe565fcf59e526c284686485e"
   },
   "1112": {
     "Id": 1112,
@@ -187,7 +187,7 @@
     "Region": "Región del Bío-Bío",
     "Circunscripcion": 10,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "18e45149981258ad04537dd80114d866a0626d73"
   },
   "1113": {
     "Id": 1113,
@@ -197,7 +197,7 @@
     "Region": "Región de Magallanes y la Antártica Chilena",
     "Circunscripcion": 15,
     "PartidoId": "DC",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "626a0c585f5d43482617a5b88eb0da4b56bb63ce"
   },
   "1114": {
     "Id": 1114,
@@ -207,7 +207,7 @@
     "Region": "Región del Bío-Bío",
     "Circunscripcion": 10,
     "PartidoId": "PPD",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "533ab43952c3ae9143ef644e458fa8fb2f981913"
   },
   "1115": {
     "Id": 1115,
@@ -217,7 +217,7 @@
     "Region": "Región de Los Ríos",
     "Circunscripcion": 12,
     "PartidoId": "PS",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "ed64df3d9777e1446a529dbdfb8bea43e0eda7f6"
   },
   "1116": {
     "Id": 1116,
@@ -227,7 +227,7 @@
     "Region": "Región de Los Lagos",
     "Circunscripcion": 13,
     "PartidoId": "PS",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "408e365d727326693228935c06274e05bb5a1140"
   },
   "1117": {
     "Id": 1117,
@@ -237,7 +237,7 @@
     "Region": "Región de Los Lagos",
     "Circunscripcion": 13,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "3ac86c7211e55e354c5d67073786a1d13fd47392"
   },
   "1118": {
     "Id": 1118,
@@ -247,7 +247,7 @@
     "Region": "Región de Coquimbo",
     "Circunscripcion": 5,
     "PartidoId": "PPD",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "1d4303b4f9e90759a0a543956acc55eb98cab3bb"
   },
   "1119": {
     "Id": 1119,
@@ -257,7 +257,7 @@
     "Region": "Región Metropolitana de Santiago",
     "Circunscripcion": 7,
     "PartidoId": "PS",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "f06efcc2f42908724ff6cba0317f5d831292d9f7"
   },
   "1120": {
     "Id": 1120,
@@ -267,7 +267,7 @@
     "Region": "Región Metropolitana de Santiago",
     "Circunscripcion": 7,
     "PartidoId": "RN",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "a17a7c6d98aae836dcd1e7427d552863e0df4538"
   },
   "1210": {
     "Id": 1210,
@@ -277,7 +277,7 @@
     "Region": "Región de Arica y Parinacota",
     "Circunscripcion": 1,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "a9173ab6801df3a338ce46efa007be373dd8c4a9"
   },
   "1211": {
     "Id": 1211,
@@ -287,7 +287,7 @@
     "Region": "Región de Arica y Parinacota",
     "Circunscripcion": 1,
     "PartidoId": "PS",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "35344e95a9303ce44617ce1b7b25178d344250d2"
   },
   "1212": {
     "Id": 1212,
@@ -297,7 +297,7 @@
     "Region": "Región de Tarapacá",
     "Circunscripcion": 2,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "f276159a3442acfba23a4ec8689468d857f67a3f"
   },
   "1213": {
     "Id": 1213,
@@ -307,7 +307,7 @@
     "Region": "Región de Tarapacá",
     "Circunscripcion": 2,
     "PartidoId": "PPD",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "d5c802468dd9380b26a9de59b6654c1dd3dccb50"
   },
   "1214": {
     "Id": 1214,
@@ -317,7 +317,7 @@
     "Region": "Región de Atacama",
     "Circunscripcion": 4,
     "PartidoId": "RN",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "566295064a20813edffeb2ad6db719a857cf21e3"
   },
   "1215": {
     "Id": 1215,
@@ -327,7 +327,7 @@
     "Region": "Región de Atacama",
     "Circunscripcion": 4,
     "PartidoId": "DC",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "d4750b7f5aac4c2bc392d74e09c0fb825fdb068e"
   },
   "1216": {
     "Id": 1216,
@@ -337,7 +337,7 @@
     "Region": "Región de Valparaíso",
     "Circunscripcion": 6,
     "PartidoId": "RD",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "487177432aa32631f71ccbcf48a94e3bde36d88b"
   },
   "1217": {
     "Id": 1217,
@@ -347,7 +347,7 @@
     "Region": "Región de Valparaíso",
     "Circunscripcion": 6,
     "PartidoId": "IND",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "404_49"
   },
   "1218": {
     "Id": 1218,
@@ -357,7 +357,7 @@
     "Region": "Región del Maule",
     "Circunscripcion": 9,
     "PartidoId": "RN",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "875875b355eb4284b335e92cd9312c62bd6c56b5"
   },
   "1219": {
     "Id": 1219,
@@ -367,7 +367,7 @@
     "Region": "Región del Maule",
     "Circunscripcion": 9,
     "PartidoId": "PS",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "a450d1bd3674a5b12f787a0875cda8b1e2bb0e74"
   },
   "1220": {
     "Id": 1220,
@@ -377,7 +377,7 @@
     "Region": "Región del Maule",
     "Circunscripcion": 9,
     "PartidoId": "RN",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "6ffb37d9342660192a0446231d77e3e9dc677c6c"
   },
   "1221": {
     "Id": 1221,
@@ -387,7 +387,7 @@
     "Region": "Región de la Araucanía",
     "Circunscripcion": 11,
     "PartidoId": "IND",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "39524e6919a31d9a1d1fd3a7a89fd7c40af0afdd"
   },
   "1222": {
     "Id": 1222,
@@ -397,7 +397,7 @@
     "Region": "Región de la Araucanía",
     "Circunscripcion": 11,
     "PartidoId": "DC",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "875b7552f8c510f100222eb80bb1d3d2a054e326"
   },
   "1223": {
     "Id": 1223,
@@ -407,7 +407,7 @@
     "Region": "Región de la Araucanía",
     "Circunscripcion": 11,
     "PartidoId": "EVO",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "3df3793b589bd887c8c9d59d4bb5b2a3e47c9134"
   },
   "1224": {
     "Id": 1224,
@@ -417,7 +417,7 @@
     "Region": "Región de Aysén del General Carlos Ibáñez del Campo",
     "Circunscripcion": 14,
     "PartidoId": "IND",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "efa5e5b88c81fc2514a64a4b65612747923bb175"
   },
   "1225": {
     "Id": 1225,
@@ -427,6 +427,6 @@
     "Region": "Región de Aysén del General Carlos Ibáñez del Campo",
     "Circunscripcion": 14,
     "PartidoId": "UDI",
-    "FiguraPublicaId": ""
+    "FiguraPublicaId": "9888b9956a2e2ed1191778d26421bed34b995b8d"
   }
 }

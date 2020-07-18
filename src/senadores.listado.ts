@@ -6,6 +6,7 @@ import {Distrito, Distritos} from "./distritos.model";
 import {Senador, Senadores} from "./senadores.model";
 import {Partido} from "./partidos.model";
 import {findPartyByAlias} from "./partidos.listado";
+import {findPublicFigureIdBySenatorId} from "./figura_publica.listado";
 
 interface SenadorRaw {
   PARLID: string[]
@@ -43,6 +44,14 @@ async function main() {
       PartidoId: party.Sigla,
       FiguraPublicaId: ""
     };
+
+    const pfId = findPublicFigureIdBySenatorId(senador.Id);
+    if(pfId === "404404"){
+      console.error('No se encontró al senador en el listado de figuras públicas', senador);
+    } else {
+      senador.FiguraPublicaId = pfId;
+    }
+
     senadores[senador.Id] = senador;
   }
 

@@ -121,7 +121,8 @@ export const publicFigures: FigurasPublicas = {
   },
   "de75abe036e34fabe565fcf59e526c284686485e": {
     Nombre: "Alejandro René Eleodoro Guillier Álvarez",
-    Nacio: ""
+    Nacio: "1953-03-05",
+    SenadorId: 1111
   },
   "e254d432497742dccd5796d1640b80481be36dc6": {
     Nombre: "Alfredo Juan Sfeir Younis",
@@ -206,7 +207,8 @@ export const publicFigures: FigurasPublicas = {
   "750e0ece12e42a4b98624599ab7673d9e6e00f9e": {
     Nombre: "Víctor Claudio José Pérez Varela",
     Nacio: "1954-10-18",
-    DiputadoId: 208
+    DiputadoId: 208,
+    SenadorId: 916
   },
   "079eae6d5c36fed844f0b0371e3f6bd913c813b4": {
     Nombre: "Jorge Esteban Pizarro Soto",
@@ -227,7 +229,8 @@ export const publicFigures: FigurasPublicas = {
   "9888b9956a2e2ed1191778d26421bed34b995b8d": {
     Nombre: "David Sergio Sandoval Plaza",
     Nacio: "1952-10-20",
-    DiputadoId: 951
+    DiputadoId: 951,
+    SenadorId: 1225
   },
   "6693968029c6f94a6d3b6e3db2b25604ed3149c1": {
     Nombre: "Pedro Antonio Velásquez Seguel",
@@ -285,6 +288,7 @@ export const publicFigures: FigurasPublicas = {
     Nombre: "Pedro Araya Guerrero",
     Nacio: "",
     DiputadoId: 808,
+    SenadorId: 1110,
     Familia: {
       Esposa: [
         {
@@ -307,7 +311,8 @@ export const publicFigures: FigurasPublicas = {
   "fd0e672d2b699e4008c15d887aaf5f989afaddc8": {
     Nombre: "Isabel Allende Bussi",
     Nacio: "1945-01-18",
-    DiputadoId: 804
+    DiputadoId: 804,
+    SenadorId: 985
   },
   "166a104d8f78e693ca47af662653be5b3bedfc63": {
     Nombre: "Claudio Patricio Alvarado Andrade",
@@ -453,7 +458,13 @@ export const publicFigures: FigurasPublicas = {
   "fd4d76a64774dccdd03f2e1fddd9a6e929e7520a": {
     Nombre: "Alejandro García-Huidobro Sanfuentes",
     Nacio: "1952-04-19",
-    DiputadoId: 844
+    DiputadoId: 844,
+    SenadorId: 1066
+  },
+  "30be367b938325b57d5667ceeea568c2ee47ed4b": {
+    Nombre: "Ena Anglein Von Baer Jahn",
+    Nacio: "1974-11-28",
+    SenadorId: 1067
   },
   "f02afbdc08430ed0c1733ffcf9f40417d2b621f8": {
     Nombre: "Rodrigo René González Torres",
@@ -479,6 +490,11 @@ export const publicFigures: FigurasPublicas = {
     Nombre: "Carlos Abel Jarpa Wevar",
     Nacio: "1944-11-14",
     DiputadoId: 855
+  },
+  "4b266191e27aaa403af840804cc7e772d05db6ac": {
+    Nombre: "Ricardo Andrés Lagos Weber",
+    Nacio: "1962-02-21",
+    SenadorId: 987
   },
   "f1383e1210cdf254263e47a4ccfb223132ac43b4": {
     Nombre: "José Antonio Kast Rist",
@@ -523,7 +539,8 @@ export const publicFigures: FigurasPublicas = {
   "f06efcc2f42908724ff6cba0317f5d831292d9f7": {
     Nombre: "Carlos Eduardo Montes Cisternas",
     Nacio: "1946-05-11",
-    DiputadoId: 870
+    DiputadoId: 870,
+    SenadorId: 1119
   },
   "21b9d78f905fedf031c1fe4d907f1642eeba877d": {
     Nombre: "Iván Alejandro Moreira Barros",
@@ -538,7 +555,8 @@ export const publicFigures: FigurasPublicas = {
   "1d4303b4f9e90759a0a543956acc55eb98cab3bb": {
     Nombre: "Adriana Blanca Cristina Muñoz D'Albora",
     Nacio: "1948-09-25",
-    DiputadoId: 873
+    DiputadoId: 873,
+    SenadorId: 1118
   },
   "5c052ff425db090c27c70594956a86cc1aa1340e": {
     Nombre: "Iván Ernesto Norambuena Farías",
@@ -583,7 +601,8 @@ export const publicFigures: FigurasPublicas = {
   "f93c3509c5abe71d8bda66f16a94af42835d17f7": {
     Nombre: "Jaime Daniel Quintana Leal",
     Nacio: "1967-10-22",
-    DiputadoId: 886
+    DiputadoId: 886,
+    SenadorId: 1008
   },
   "cf12e9c036c38f6e1c54af467b35e4e71021f4b9": {
     Nombre: "Carlos Recondo Lavanderos",
@@ -729,12 +748,19 @@ export const publicFigures: FigurasPublicas = {
   "7c8f365b1dd473b637ffba6f9e0111304f1efed3": {
     Nombre: "Francisco Javier Chahuán Chahuán",
     Nacio: "1971-05-20",
-    DiputadoId: 820
+    DiputadoId: 820,
+    SenadorId: 986
   },
   "ed64df3d9777e1446a529dbdfb8bea43e0eda7f6": {
     Nombre: "Alfonso Arturo De Urresti Longton",
     Nacio: "1966-03-07",
-    DiputadoId: 824
+    DiputadoId: 824,
+    SenadorId: 1115
+  },
+  "408e365d727326693228935c06274e05bb5a1140": {
+    Nombre: "Rabindranath Vladimir Quinteros Lara",
+    Nacio: "1943-10-31",
+    SenadorId: 1116
   },
   "e755cf731369acba42c0694a84a90c61ae9be7ef": {
     Nombre: "Marcelo Eduardo Díaz Díaz",
@@ -795,7 +821,8 @@ export const publicFigures: FigurasPublicas = {
   "626a0c585f5d43482617a5b88eb0da4b56bb63ce": {
     Nombre: "Carolina Goic Boroevic",
     Nacio: "1972-12-20",
-    DiputadoId: 847
+    DiputadoId: 847,
+    SenadorId: 1113
   },
   "957bf5a25758100a77fd525a3a2de1f75b19121e": {
     Nombre: "María Amelia Herrera Silva",
@@ -821,6 +848,16 @@ export const publicFigures: FigurasPublicas = {
     Nombre: "Juan Carlos Latorre Carmona",
     Nacio: "1949-03-29",
     DiputadoId: 858
+  },
+  "487177432aa32631f71ccbcf48a94e3bde36d88b": {
+    Nombre: "Juan Ignacio Latorre Riveros",
+    Nacio: "1978-03-24",
+    SenadorId: 1216
+  },
+  "404_49": {
+    Nombre: "Kenneth Peter Pugh Olavarría",
+    Nacio: "1959-10-22",
+    SenadorId: 1217
   },
   "7ac0d7c52c34a4552fe8259b8584cd413348c800": {
     Nombre: "Roberto Eduardo León Ramírez",
@@ -939,7 +976,8 @@ export const publicFigures: FigurasPublicas = {
   "533ab43952c3ae9143ef644e458fa8fb2f981913": {
     Nombre: "Felipe Harboe Bascuñán",
     Nacio: "1972-07-20",
-    DiputadoId: 922
+    DiputadoId: 922,
+    SenadorId: 1114
   },
   "1159e65598e59f1bbd7457782c46a56ee13e2041": {
     Nombre: "Pedro Pablo Alvarez-Salamanca Ramírez",
@@ -1046,6 +1084,11 @@ export const publicFigures: FigurasPublicas = {
     Nacio: "1966-03-22",
     DiputadoId: 947
   },
+  "3455d9899f8888ea5580b64835cda9f109e897be": {
+    Nombre: "Ximena Cecilia Rincón González",
+    Nacio: "1968-07-05",
+    SenadorId: 1009
+  },
   "9ceb0bd5cae62fa5bf13286dd13698206ecd6fc7": {
     Nombre: "Gaspar Alberto Rivas Sánchez",
     Nacio: "1978-05-17",
@@ -1089,7 +1132,8 @@ export const publicFigures: FigurasPublicas = {
   "18e45149981258ad04537dd80114d866a0626d73": {
     Nombre: "Enrique Van Rysselberghe Herrera",
     Nacio: "1976-09-17",
-    DiputadoId: 959
+    DiputadoId: 959,
+    SenadorId: 1112
   },
   "ec007ed1d15521092c3eadd43cb81410267177eb": {
     Nombre: "Orlando Severo Vargas Pizarro",
@@ -1110,6 +1154,11 @@ export const publicFigures: FigurasPublicas = {
     Nombre: "Mario Alberto Acuña Cisternas",
     Nacio: "1951-09-26",
     DiputadoId: 1
+  },
+  "39524e6919a31d9a1d1fd3a7a89fd7c40af0afdd": {
+    Nombre: "Carmen Gloria Aravena Acuña",
+    Nacio: "1967-01-06",
+    SenadorId: 1221
   },
   "0d234f22bb83124348e13bbf6baada186f3fb3ba": {
     Nombre: "Gustavo Alessandri Valdés",
@@ -1240,7 +1289,8 @@ export const publicFigures: FigurasPublicas = {
   "875b7552f8c510f100222eb80bb1d3d2a054e326": {
     Nombre: "Francisco Segundo Huenchumilla Jaramillo",
     Nacio: "1944-03-22",
-    DiputadoId: 43
+    DiputadoId: 43,
+    SenadorId: 1222
   },
   "0f70fcd106f0228c66322680324d9c27da47e4f3": {
     Nombre: "José Tomás Jocelyn-Holt Letelier",
@@ -1375,6 +1425,11 @@ export const publicFigures: FigurasPublicas = {
     Nombre: "Ramón Julio Elizalde Hevia",
     Nacio: "1940-02-25",
     DiputadoId: 428
+  },
+  "a450d1bd3674a5b12f787a0875cda8b1e2bb0e74": {
+    Nombre: "Álvaro Antonio Elizalde Soto",
+    Nacio: "1969-10-15",
+    SenadorId: 1219
   },
   "23fe2cf5a5526ab59545f244f1c92188efdea416": {
     Nombre: "Jaime Luis Estévez Valencia",
@@ -1726,6 +1781,11 @@ export const publicFigures: FigurasPublicas = {
     Nacio: "1961-11-19",
     DiputadoId: 155
   },
+  "6ffb37d9342660192a0446231d77e3e9dc677c6c": {
+    Nombre: "Rodrigo Galilea Vial",
+    Nacio: "1966-11-03",
+    SenadorId: 1220
+  },
   "b8f150b73325ddb2b986d35184520835e700558b": {
     Nombre: "Rosa Orfilia González Román",
     Nacio: "1942-07-23",
@@ -1796,7 +1856,8 @@ export const publicFigures: FigurasPublicas = {
   "6a31dcdcd0205c85deafe31952eafe3ed0e9638c": {
     Nombre: "Alejandro Navarro Brain",
     Nacio: "1958-11-20",
-    DiputadoId: 195
+    DiputadoId: 195,
+    SenadorId: 915
   },
   "f6f15b5b5cecaac5db122775c4768acdc51c4171": {
     Nombre: "Cristián Pablo Pareto Vergara",
@@ -1947,6 +2008,16 @@ export const publicFigures: FigurasPublicas = {
     Nacio: "1969-03-03",
     DiputadoId: 106
   },
+  "d5c802468dd9380b26a9de59b6654c1dd3dccb50": {
+    Nombre: "Jorge Alejandro Soria Quiroga",
+    Nacio: "1936-11-01",
+    SenadorId: 1213
+  },
+  "566295064a20813edffeb2ad6db719a857cf21e3": {
+    Nombre: "Rafael Prohens Espinosa",
+    Nacio: "1955-06-12",
+    SenadorId: 1214
+  },
   "d8264897cc7b441284d6a0d5dfe90c3021db6c14": {
     Nombre: "Mario Francisco Bartolucci Johnston",
     Nacio: "1949-12-24",
@@ -2065,7 +2136,8 @@ export const publicFigures: FigurasPublicas = {
   "d4750b7f5aac4c2bc392d74e09c0fb825fdb068e": {
     Nombre: "Yasna Provoste Campillay",
     Nacio: "1969-12-16",
-    DiputadoId: 998
+    DiputadoId: 998,
+    SenadorId: 1215
   },
   "c8b7aafb00dc7f0db1ace246a76e6e5b1590c1f8": {
     Nombre: "Sergio Alfredo Gahona Salazar",
@@ -2144,7 +2216,8 @@ export const publicFigures: FigurasPublicas = {
   "3df3793b589bd887c8c9d59d4bb5b2a3e47c9134": {
     Nombre: "Felipe Kast Sommerhoff",
     Nacio: "1977-06-09",
-    DiputadoId: 988
+    DiputadoId: 988,
+    SenadorId: 1223
   },
   "cbb692c38fa6b0861f6b991e6613f8a66ca73e2f": {
     Nombre: "Jaime Hernán Gonzalo Pilowsky Greene",
@@ -2458,6 +2531,21 @@ export const publicFigures: FigurasPublicas = {
     Nacio: "1963-12-13",
     DiputadoId: 1059
   },
+  "efa5e5b88c81fc2514a64a4b65612747923bb175": {
+    Nombre: "Ximena Loreto Órdenes Neira",
+    Nacio: "1973-03-09",
+    SenadorId: 1224
+  },
+  "a17a7c6d98aae836dcd1e7427d552863e0df4538": {
+    Nombre: "Manuel José Ossandón Irarrázabal",
+    Nacio: "1962-08-24",
+    SenadorId: 1120
+  },
+  "a9173ab6801df3a338ce46efa007be373dd8c4a9": {
+    Nombre: "José Miguel Alberto Durana Semir",
+    Nacio: "1960-06-27",
+    SenadorId: 1210
+  },
   "1581560e6d8e21d28cb576c2be6c34167bfadda7": {
     Nombre: "Luis Rafael Pardo Sáinz",
     Nacio: "1960-12-13",
@@ -2467,6 +2555,16 @@ export const publicFigures: FigurasPublicas = {
     Nombre: "Irle Andrea Parra Sauterel",
     Nacio: "1967-09-02",
     DiputadoId: 1061
+  },
+  "35344e95a9303ce44617ce1b7b25178d344250d2": {
+    Nombre: "José Miguel Insulza Salinas",
+    Nacio: "1943-06-02",
+    SenadorId: 1211
+  },
+  "f276159a3442acfba23a4ec8689468d857f67a3f": {
+    Nombre: "Luz Eliana Ebensperger Orrego",
+    Nacio: "1964-03-08",
+    SenadorId: 1212
   },
   "c785e0c63e907a73d2046e0ad51dfdca82eaf52a": {
     Nombre: "Joanna Elena Pérez Olea",
@@ -2681,10 +2779,16 @@ export const publicFigures: FigurasPublicas = {
     Nacio: "1974-08-05",
     DiputadoId: 1019
   },
+  "875875b355eb4284b335e92cd9312c62bd6c56b5": {
+    Nombre: "Juan Enrique Castro Prieto",
+    Nacio: "1959-11-01",
+    SenadorId: 1218
+  },
   "3ac86c7211e55e354c5d67073786a1d13fd47392": {
     Nombre: "Cristhian Patricio Moreira Barros",
     Nacio: "1961-09-05",
-    DiputadoId: 1053
+    DiputadoId: 1053,
+    SenadorId: 1117
   }
 };
 
@@ -2710,6 +2814,15 @@ export const findPublicFigureIdByDeputyId = (deputyId: number): string => {
   for (const pfId in publicFigures) {
     const dId = publicFigures[pfId].DiputadoId;
     if((Array.isArray(dId) && dId.includes(deputyId)) || (dId === deputyId))
+      return pfId;
+  }
+  return '404404';
+}
+
+export const findPublicFigureIdBySenatorId = (senatorId: number): string => {
+  for (const pfId in publicFigures) {
+    const sId = publicFigures[pfId].SenadorId;
+    if((Array.isArray(sId) && sId.includes(senatorId)) || (sId === senatorId))
       return pfId;
   }
   return '404404';

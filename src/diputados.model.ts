@@ -35,7 +35,7 @@ export interface Diputados {
   [Id: string]: Diputado
 }
 
-export interface Asistencia {
+export interface Inasistencia {
   [DiputadoId: string]: {
     TipoAsistencia: IdValor
     Justificacion?: {
@@ -53,7 +53,7 @@ export interface Sesion {
   Termino: string
   Tipo: IdValor
   Estado: IdValor
-  Asistencia: Asistencia
+  Inasistencia: Inasistencia
 }
 
 export interface Voto {
