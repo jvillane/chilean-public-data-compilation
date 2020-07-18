@@ -1,6 +1,7 @@
 import {FiguraPublica, FigurasPublicas, Militancia, Referencia, ReferenciaPareja} from "./figura_publica.model";
 import {writeFile} from "fs";
 import {aliases} from "./aliases";
+import {politicalParties} from "./partidos.listado";
 
 const publicFigureList: FiguraPublica[] = [
   {
@@ -3306,9 +3307,12 @@ const publicFigureList: FiguraPublica[] = [
   }
 ];
 
+//TODO borrar esta data dummy
+const ppIds = Object.keys(politicalParties);
+
 const aux: FigurasPublicas = {};
 for(const pf of publicFigureList) {
-  aux[pf.Id] = pf;
+  aux[pf.Id] = Object.assign(pf, {Militancias: [{PartidoId: ppIds[Math.floor(Math.random() * ppIds.length)]}]});
 }
 
 export const publicFigures = aux;
