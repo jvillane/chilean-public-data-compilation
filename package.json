@@ -18,7 +18,8 @@
     "noticias.listado": "npx ts-node src/noticias.listado.ts",
     "regiones.listado": "npx ts-node src/regiones.listado.ts",
     "distritos.listado": "npx ts-node src/distritos.listado.ts",
-    "senadores.listado": "npx ts-node src/senadores.listado.ts"
+    "senadores.listado": "npx ts-node src/senadores.listado.ts",
+    "senadores.proyectos": "npx ts-node src/senadores.proyectos.ts"
   },
   "author": "Julio Villane",
   "license": "ISC",
@@ -30,6 +31,7 @@
     "@types/xml2js": "^0.4.5",
     "axios": "^0.19.2",
     "fs": "^0.0.1-security",
+    "moment": "^2.27.0",
     "ndb": "^1.1.5",
     "pdf-parse": "^1.1.1",
     "puppeteer": "2.1.1",

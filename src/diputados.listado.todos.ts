@@ -50,6 +50,7 @@ async function main() {
       }
     }
     const deputy: Diputado = {
+      Id: deputyRaw.Id[0],
       Nombres: deputyRaw.Nombre[0] + (deputyRaw.Nombre2[0].length > 0 ? ' ' + deputyRaw.Nombre2[0] : ''),
       ApellidoPaterno: deputyRaw.ApellidoPaterno[0],
       ApellidoMaterno: deputyRaw.ApellidoMaterno[0],

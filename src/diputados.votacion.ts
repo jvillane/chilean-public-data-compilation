@@ -2,7 +2,7 @@ import {parseStringPromise} from "xml2js";
 import axios from "axios";
 import {IdValor, ProyectoLey, ProyectoLeyAutor, ProyectosLey, Votacion, Votaciones} from "./diputados.model";
 import {writeFile} from "fs";
-import * as lawProjectsNow from "../data/proyectos_ley.listado.json";
+import * as lawProjectsNow from "../data/diputados.proyectos_ley.json";
 
 interface TypeRawContent {
   $: {
@@ -250,7 +250,7 @@ async function main() {
       break;
     }
 
-    writeFile(`./data/proyectos_ley.listado.json`, JSON.stringify(lawProjects), function (err) {
+    writeFile(`./data/diputados.proyectos_ley.json`, JSON.stringify(lawProjects), function (err) {
       if (err) {
         console.error(err);
       }

@@ -22,6 +22,7 @@ export interface Afiliacion {
 }
 
 export interface Diputado {
+  Id: string
   Nombres: string
   ApellidoPaterno: string
   ApellidoMaterno: string

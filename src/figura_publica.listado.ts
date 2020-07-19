@@ -1728,7 +1728,7 @@ const publicFigureList: FiguraPublica[] = [
   },
   {
     "Id": "d3b74ff5e6360500c52178f6081b00d2c196b87b",
-    "Nombre": "Hosain Sabag Castillo",
+    "Nombre": "Hosaín Sabag Castillo",
     "Nacio": "1937-05-05",
     "DiputadoId": 495
   },
@@ -1951,6 +1951,31 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Manuel José Ramón Matta Aragay",
     "Nacio": "1946-11-10",
     "DiputadoId": 660
+  },
+  {
+    "Id": "9d4496051a88fb7b8609e025e2eb43fc19421263",
+    "Nombre": "José Andrés Rafael Zaldívar Larraín",
+    "Nacio": "1936-03-18"
+  },
+  {
+    "Id": "ec88810e51361ac3de36694afcd165163c785cba",
+    "Nombre": "María Soledad Alvear Valenzuela",
+    "Nacio": "1950-09-17"
+  },
+  {
+    "Id": "e2401b6c7e3e3a307ed98d49da354370fa009c8b",
+    "Nombre": "Enrique Manuel Jovino Novoa Vásquez",
+    "Nacio": "1945-03-31"
+  },
+  {
+    "Id": "721e53113c1f4840951fa5cb41aee9cd4a7d260a",
+    "Nombre": "Sergio Mariano Ruiz-Esquide Jara",
+    "Nacio": "1930-05-10"
+  },
+  {
+    "Id": "2662735eed0ba02585802cb3d9eafe1cf9214fd8",
+    "Nombre": "Hernán Larraín Fernández",
+    "Nacio": "1947-09-21"
   },
   {
     "Id": "bfb0c1d21c74ed0076abf9db47a4122a4291ded3",
@@ -3324,12 +3349,16 @@ interface PublicFigureWithId extends FiguraPublica {
 export const findPublicFigureByAlias = (name: string): PublicFigureWithId | undefined => {
   for (const id in aliases) {
     if (aliases[id].includes(name)) {
-      for (const pfId in publicFigures) {
-        if (pfId === id) {
-          const pf = Object.assign({Id: pfId}, publicFigures[pfId])
-          return pf;
-        }
-      }
+      return publicFigures[id];
+    }
+  }
+  return undefined;
+}
+
+export const findPublicFigureIdByAlias = (name: string): string | undefined => {
+  for (const id in aliases) {
+    if (aliases[id].includes(name)) {
+      return id;
     }
   }
   return undefined;
