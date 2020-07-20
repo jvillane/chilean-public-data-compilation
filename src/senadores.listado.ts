@@ -1,10 +1,7 @@
 import {writeFile} from "fs";
-import {Comuna} from "./regiones.model";
 import axios from "axios";
 import {parseStringPromise} from "xml2js";
-import {Distrito, Distritos} from "./distritos.model";
 import {Senador, Senadores} from "./senadores.model";
-import {Partido} from "./partidos.model";
 import {findPartyByAlias} from "./partidos.listado";
 import {findPublicFigureIdBySenatorId} from "./figura_publica.listado";
 

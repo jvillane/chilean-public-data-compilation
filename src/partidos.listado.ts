@@ -7,8 +7,8 @@ export const politicalParties: Partidos = {
     Nombre: "Independiente",
     Alias: ["independiente"]
   },
-  COM: {
-    Sigla: "COM",
+  COMUNES: {
+    Sigla: "COMUNES",
     Nombre: "Comunes",
     FechaConstitucion: "2018-05-08",
     Posicion: "Izquierda",
@@ -21,8 +21,8 @@ export const politicalParties: Partidos = {
     Posicion: "Centro izquierda",
     Alias: ["ppd", "p.p.d.", "partido por la democracia"]
   },
-  CIU: {
-    Sigla: "CIU",
+  CIUDADANOS: {
+    Sigla: "CIUDADANOS",
     Nombre: "Ciudadanos",
     FechaConstitucion: "2018-07-09",
     Posicion: "Centro",
@@ -42,8 +42,8 @@ export const politicalParties: Partidos = {
     Posicion: "Derecha",
     Alias: ["partido nacional ciudadano"]
   },
-  PLC: {
-    Sigla: "PLC",
+  PL: {
+    Sigla: "PL",
     Nombre: "Partido Liberal de Chile",
     FechaConstitucion: "2018-11-13",
     Posicion: "Centro izquierda",
@@ -65,7 +65,7 @@ export const politicalParties: Partidos = {
   },
   RN: {
     Sigla: "RN",
-    Nombre: "Renovación Nacional",
+    Nombre: "Partido Renovación Nacional",
     FechaConstitucion: "2018-05-08",
     Posicion: "Centro derecha",
     Alias: ["rn", "r.n.", "partido renovación nacional", "renovación nacional", "partido renovacion nacional", "renovacion nacional"],
@@ -120,6 +120,13 @@ export const politicalParties: Partidos = {
     Posicion: "Centro izquierda",
     Alias: ["pr", "p.r.", "partido radical de chile"]
   },
+  PRSD: {
+    Sigla: "PRSD",
+    Nombre: "Partido Radical Socialdemócrata",
+    FechaConstitucion: "1994-08-18",
+    Posicion: "Centro izquierda",
+    Alias: ["prsd", "p.r.s.d.", "partido radical socialdemócrata", "partido radical socialdemocrata"]
+  },
   PRI: {
     Sigla: "PRI",
     Nombre: "Partido Regionalista Independiente Demócrata",
@@ -127,15 +134,15 @@ export const politicalParties: Partidos = {
     Posicion: "Centro",
     Alias: ["pri", "partido regionalista independiente demócrata", "partido regionalista independiente democrata"]
   },
-  EVO: {
-    Sigla: "EVO",
+  EVOPOLI: {
+    Sigla: "EVOPOLI",
     Nombre: "Evolución Política",
     FechaConstitucion: "2016-04-13",
     Posicion: "Centro derecha",
     Alias: ["evo", "evopoli", "evolución política", "evolucion politica"]
   },
   PRO: {
-    Sigla: "PR",
+    Sigla: "PRO",
     Nombre: "Partido Progresista de Chile",
     FechaConstitucion: "2018-05-08",
     Posicion: "Izquierda",
@@ -143,7 +150,7 @@ export const politicalParties: Partidos = {
   },
   DC: {
     Sigla: "DC",
-    Nombre: "Democracia Cristiana",
+    Nombre: "Partido Demócrata Cristiano",
     FechaConstitucion: "1988-05-02",
     Posicion: "Centro izquierda",
     Alias: ["dc", "d.c.", "pdc", "p.d.c.", "partido demócrata cristiano", "partido democrata cristiano", "democracia cristiana"]
@@ -183,7 +190,16 @@ export const politicalParties: Partidos = {
     FechaConstitucion: "2014-06-05",
     Posicion: "Izquierda",
     Alias: ["ph", "p.h.", "partido humanista"]
-  }
+  },
+  PPC: {
+    Sigla: "PPC",
+    Nombre: "Partido Poder Ciudadano",
+    FechaConstitucion: "2016-05-26",
+    FechaDisolucion: "2019-02-20",
+    Posicion: "Izquierda",
+    Alias: ["ph", "p.h.", "partido humanista"]
+  },
+
 }
 
 export function findPartyByAlias(alias: string): Partido | undefined {

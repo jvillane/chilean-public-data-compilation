@@ -4,6 +4,7 @@ export interface Partido {
   Sigla: string
   Nombre: string
   FechaConstitucion?: string
+  FechaDisolucion?: string
   Posicion?: Posicion
   Alias: string[]
   Logo?: string

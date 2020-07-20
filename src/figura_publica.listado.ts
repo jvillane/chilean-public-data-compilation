@@ -1,9 +1,8 @@
-import {FiguraPublica, FigurasPublicas, Militancia, Referencia, ReferenciaPareja} from "./figura_publica.model";
+import {FiguraPublica, FigurasPublicas} from "./figura_publica.model";
 import {writeFile} from "fs";
 import {aliases} from "./aliases";
-import {politicalParties} from "./partidos.listado";
 
-const publicFigureList: FiguraPublica[] = [
+export const publicFigureList: FiguraPublica[] = [
   {
     "Id": "3baf8a82290dc441c78bfdb4587c7fa26a32faad=",
     "Nombre": "Manuel Jose Bernardino Piñera Carvallo",
@@ -139,7 +138,12 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "de75abe036e34fabe565fcf59e526c284686485e",
     "Nombre": "Alejandro René Eleodoro Guillier Álvarez",
     "Nacio": "1953-03-05",
-    "SenadorId": 1111
+    "SenadorId": 1111,
+    "Militancias": [
+      {
+        "PartidoId": "IND"
+      }
+    ]
   },
   {
     "Id": "e254d432497742dccd5796d1640b80481be36dc6",
@@ -246,14 +250,24 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Víctor Claudio José Pérez Varela",
     "Nacio": "1954-10-18",
     "DiputadoId": 208,
-    "SenadorId": 916
+    "SenadorId": 916,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "079eae6d5c36fed844f0b0371e3f6bd913c813b4",
     "Nombre": "Jorge Esteban Pizarro Soto",
     "Nacio": "1952-04-21",
     "DiputadoId": 485,
-    "SenadorId": 163
+    "SenadorId": 163,
+    "Militancias": [
+      {
+        "PartidoId": "DC"
+      }
+    ]
   },
   {
     "Id": "404_04",
@@ -272,13 +286,24 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "David Sergio Sandoval Plaza",
     "Nacio": "1952-10-20",
     "DiputadoId": 951,
-    "SenadorId": 1225
+    "SenadorId": 1225,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "6693968029c6f94a6d3b6e3db2b25604ed3149c1",
     "Nombre": "Pedro Antonio Velásquez Seguel",
     "Nacio": "1964-08-05",
-    "DiputadoId": 961
+    "DiputadoId": 961,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "0c807508a65a121430f6a64296f67856a097276b",
@@ -308,7 +333,23 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "a6a972dc570d6049954459543b8411f0973a8c67",
     "Nombre": "René Fernando Saffirio Espinoza",
     "Nacio": "1955-10-09",
-    "DiputadoId": 950
+    "DiputadoId": 950,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2010-03-11T00:00:00",
+        "Hasta": "2014-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2014-03-11T00:00:00",
+        "Hasta": "2018-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "18b106a5acb975ed7da383ac73428b5f78b15e74",
@@ -320,7 +361,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "a2ae86ab87f39d9e3b72fffc16bac13ed3c019da",
     "Nombre": "Guillermo León Teillier Del Valle",
     "Nacio": "1943-10-29",
-    "DiputadoId": 956
+    "DiputadoId": 956,
+    "Militancias": [
+      {
+        "PartidoId": "PC",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "341a19aa3f268074f94bcfe1161c63728090d5ca",
@@ -348,7 +395,12 @@ const publicFigureList: FiguraPublica[] = [
           "Nombre": "Mónica Javiera Blanco Suárez"
         }
       ]
-    }
+    },
+    "Militancias": [
+      {
+        "PartidoId": "IND"
+      }
+    ]
   },
   {
     "Id": "bf95d31ad2f6b8c7b0fbe06cd25ff131279958bf",
@@ -367,7 +419,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Isabel Allende Bussi",
     "Nacio": "1945-01-18",
     "DiputadoId": 804,
-    "SenadorId": 985
+    "SenadorId": 985,
+    "Militancias": [
+      {
+        "PartidoId": "PS"
+      }
+    ]
   },
   {
     "Id": "166a104d8f78e693ca47af662653be5b3bedfc63",
@@ -398,13 +455,25 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "77b9f16862919da5f711818101a88525dad485b9",
     "Nombre": "Gabriel Héctor Ascencio Mansilla",
     "Nacio": "1953-10-25",
-    "DiputadoId": 810
+    "DiputadoId": 810,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "1994-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "bcc53f26caf73ac5187e938180b0ba8f5e3612cb",
     "Nombre": "José Ramón Barros Montero",
     "Nacio": "1958-03-05",
-    "DiputadoId": 811
+    "DiputadoId": 811,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2002-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "7bf69231b6814db8a18f4de4aca536630d8684c3",
@@ -516,7 +585,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "5ebdb3f8d79206e2992ccad8f45e0818e6b5750b",
     "Nombre": "Fidel Edgardo Espinoza Sandoval",
     "Nacio": "1970-01-24",
-    "DiputadoId": 837
+    "DiputadoId": 837,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2002-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "3eec05a4012e505df440fe1ca335585001941b3b",
@@ -534,26 +609,48 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "cfab8c13eadeab651c7bfa0a8ada1e27479adbbc",
     "Nombre": "René Manuel García García",
     "Nacio": "1950-05-24",
-    "DiputadoId": 843
+    "DiputadoId": 843,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "1990-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "fd4d76a64774dccdd03f2e1fddd9a6e929e7520a",
     "Nombre": "Alejandro García-Huidobro Sanfuentes",
     "Nacio": "1952-04-19",
     "DiputadoId": 844,
-    "SenadorId": 1066
+    "SenadorId": 1066,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "30be367b938325b57d5667ceeea568c2ee47ed4b",
     "Nombre": "Ena Anglein Von Baer Jahn",
     "Nacio": "1974-11-28",
-    "SenadorId": 1067
+    "SenadorId": 1067,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "f02afbdc08430ed0c1733ffcf9f40417d2b621f8",
     "Nombre": "Rodrigo René González Torres",
     "Nacio": "1941-09-26",
-    "DiputadoId": 848
+    "DiputadoId": 848,
+    "Militancias": [
+      {
+        "PartidoId": "PPD",
+        "Desde": "2002-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "13c429cd0906ba2d58ef7784fae91ae2d4de3c97",
@@ -565,7 +662,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "920ea0d52e1d10f39f85842145c5e8a77b0b6655",
     "Nombre": "Javier Ricardo Hernández Hernández",
     "Nacio": "1954-08-07",
-    "DiputadoId": 850
+    "DiputadoId": 850,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2002-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "3998791aafd490ea9fe28112dff1ee370c16c598",
@@ -577,13 +680,24 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "66c0d38e537930fd2b5d2fa26fc851a6cf656eea",
     "Nombre": "Carlos Abel Jarpa Wevar",
     "Nacio": "1944-11-14",
-    "DiputadoId": 855
+    "DiputadoId": 855,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-12-19T00:00:00"
+      }
+    ]
   },
   {
     "Id": "4b266191e27aaa403af840804cc7e772d05db6ac",
     "Nombre": "Ricardo Andrés Lagos Weber",
     "Nacio": "1962-02-21",
-    "SenadorId": 987
+    "SenadorId": 987,
+    "Militancias": [
+      {
+        "PartidoId": "PPD"
+      }
+    ]
   },
   {
     "Id": "f1383e1210cdf254263e47a4ccfb223132ac43b4",
@@ -601,7 +715,43 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "3661bfd97fcd7d2aaba6c325de86d9682758157f",
     "Nombre": "Pablo Lorenzini Basso",
     "Nacio": "1949-10-25",
-    "DiputadoId": 862
+    "DiputadoId": 862,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2006-03-11T00:00:00",
+        "Hasta": "2010-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "DC",
+        "Desde": "1998-03-11T00:00:00",
+        "Hasta": "2002-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "DC",
+        "Desde": "2010-03-11T00:00:00",
+        "Hasta": "2014-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "DC",
+        "Desde": "2002-03-11T00:00:00",
+        "Hasta": "2006-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "DC",
+        "Desde": "2018-03-11T00:00:00",
+        "Hasta": "2020-04-27T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2020-04-28T00:00:00"
+      },
+      {
+        "PartidoId": "DC",
+        "Desde": "2014-03-11T00:00:00",
+        "Hasta": "2018-03-10T23:59:59"
+      }
+    ]
   },
   {
     "Id": "2daaf560909e7d0367ea9e00ce0d016a2338e4d7",
@@ -619,13 +769,25 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "0a71863a3a01b2a89b2bef99ea17c38ba477b7b7",
     "Nombre": "Patricio Melero Abaroa",
     "Nacio": "1956-06-19",
-    "DiputadoId": 865
+    "DiputadoId": 865,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "1990-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "f4b2a7ad79e60f71aab0091bb19780a9f85a2d4b",
     "Nombre": "Fernando Meza Moncada",
     "Nacio": "1946-07-14",
-    "DiputadoId": 866
+    "DiputadoId": 866,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-12-19T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e2db8f37f347a4672e68770bf7e3d33cdb253b20",
@@ -638,7 +800,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Carlos Eduardo Montes Cisternas",
     "Nacio": "1946-05-11",
     "DiputadoId": 870,
-    "SenadorId": 1119
+    "SenadorId": 1119,
+    "Militancias": [
+      {
+        "PartidoId": "PS"
+      }
+    ]
   },
   {
     "Id": "21b9d78f905fedf031c1fe4d907f1642eeba877d",
@@ -650,20 +817,48 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "19394fb3f76df5d8c376938f9d9b3cff9ae0f7db",
     "Nombre": "Jaime Francisco Mulet Martínez",
     "Nacio": "1963-08-03",
-    "DiputadoId": 872
+    "DiputadoId": 872,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "1998-03-11T00:00:00",
+        "Hasta": "2002-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "DC",
+        "Desde": "2002-03-11T00:00:00",
+        "Hasta": "2006-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "PRI",
+        "Desde": "2006-03-11T00:00:00",
+        "Hasta": "2010-03-10T23:59:59"
+      }
+    ]
   },
   {
     "Id": "1d4303b4f9e90759a0a543956acc55eb98cab3bb",
     "Nombre": "Adriana Blanca Cristina Muñoz D'Albora",
     "Nacio": "1948-09-25",
     "DiputadoId": 873,
-    "SenadorId": 1118
+    "SenadorId": 1118,
+    "Militancias": [
+      {
+        "PartidoId": "PPD"
+      }
+    ]
   },
   {
     "Id": "5c052ff425db090c27c70594956a86cc1aa1340e",
     "Nombre": "Iván Ernesto Norambuena Farías",
     "Nacio": "1958-09-04",
-    "DiputadoId": 875
+    "DiputadoId": 875,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2002-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "fec6430feb56a80577aa08da5a98e4075509a0bf",
@@ -681,7 +876,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "75a26bf72a5127d5d0471a2476174bd904aeb5da",
     "Nombre": "José Miguel Ortiz Novoa",
     "Nacio": "1941-11-22",
-    "DiputadoId": 879
+    "DiputadoId": 879,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "1990-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "6abb0029e7075a39d1f0a6d5a60345274aa0a038",
@@ -705,14 +906,25 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "bc359cdd5993e17b74a2499e54a1b43ef50ad642",
     "Nombre": "José Pérez Arriagada",
     "Nacio": "1940-12-29",
-    "DiputadoId": 885
+    "DiputadoId": 885,
+    "Militancias": [
+      {
+        "PartidoId": "PRSD",
+        "Desde": "1988-01-01T00:00:00"
+      }
+    ]
   },
   {
     "Id": "f93c3509c5abe71d8bda66f16a94af42835d17f7",
     "Nombre": "Jaime Daniel Quintana Leal",
     "Nacio": "1967-10-22",
     "DiputadoId": 886,
-    "SenadorId": 1008
+    "SenadorId": 1008,
+    "Militancias": [
+      {
+        "PartidoId": "PPD"
+      }
+    ]
   },
   {
     "Id": "cf12e9c036c38f6e1c54af467b35e4e71021f4b9",
@@ -768,7 +980,29 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "e820846626f1c301f7006900a5abc87752b6fcfa",
     "Nombre": "Alejandra Amalia Sepúlveda Orbenes",
     "Nacio": "1965-11-13",
-    "DiputadoId": 897
+    "DiputadoId": 897,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2006-03-11T00:00:00",
+        "Hasta": "2010-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "PRI",
+        "Desde": "2010-03-11T00:00:00",
+        "Hasta": "2014-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "DC",
+        "Desde": "2002-03-11T00:00:00",
+        "Hasta": "2006-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2014-03-11T00:00:00",
+        "Hasta": "2018-03-10T23:59:59"
+      }
+    ]
   },
   {
     "Id": "204ed206c178f5fb5d9216ad0f14e56cc421a5a0",
@@ -818,7 +1052,39 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "2c338c4bb71004d962aafc427beb11c50873aa73",
     "Nombre": "Ignacio Urrutia Bonilla",
     "Nacio": "1957-09-16",
-    "DiputadoId": 908
+    "DiputadoId": 908,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2006-03-11T00:00:00",
+        "Hasta": "2010-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "UDI",
+        "Desde": "2010-03-11T00:00:00",
+        "Hasta": "2014-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-04-24T00:00:00",
+        "Hasta": "2019-11-16T23:59:59"
+      },
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00",
+        "Hasta": "2019-04-23T23:59:59"
+      },
+      {
+        "PartidoId": "UDI",
+        "Desde": "2002-03-11T00:00:00",
+        "Hasta": "2006-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "UDI",
+        "Desde": "2014-03-11T00:00:00",
+        "Hasta": "2018-03-10T23:59:59"
+      }
+    ]
   },
   {
     "Id": "449e72cb31b10c1455768068658cb50662accee3",
@@ -848,7 +1114,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "519abc66b27cb0e55563dcfdb006b069fe1ff25b",
     "Nombre": "Gastón Alejandro Von Mühlenbrock Zamora",
     "Nacio": "1954-12-26",
-    "DiputadoId": 917
+    "DiputadoId": 917,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2002-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "33a1d2981a5fda7a7b200a1463d2b4707cf66e8b",
@@ -866,7 +1138,23 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "825005b83fdc6b7c2a9979be5d5034b7cb43ef1a",
     "Nombre": "René Osvaldo Alinco Bustos",
     "Nacio": "1958-06-02",
-    "DiputadoId": 803
+    "DiputadoId": 803,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2010-03-11T00:00:00",
+        "Hasta": "2014-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-03-11T00:00:00"
+      },
+      {
+        "PartidoId": "PPD",
+        "Desde": "2006-03-11T00:00:00",
+        "Hasta": "2010-03-10T23:59:59"
+      }
+    ]
   },
   {
     "Id": "0a175da8241d760c510462d8504a668db1969e08",
@@ -878,33 +1166,75 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "95fdf3dc2fff548a00a1878d988d39bc708380e0",
     "Nombre": "Sergio Bobadilla Muñoz",
     "Nacio": "1958-03-25",
-    "DiputadoId": 815
+    "DiputadoId": 815,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2006-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "7c8f365b1dd473b637ffba6f9e0111304f1efed3",
     "Nombre": "Francisco Javier Chahuán Chahuán",
     "Nacio": "1971-05-20",
     "DiputadoId": 820,
-    "SenadorId": 986
+    "SenadorId": 986,
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "ed64df3d9777e1446a529dbdfb8bea43e0eda7f6",
     "Nombre": "Alfonso Arturo De Urresti Longton",
     "Nacio": "1966-03-07",
     "DiputadoId": 824,
-    "SenadorId": 1115
+    "SenadorId": 1115,
+    "Militancias": [
+      {
+        "PartidoId": "PS"
+      }
+    ]
   },
   {
     "Id": "408e365d727326693228935c06274e05bb5a1140",
     "Nombre": "Rabindranath Vladimir Quinteros Lara",
     "Nacio": "1943-10-31",
-    "SenadorId": 1116
+    "SenadorId": 1116,
+    "Militancias": [
+      {
+        "PartidoId": "PS"
+      }
+    ]
   },
   {
     "Id": "e755cf731369acba42c0694a84a90c61ae9be7ef",
     "Nombre": "Marcelo Eduardo Díaz Díaz",
     "Nacio": "1971-02-06",
-    "DiputadoId": 827
+    "DiputadoId": 827,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2006-03-11T00:00:00",
+        "Hasta": "2010-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "PS",
+        "Desde": "2010-03-11T00:00:00",
+        "Hasta": "2014-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "PS",
+        "Desde": "2018-03-11T00:00:00",
+        "Hasta": "2020-01-13T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2020-01-14T00:00:00"
+      }
+    ]
   },
   {
     "Id": "91855993317acaf09009828577a3662ae867b027",
@@ -959,7 +1289,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Guido Juan Primo Girardi Briere",
     "Nacio": "1934-11-17",
     "DiputadoId": 845,
-    "SenadorId": 909
+    "SenadorId": 909,
+    "Militancias": [
+      {
+        "PartidoId": "PPD"
+      }
+    ]
   },
   {
     "Id": "e0d34af26cbf6cf0b243f260a7583a81851b3b17",
@@ -972,7 +1307,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Carolina Goic Boroevic",
     "Nacio": "1972-12-20",
     "DiputadoId": 847,
-    "SenadorId": 1113
+    "SenadorId": 1113,
+    "Militancias": [
+      {
+        "PartidoId": "DC"
+      }
+    ]
   },
   {
     "Id": "957bf5a25758100a77fd525a3a2de1f75b19121e",
@@ -996,7 +1336,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "a2817b6396ba02d9bb48d6f378ee96a05d02e38a",
     "Nombre": "Tucapel Francisco Jiménez Fuentes",
     "Nacio": "1962-09-01",
-    "DiputadoId": 856
+    "DiputadoId": 856,
+    "Militancias": [
+      {
+        "PartidoId": "PPD",
+        "Desde": "2006-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "aad9cec89c403f1b741ae8c25b457596b5e6c247",
@@ -1008,13 +1354,23 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "487177432aa32631f71ccbcf48a94e3bde36d88b",
     "Nombre": "Juan Ignacio Latorre Riveros",
     "Nacio": "1978-03-24",
-    "SenadorId": 1216
+    "SenadorId": 1216,
+    "Militancias": [
+      {
+        "PartidoId": "RD"
+      }
+    ]
   },
   {
     "Id": "404_49",
     "Nombre": "Kenneth Peter Pugh Olavarría",
     "Nacio": "1959-10-22",
-    "SenadorId": 1217
+    "SenadorId": 1217,
+    "Militancias": [
+      {
+        "PartidoId": "IND"
+      }
+    ]
   },
   {
     "Id": "7ac0d7c52c34a4552fe8259b8584cd413348c800",
@@ -1047,7 +1403,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "e700be824ab5bf0d0a3575b05c746a02723ab3f3",
     "Nombre": "Manuel Zacarías Monsalve Benavides",
     "Nacio": "1965-06-09",
-    "DiputadoId": 869
+    "DiputadoId": 869,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2006-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "23e713eba38b4979dc0c40efae89d9edd6df3187",
@@ -1083,7 +1445,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "a12f8cf07d3ab513104e8f6b383d93c89b318b62",
     "Nombre": "Jorge Eduardo Sabag Villalobos",
     "Nacio": "1963-12-26",
-    "DiputadoId": 893
+    "DiputadoId": 893,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2006-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "762e48a896ef57b708fede9b67c65bb449dac3c7",
@@ -1095,7 +1463,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "218150a8a96f0e5437478186276888a6433ac681",
     "Nombre": "Gabriel Moisés Silber Romo",
     "Nacio": "1976-09-15",
-    "DiputadoId": 898
+    "DiputadoId": 898,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2006-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "6126fe92f78af135678e48187a6df58c7f965379",
@@ -1131,7 +1505,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "f0f3465b23d7ea49e1782d8f8b63ac80ac07fb09",
     "Nombre": "Mario Venegas Cárdenas",
     "Nacio": "1957-12-03",
-    "DiputadoId": 913
+    "DiputadoId": 913,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2006-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "2e8a3f535f96bc477802633120c2bb25eb03e7a6",
@@ -1149,20 +1529,37 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "3813777d3972b00b1c6bc94e0b6d32309b365807",
     "Nombre": "Marcelo Gastón Schilling Rodríguez",
     "Nacio": "1949-05-18",
-    "DiputadoId": 920
+    "DiputadoId": 920,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2008-08-12T00:00:00"
+      }
+    ]
   },
   {
     "Id": "533ab43952c3ae9143ef644e458fa8fb2f981913",
     "Nombre": "Felipe Harboe Bascuñán",
     "Nacio": "1972-07-20",
     "DiputadoId": 922,
-    "SenadorId": 1114
+    "SenadorId": 1114,
+    "Militancias": [
+      {
+        "PartidoId": "PPD"
+      }
+    ]
   },
   {
     "Id": "1159e65598e59f1bbd7457782c46a56ee13e2041",
     "Nombre": "Pedro Pablo Alvarez-Salamanca Ramírez",
     "Nacio": "1976-02-18",
-    "DiputadoId": 923
+    "DiputadoId": 923,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "354bbe40cc5c8ea7ee0fb4228fd8a41cb9df6599",
@@ -1174,13 +1571,40 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "14a3a1b6a97c9700fe202990520cc1e32d29725a",
     "Nombre": "Pepe Auth Stewart",
     "Nacio": "1957-03-06",
-    "DiputadoId": 925
+    "DiputadoId": 925,
+    "Militancias": [
+      {
+        "PartidoId": "PPD",
+        "Desde": "2010-03-11T00:00:00",
+        "Hasta": "2014-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-03-11T00:00:00"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2017-03-21T00:00:00",
+        "Hasta": "2018-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "PPD",
+        "Desde": "2014-03-11T00:00:00",
+        "Hasta": "2017-03-20T23:59:59"
+      }
+    ]
   },
   {
     "Id": "c3ff25045877426130b60c04c5916e1e4ff9e822",
     "Nombre": "Nino Baltolu Rasera",
     "Nacio": "1953-09-28",
-    "DiputadoId": 926
+    "DiputadoId": 926,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "d214a925db83d1b0cc448fd5f8ae6c3e806d3cd5",
@@ -1204,7 +1628,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "ffcb123af9eb4104d0248db7080ae9598b4ee8c4",
     "Nombre": "Juan Luis Castro González",
     "Nacio": "1960-04-18",
-    "DiputadoId": 931
+    "DiputadoId": 931,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "f593cbfa24c461494d373bc0a0b431364345fe07",
@@ -1228,13 +1658,25 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "c851d86d80b79fca54d1f42b091425920386bd16",
     "Nombre": "Cristina Girardi Lavín",
     "Nacio": "1962-01-09",
-    "DiputadoId": 936
+    "DiputadoId": 936,
+    "Militancias": [
+      {
+        "PartidoId": "PPD",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "4014db182a90735941e77289b7c73b9f724f8a24",
     "Nombre": "Hugo Humberto Gutiérrez Gálvez",
     "Nacio": "1961-10-05",
-    "DiputadoId": 937
+    "DiputadoId": 937,
+    "Militancias": [
+      {
+        "PartidoId": "PC",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "8ab21be259db2d874842d0c955ac7a3f8dcf4ca2",
@@ -1246,7 +1688,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "9085ba5bb5ae21c6cba63c38bbfb0a8a168cd6fe",
     "Nombre": "María José Hoffmann Opazo",
     "Nacio": "1976-12-28",
-    "DiputadoId": 940
+    "DiputadoId": 940,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "3f6633b0b0dc461e790bc31c743aad12a64b3661",
@@ -1258,7 +1706,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "a3ea8b261f99d706f7b2495eee00f66dff1124bd",
     "Nombre": "Javier Ignacio Macaya Danús",
     "Nacio": "1978-11-11",
-    "DiputadoId": 942
+    "DiputadoId": 942,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "1497ab3f6ec400a61aedf93165427a7bc62c810b",
@@ -1270,13 +1724,25 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "0366831ccfef44f300d4d68fea448f1be4657c20",
     "Nombre": "Celso René Morales Muñoz",
     "Nacio": "1957-07-10",
-    "DiputadoId": 945
+    "DiputadoId": 945,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "4a4e216254987bb1b1a44c6b6e6ed3705a9a9e20",
     "Nombre": "Leopoldo Alfredo Pérez Lahsen",
     "Nacio": "1957-03-28",
-    "DiputadoId": 946
+    "DiputadoId": 946,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e7e7e09f2b80d23faf4166af614478acbbf66e82",
@@ -1288,7 +1754,12 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "3455d9899f8888ea5580b64835cda9f109e897be",
     "Nombre": "Ximena Cecilia Rincón González",
     "Nacio": "1968-07-05",
-    "SenadorId": 1009
+    "SenadorId": 1009,
+    "Militancias": [
+      {
+        "PartidoId": "DC"
+      }
+    ]
   },
   {
     "Id": "9ceb0bd5cae62fa5bf13286dd13698206ecd6fc7",
@@ -1300,19 +1771,37 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "6129caaea5a8c211449dfe4fad4aa0d0f1f56177",
     "Nombre": "Marcela Constanza Sabat Fernández",
     "Nacio": "1981-04-04",
-    "DiputadoId": 949
+    "DiputadoId": 949,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "a4bd09f20ba59fbe8a9dae8cf6bb95e800237d56",
     "Nombre": "Juan Alejandro Santana Tirachini",
     "Nacio": "1965-07-18",
-    "DiputadoId": 952
+    "DiputadoId": 952,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "581f60584c1461bcea09cc3bd8e458c26e591dd9",
     "Nombre": "Frank Carlos Sauerbaum Muñoz",
     "Nacio": "1972-11-21",
-    "DiputadoId": 953
+    "DiputadoId": 953,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "5aed7dd6709bdec9a5c4ad127375ee8a2900ba94",
@@ -1330,7 +1819,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "f3c5b38778c9994c1e60e05aaeb056e905e49834",
     "Nombre": "Víctor Torres Jeldes",
     "Nacio": "1975-10-11",
-    "DiputadoId": 957
+    "DiputadoId": 957,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "8f687dbb159434410c793e9c32f0a604f819ad67",
@@ -1343,7 +1838,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Enrique Van Rysselberghe Herrera",
     "Nacio": "1976-09-17",
     "DiputadoId": 959,
-    "SenadorId": 1112
+    "SenadorId": 1112,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "ec007ed1d15521092c3eadd43cb81410267177eb",
@@ -1355,7 +1855,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "5395ad654bbc4bd870f11078c3c91185d893af03",
     "Nombre": "Matías Vicente Walker Prieto",
     "Nacio": "1973-07-19",
-    "DiputadoId": 963
+    "DiputadoId": 963,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2010-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "d90bc5faa6707d6c67716fe544b5643d5cdff97c",
@@ -1373,7 +1879,12 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "39524e6919a31d9a1d1fd3a7a89fd7c40af0afdd",
     "Nombre": "Carmen Gloria Aravena Acuña",
     "Nacio": "1967-01-06",
-    "SenadorId": 1221
+    "SenadorId": 1221,
+    "Militancias": [
+      {
+        "PartidoId": "IND"
+      }
+    ]
   },
   {
     "Id": "0d234f22bb83124348e13bbf6baada186f3fb3ba",
@@ -1399,7 +1910,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Juan Antonio Coloma Correa",
     "Nacio": "1956-07-15",
     "DiputadoId": 19,
-    "SenadorId": 687
+    "SenadorId": 687,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "7d38f3cf1f368a7d0a7932b9442ae32341a07c31",
@@ -1418,7 +1934,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "José Gilberto García Ruminot",
     "Nacio": "1955-05-22",
     "DiputadoId": 35,
-    "SenadorId": 690
+    "SenadorId": 690,
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "2dbfaf90f4db592bed429b97f7fa6408b47a64fe",
@@ -1528,7 +2049,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Francisco Segundo Huenchumilla Jaramillo",
     "Nacio": "1944-03-22",
     "DiputadoId": 43,
-    "SenadorId": 1222
+    "SenadorId": 1222,
+    "Militancias": [
+      {
+        "PartidoId": "DC"
+      }
+    ]
   },
   {
     "Id": "0f70fcd106f0228c66322680324d9c27da47e4f3",
@@ -1546,7 +2072,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "ad6aaec6aa4629aba89485e145b1e223d64cb47b",
     "Nombre": "Jaime Naranjo Ortiz",
     "Nacio": "1951-01-12",
-    "DiputadoId": 74
+    "DiputadoId": 74,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "1990-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "404_47",
@@ -1693,7 +2225,12 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "a450d1bd3674a5b12f787a0875cda8b1e2bb0e74",
     "Nombre": "Álvaro Antonio Elizalde Soto",
     "Nacio": "1969-10-15",
-    "SenadorId": 1219
+    "SenadorId": 1219,
+    "Militancias": [
+      {
+        "PartidoId": "PS"
+      }
+    ]
   },
   {
     "Id": "23fe2cf5a5526ab59545f244f1c92188efdea416",
@@ -1789,7 +2326,12 @@ const publicFigureList: FiguraPublica[] = [
           "Nombre": "Marcela Cubillos Sigall"
         }
       ]
-    }
+    },
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "6e1b1a4eb84f9586d5220aa68c8d07481b41dc23",
@@ -1950,7 +2492,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "2bfb76735d69f429bc3cb8c3fbbadef4aaab9627",
     "Nombre": "Manuel José Ramón Matta Aragay",
     "Nacio": "1946-11-10",
-    "DiputadoId": 660
+    "DiputadoId": 660,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "1990-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "9d4496051a88fb7b8609e025e2eb43fc19421263",
@@ -2139,7 +2687,12 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "6ffb37d9342660192a0446231d77e3e9dc677c6c",
     "Nombre": "Rodrigo Galilea Vial",
     "Nacio": "1966-11-03",
-    "SenadorId": 1220
+    "SenadorId": 1220,
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "b8f150b73325ddb2b986d35184520835e700558b",
@@ -2176,7 +2729,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "e458ab5bcc9431c0b43110528aced48adc6b57f4",
     "Nombre": "Carlos Ignacio Kuschel Silva",
     "Nacio": "1953-03-16",
-    "DiputadoId": 172
+    "DiputadoId": 172,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "1990-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "404_36",
@@ -2189,7 +2748,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Juan Pablo Letelier Morel",
     "Nacio": "1961-01-07",
     "DiputadoId": 176,
-    "SenadorId": 912
+    "SenadorId": 912,
+    "Militancias": [
+      {
+        "PartidoId": "PS"
+      }
+    ]
   },
   {
     "Id": "3f7a80659b6e81098829d335787cb42191cb9ee2",
@@ -2226,7 +2790,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Alejandro Navarro Brain",
     "Nacio": "1958-11-20",
     "DiputadoId": 195,
-    "SenadorId": 915
+    "SenadorId": 915,
+    "Militancias": [
+      {
+        "PartidoId": "PR"
+      }
+    ]
   },
   {
     "Id": "f6f15b5b5cecaac5db122775c4768acdc51c4171",
@@ -2410,13 +2979,23 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "d5c802468dd9380b26a9de59b6654c1dd3dccb50",
     "Nombre": "Jorge Alejandro Soria Quiroga",
     "Nacio": "1936-11-01",
-    "SenadorId": 1213
+    "SenadorId": 1213,
+    "Militancias": [
+      {
+        "PartidoId": "PPD"
+      }
+    ]
   },
   {
     "Id": "566295064a20813edffeb2ad6db719a857cf21e3",
     "Nombre": "Rafael Prohens Espinosa",
     "Nacio": "1955-06-12",
-    "SenadorId": 1214
+    "SenadorId": 1214,
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "d8264897cc7b441284d6a0d5dfe90c3021db6c14",
@@ -2472,13 +3051,25 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "49092a6d2e3f9c81de8f1cfccd43ce2711f699b2",
     "Nombre": "Issa Farid Kort Garriga",
     "Nacio": "1980-05-09",
-    "DiputadoId": 967
+    "DiputadoId": 967,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2011-08-10T00:00:00"
+      }
+    ]
   },
   {
     "Id": "42f7236c76d1cae9aa09fced1eebaaf323881295",
     "Nombre": "Renzo Aldo Trisotti Martínez",
     "Nacio": "1976-03-15",
-    "DiputadoId": 1003
+    "DiputadoId": 1003,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "346a9078bd5ae8b844d8be33085106d00437e969",
@@ -2492,7 +3083,13 @@ const publicFigureList: FiguraPublica[] = [
           "Nombre": "Cathy Carolina Barriga Guerra"
         }
       ]
-    }
+    },
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "6ce82583393e2db066051435deff7163890075d6",
@@ -2511,19 +3108,37 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "1f6e9f9d5f98a79f849a1f69699ab077e9723039",
     "Nombre": "Camila Antonia Amaranta Vallejo Dowling",
     "Nacio": "1988-04-28",
-    "DiputadoId": 1006
+    "DiputadoId": 1006,
+    "Militancias": [
+      {
+        "PartidoId": "PC",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "4907c57b640b2fcf604045875ed3fb4b0d0ab34e",
     "Nombre": "María Loreto Carvajal Ambiado",
     "Nacio": "1973-05-18",
-    "DiputadoId": 974
+    "DiputadoId": 974,
+    "Militancias": [
+      {
+        "PartidoId": "PPD",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "c05fa2759b425a37f4f11b1380fe3c8250b59653",
     "Nombre": "Iván Flores García",
     "Nacio": "1955-06-15",
-    "DiputadoId": 982
+    "DiputadoId": 982,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "2221dbebad9181f9c81d7007e810f011828e2d36",
@@ -2535,7 +3150,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "3904534b62fa2fb99d9fbaefa359f5287a2116b7",
     "Nombre": "Marcela Ximena Hernando Pérez",
     "Nacio": "1960-02-12",
-    "DiputadoId": 986
+    "DiputadoId": 986,
+    "Militancias": [
+      {
+        "PartidoId": "PRSD",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "74c950490073348916b9dc5977bb086e41c4ba47",
@@ -2549,26 +3170,49 @@ const publicFigureList: FiguraPublica[] = [
           "Nombre": "Cristián Monckeberg Bruner"
         }
       ]
-    }
+    },
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "d4750b7f5aac4c2bc392d74e09c0fb825fdb068e",
     "Nombre": "Yasna Provoste Campillay",
     "Nacio": "1969-12-16",
     "DiputadoId": 998,
-    "SenadorId": 1215
+    "SenadorId": 1215,
+    "Militancias": [
+      {
+        "PartidoId": "DC"
+      }
+    ]
   },
   {
     "Id": "c8b7aafb00dc7f0db1ace246a76e6e5b1590c1f8",
     "Nombre": "Sergio Alfredo Gahona Salazar",
     "Nacio": "1965-09-15",
-    "DiputadoId": 985
+    "DiputadoId": 985,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "28a86da8570ad798a6948108f26ddb8f2f120c7e",
     "Nombre": "Daniel Ignacio Núñez Arancibia",
     "Nacio": "1971-01-07",
-    "DiputadoId": 993
+    "DiputadoId": 993,
+    "Militancias": [
+      {
+        "PartidoId": "PC",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "66455c68b97643086f759d504c3de9b66939930e",
@@ -2580,7 +3224,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "a86f647c1ff0a2cd66bd50079a3c2cd216ba2c02",
     "Nombre": "Osvaldo Alejandro Nicanor Urrutia Soto",
     "Nacio": "1951-11-28",
-    "DiputadoId": 1005
+    "DiputadoId": 1005,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "729d68cac38dc848ea4d8aede349ad93adda4817",
@@ -2592,19 +3242,42 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "e8a29fecef6930b8e2a8af3e2296a1e6319956b6",
     "Nombre": "Karol Cariola Oliva",
     "Nacio": "1987-04-01",
-    "DiputadoId": 973
+    "DiputadoId": 973,
+    "Militancias": [
+      {
+        "PartidoId": "PC",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "1733df4e05e8eb253e6f6b21da20aa342591c6f7",
     "Nombre": "Maya Alejandra Fernández Allende",
     "Nacio": "1971-11-27",
-    "DiputadoId": 981
+    "DiputadoId": 981,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "b33cfa6501f2184011d0d49a35192c41a0e59926",
     "Nombre": "Kenneth Giorgio Jackson Drago",
     "Nacio": "1987-02-06",
-    "DiputadoId": 987
+    "DiputadoId": 987,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2012-12-01T00:00:00",
+        "Hasta": "2018-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "RD",
+        "Desde": "2016-06-22T00:00:00"
+      }
+    ]
   },
   {
     "Id": "404_44",
@@ -2647,7 +3320,12 @@ const publicFigureList: FiguraPublica[] = [
     "Nombre": "Felipe Kast Sommerhoff",
     "Nacio": "1977-06-09",
     "DiputadoId": 988,
-    "SenadorId": 1223
+    "SenadorId": 1223,
+    "Militancias": [
+      {
+        "PartidoId": "EVOPOLI"
+      }
+    ]
   },
   {
     "Id": "cbb692c38fa6b0861f6b991e6613f8a66ca73e2f",
@@ -2671,19 +3349,37 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "620f76c1d5b935fc0179cb906c40e79b1beb3a1c",
     "Nombre": "Jaime Andrés Bellolio Avaria",
     "Nacio": "1980-11-29",
-    "DiputadoId": 970
+    "DiputadoId": 970,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "6b10fff4fe9e676f08a37d469ced26ebe6d4713b",
     "Nombre": "Leonardo Soto Ferrada",
     "Nacio": "1966-05-15",
-    "DiputadoId": 1002
+    "DiputadoId": 1002,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "65f2d1890a37d3cd48b02f997716fe491433ba05",
     "Nombre": "Juan Antonio Coloma Álamos",
     "Nacio": "1980-03-14",
-    "DiputadoId": 976
+    "DiputadoId": 976,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "1895da26f6472fa18b7d23bc652cce78153c917d",
@@ -2707,19 +3403,37 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "6185d8916c66d3c9ba92107c548a82c872f60665",
     "Nombre": "Diego Alfredo Paulsen Kehr",
     "Nacio": "1987-08-01",
-    "DiputadoId": 995
+    "DiputadoId": 995,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "a28bc9e57581b875991bbd40631f28eaf548391a",
     "Nombre": "Bernardo Jose Berger Fett",
     "Nacio": "1946-10-04",
-    "DiputadoId": 971
+    "DiputadoId": 971,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "c11d593b25f141f1f5e9ccb3a495f1eb4eba1546",
     "Nombre": "Gonzalo Guillermo Fuenzalida Figueroa",
     "Nacio": "1973-06-18",
-    "DiputadoId": 984
+    "DiputadoId": 984,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "1351731916727b402bbbd42f0ba6dbdfaa632499",
@@ -2737,7 +3451,13 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "fb2b25556adf2646abc1d6cfdbb491018f715194",
     "Nombre": "Gabriel Boric Font",
     "Nacio": "1986-02-11",
-    "DiputadoId": 972
+    "DiputadoId": 972,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "3d95c91970661925108d8b6d329f9663c31d5417",
@@ -2749,103 +3469,205 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "6ec0a41d8ff13cdf50e3a1dbcc72997af4800c89",
     "Nombre": "Raúl Florcita Alarcón Rojas",
     "Nacio": "1945-10-15",
-    "DiputadoId": 1008
+    "DiputadoId": 1008,
+    "Militancias": [
+      {
+        "PartidoId": "PH",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "186ff7d6d25014ce52298a30b372d415848ee95c",
     "Nombre": "Jorge Alessandri Vergara",
     "Nacio": "1979-06-08",
-    "DiputadoId": 1009
+    "DiputadoId": 1009,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "3251dca193705fe3395f6691a481952a850f9e3c",
     "Nombre": "Sebastián Diego Álvarez Ramírez",
     "Nacio": "1970-11-13",
-    "DiputadoId": 1010
+    "DiputadoId": 1010,
+    "Militancias": [
+      {
+        "PartidoId": "EVOPOLI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "aecf1bfe4d6b5f1ba89182695dc0f8bf931c6085",
     "Nombre": "Sandra Haydee Amar Mancilla",
     "Nacio": "1955-11-24",
-    "DiputadoId": 1011
+    "DiputadoId": 1011,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "a1754ae62a235fdfdcc5a84ccd34af14e40358c2",
     "Nombre": "Boris Anthony Barrera Moreno",
     "Nacio": "1970-05-03",
-    "DiputadoId": 1012
+    "DiputadoId": 1012,
+    "Militancias": [
+      {
+        "PartidoId": "PC",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "2f8d214e04d3f11a7d529e9c771d8372f235fa51",
     "Nombre": "Karim Antonio Bianchi Retamales",
     "Nacio": "1983-01-31",
-    "DiputadoId": 1014
+    "DiputadoId": 1014,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e2c6be59f716a66b21d18217b0351eafaf5c98db",
     "Nombre": "Miguel Ángel Calisto Águila",
     "Nacio": "1985-07-19",
-    "DiputadoId": 1016
+    "DiputadoId": 1016,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "fe8fe6dbcd0ff3fbdcd0b402dffa2b9435a145f2",
     "Nombre": "Álvaro Jorge Carter Fernández",
     "Nacio": "1980-10-09",
-    "DiputadoId": 1017
+    "DiputadoId": 1017,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "5c1bf64fab54b45467af36f7033b55be4b32b802",
     "Nombre": "Natalia Valentina Castillo Muñoz",
     "Nacio": "1982-08-01",
-    "DiputadoId": 1018
+    "DiputadoId": 1018,
+    "Militancias": [
+      {
+        "PartidoId": "RD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "9ef4a96bc8594bb934f10ca09a871481229003c2",
     "Nombre": "Ricardo Celis Araya",
     "Nacio": "1955-07-11",
-    "DiputadoId": 1020
+    "DiputadoId": 1020,
+    "Militancias": [
+      {
+        "PartidoId": "PPD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "4a9d66ff647febdfcd0be84d2021435b6e76fa3b",
     "Nombre": "Andrés Celis Montt",
     "Nacio": "1975-04-08",
-    "DiputadoId": 1021
+    "DiputadoId": 1021,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "d2ec79d26dbd1546bef722eed8be210eb409ec45",
     "Nombre": "Sofía Slovena Cid Versalovic",
     "Nacio": "1971-09-29",
-    "DiputadoId": 1022
+    "DiputadoId": 1022,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "2a9259110d10d0729cda41a079bea37e56f0f228",
     "Nombre": "Luciano Cruz-Coke Carvallo",
     "Nacio": "1970-07-01",
-    "DiputadoId": 1024
+    "DiputadoId": 1024,
+    "Militancias": [
+      {
+        "PartidoId": "EVOPOLI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e1d6b03690b2a256c44f9c99fc3be2cc85bdcd26",
     "Nombre": "María Catalina Del Real Mihovilovic",
     "Nacio": "1968-11-07",
-    "DiputadoId": 1025
+    "DiputadoId": 1025,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "62f5adb90cc7d54cf4fd84f9cefc2dcb65f4a48f",
     "Nombre": "Mario Guillermo Desbordes Jiménez",
     "Nacio": "1968-10-15",
-    "DiputadoId": 1026
+    "DiputadoId": 1026,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "a1ee83001ff55754f555c72a6ac200f482589c15",
     "Nombre": "Jorge Andrés Durán Espinoza",
     "Nacio": "1980-12-17",
-    "DiputadoId": 1027
+    "DiputadoId": 1027,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "78788f3312832ccb975c435468697f89125dde0f",
     "Nombre": "Francisco de Borja Eguiguren Correa",
     "Nacio": "1967-07-13",
-    "DiputadoId": 1029
+    "DiputadoId": 1029,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "6e3254daedf71e65d35b52482f14c1bfe637ddcf",
@@ -2860,7 +3682,13 @@ const publicFigureList: FiguraPublica[] = [
           "Desde": "2017-01-01"
         }
       ]
-    }
+    },
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "3c7cf78c5639b90636dcb312bbc3c09c58e1deb4",
@@ -2880,199 +3708,396 @@ const publicFigureList: FiguraPublica[] = [
     "Id": "9d96f9d4b5b092d4987d1b9dc333de264567412d",
     "Nombre": "Juan Manuel Fuenzalida Cobo",
     "Nacio": "1973-07-01",
-    "DiputadoId": 1031
+    "DiputadoId": 1031,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "c18c7acf221e69cb950b0d40ee5848b9ab4f1eab",
     "Nombre": "Ramón Ernesto Galleguillos Castillo",
     "Nacio": "1953-07-26",
-    "DiputadoId": 1032
+    "DiputadoId": 1032,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "5c892a483e1e66a78e0640b648269c26dedbdf40",
     "Nombre": "Renato Fabrizio Garín González",
     "Nacio": "1986-05-30",
-    "DiputadoId": 1033
+    "DiputadoId": 1033,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-04-24T00:00:00"
+      }
+    ]
   },
   {
     "Id": "49fb25a927d2521189022eb52b93e1dab064645d",
     "Nombre": "Carmen Adelaida Hertz Cádiz",
     "Nacio": "1945-06-19",
-    "DiputadoId": 1035
+    "DiputadoId": 1035,
+    "Militancias": [
+      {
+        "PartidoId": "PC",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "2c65a090f5f8d1374e2d440ac59d958e03b335b1",
     "Nombre": "Tomás René Hirsch Goldschmidt",
     "Nacio": "1956-07-19",
-    "DiputadoId": 1036
+    "DiputadoId": 1036,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2020-05-06T00:00:00"
+      }
+    ]
   },
   {
     "Id": "dbfb1eb63bfad28a469e5385aba1f05f5c1cd1ed",
     "Nombre": "Diego Eduardo Ibáñez Cotroneo",
     "Nacio": "1989-01-25",
-    "DiputadoId": 1037
+    "DiputadoId": 1037,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "60498fb3a14a2389519f092afaddd1f8a260dca8",
     "Nombre": "Pamela Jiles Moreno",
     "Nacio": "1960-11-30",
-    "DiputadoId": 1039
+    "DiputadoId": 1039,
+    "Militancias": [
+      {
+        "PartidoId": "PH",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "fac6b73e5e34acdc3a635488da197d8ee00a101e",
     "Nombre": "Harry Kurt Thomas Jürgensen Rundshagen",
     "Nacio": "1968-09-03",
-    "DiputadoId": 1040
+    "DiputadoId": 1040,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "786641cf735ba22b03fcfbc9bb305e4dff92d92b",
     "Nombre": "Sebastián Keitel Bianchi",
     "Nacio": "1973-02-14",
-    "DiputadoId": 1042
+    "DiputadoId": 1042,
+    "Militancias": [
+      {
+        "PartidoId": "EVOPOLI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "10eaa7dbabd15539e4efd62e03bc98e71215cdd1",
     "Nombre": "Carlos Antonio Karim Bianchi Chelech",
     "Nacio": "1960-11-04",
-    "SenadorId": 907
+    "SenadorId": 907,
+    "Militancias": [
+      {
+        "PartidoId": "IND"
+      }
+    ]
   },
   {
     "Id": "454e9afee3763902aa84638e4fa1794b6df6a124",
     "Nombre": "Raúl Alfonso Leiva Carvajal",
     "Nacio": "1974-03-24",
-    "DiputadoId": 1044
+    "DiputadoId": 1044,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "4f656281076bb5e318d0a4ceb54dae105a08465d",
     "Nombre": "Aracely Andrea Leuquén Uribe",
     "Nacio": "1980-11-24",
-    "DiputadoId": 1045
+    "DiputadoId": 1045,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "828b3d062b7100c577ac1bde6b26f38ba68b7ef1",
     "Nombre": "Andrés Longton Herrera",
     "Nacio": "1982-05-26",
-    "DiputadoId": 1046
+    "DiputadoId": 1046,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "bfd1b69bd11c651b795d735aac31550f715edfcf",
     "Nombre": "Karin Claudia Luck Urban",
     "Nacio": "1971-07-19",
-    "DiputadoId": 1047
+    "DiputadoId": 1047,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "bcbd042d33c4e84fc2ece8bbbfa653fe84995514",
     "Nombre": "Marta Carolina Marzán Pinto",
     "Nacio": "1963-12-22",
-    "DiputadoId": 1048
+    "DiputadoId": 1048,
+    "Militancias": [
+      {
+        "PartidoId": "PPD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "95e7a8be4d3b760628729c510999610efee1ff5b",
     "Nombre": "Cosme Leopoldo Mellado Pino",
     "Nacio": "1960-02-24",
-    "DiputadoId": 1049
+    "DiputadoId": 1049,
+    "Militancias": [
+      {
+        "PartidoId": "PRSD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "c7323f61b2b71700c6af24cf7178512a040ca218",
     "Nombre": "Miguel Alejandro Mellado Suazo",
     "Nacio": "1958-12-29",
-    "DiputadoId": 1050
+    "DiputadoId": 1050,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "0a870a208f9bc4b8bed2f6a5da7d08d18723d513",
     "Nombre": "Claudia Nathalie Mix Jiménez",
     "Nacio": "1969-07-13",
-    "DiputadoId": 1051
+    "DiputadoId": 1051,
+    "Militancias": [
+      {
+        "PartidoId": "PPC",
+        "Desde": "2018-03-11T00:00:00",
+        "Hasta": "2019-02-20T00:00:01"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-02-21T00:00:01"
+      }
+    ]
   },
   {
     "Id": "ce97e00bb66bc235519161b66fcaf0df2bc7ed67",
     "Nombre": "Jose Sergio Andrés Molina Magofke",
     "Nacio": "1963-11-17",
-    "DiputadoId": 1052
+    "DiputadoId": 1052,
+    "Militancias": [
+      {
+        "PartidoId": "EVOPOLI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "a77af3defed125bc2105310e2f25e024b77568af",
     "Nombre": "Francesca Elizabeth Andrea Muñoz González",
     "Nacio": "1980-03-07",
-    "DiputadoId": 1054
+    "DiputadoId": 1054,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e9c33a18ef2454fdfefd65ba29c4014b9da1bcba",
     "Nombre": "Nicolás José Noman Garrido",
     "Nacio": "1981-05-07",
-    "DiputadoId": 1055
+    "DiputadoId": 1055,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "6e817a421e49ec051594ce63ba9b819824fe39da",
     "Nombre": "Emilia Iris Nuyado Ancapichún",
     "Nacio": "1968-08-17",
-    "DiputadoId": 1056
+    "DiputadoId": 1056,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "7e852a037b8330e0dfb2215fbf850d08c3aaaa07",
     "Nombre": "Erika Alejandra Olivera De La Fuente",
     "Nacio": "1976-01-04",
-    "DiputadoId": 1057
+    "DiputadoId": 1057,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "c8c5ff8ad19345447a0b824004bcabc19cec4dee",
     "Nombre": "María Ximena Ossandón Irarrázabal",
     "Nacio": "1963-12-13",
-    "DiputadoId": 1059
+    "DiputadoId": 1059,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "efa5e5b88c81fc2514a64a4b65612747923bb175",
     "Nombre": "Ximena Loreto Órdenes Neira",
     "Nacio": "1973-03-09",
-    "SenadorId": 1224
+    "SenadorId": 1224,
+    "Militancias": [
+      {
+        "PartidoId": "IND"
+      }
+    ]
   },
   {
     "Id": "a17a7c6d98aae836dcd1e7427d552863e0df4538",
     "Nombre": "Manuel José Ossandón Irarrázabal",
     "Nacio": "1962-08-24",
-    "SenadorId": 1120
+    "SenadorId": 1120,
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "a9173ab6801df3a338ce46efa007be373dd8c4a9",
     "Nombre": "José Miguel Alberto Durana Semir",
     "Nacio": "1960-06-27",
-    "SenadorId": 1210
+    "SenadorId": 1210,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "1581560e6d8e21d28cb576c2be6c34167bfadda7",
     "Nombre": "Luis Rafael Pardo Sáinz",
     "Nacio": "1960-12-13",
-    "DiputadoId": 1060
+    "DiputadoId": 1060,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "26d2778a624cf100839abe3ef7c0e9c5fbf77c08",
     "Nombre": "Irle Andrea Parra Sauterel",
     "Nacio": "1967-09-02",
-    "DiputadoId": 1061
+    "DiputadoId": 1061,
+    "Militancias": [
+      {
+        "PartidoId": "PPD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "35344e95a9303ce44617ce1b7b25178d344250d2",
     "Nombre": "José Miguel Insulza Salinas",
     "Nacio": "1943-06-02",
-    "SenadorId": 1211
+    "SenadorId": 1211,
+    "Militancias": [
+      {
+        "PartidoId": "PS"
+      }
+    ]
   },
   {
     "Id": "f276159a3442acfba23a4ec8689468d857f67a3f",
     "Nombre": "Luz Eliana Ebensperger Orrego",
     "Nacio": "1964-03-08",
-    "SenadorId": 1212
+    "SenadorId": 1212,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "c785e0c63e907a73d2046e0ad51dfdca82eaf52a",
     "Nombre": "Joanna Elena Pérez Olea",
     "Nacio": "1976-04-01",
-    "DiputadoId": 1062
+    "DiputadoId": 1062,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "97d2308350a2df66b6868a5f212a0f2816d093b5",
     "Nombre": "Catalina Ilona Io Pérez Salinas",
     "Nacio": "1990-12-18",
-    "DiputadoId": 1063
+    "DiputadoId": 1063,
+    "Militancias": [
+      {
+        "PartidoId": "RD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "2a30bf33bd93871683b2e9b41d70dc1ddbf92546",
@@ -3081,263 +4106,526 @@ const publicFigureList: FiguraPublica[] = [
     "DiputadoId": [
       209,
       1064
+    ],
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-03-11T00:00:00"
+      }
     ]
   },
   {
     "Id": "211abb9c96ad41acf451540b9e64464e48ec67fa",
     "Nombre": "Guillermo Andrés Ramírez Diez",
     "Nacio": "1979-04-16",
-    "DiputadoId": 1065
+    "DiputadoId": 1065,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "8d0de97b3939ee3d29e681ba1f9db0e3c2b209f4",
     "Nombre": "Rolando Ramón Rentería Moller",
     "Nacio": "1968-08-19",
-    "DiputadoId": 1066
+    "DiputadoId": 1066,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "c0e938fb1aec8b3ef419b7171e65a15181585323",
     "Nombre": "Hugo Vicente Rey Martínez",
     "Nacio": "1973-12-06",
-    "DiputadoId": 1067
+    "DiputadoId": 1067,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "3ea895fd175da7e93af8fd0b53e39b4d13d62d19",
     "Nombre": "Camila Ruzlay Rojas Valderrama",
     "Nacio": "1991-03-11",
-    "DiputadoId": 1068
+    "DiputadoId": 1068,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-05-30T16:22:26"
+      }
+    ]
   },
   {
     "Id": "6259e326e1d2545df582d9e6dc13724c0d51c7fc",
     "Nombre": "Leonidas Andrés Romero Sáez",
     "Nacio": "1955-10-15",
-    "DiputadoId": 1069
+    "DiputadoId": 1069,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "4d8c25c4b5383c7dd31f624f547cc4ae09df841f",
     "Nombre": "Patricio Eduardo Rosas Barrientos",
     "Nacio": "1968-05-06",
-    "DiputadoId": 1070
+    "DiputadoId": 1070,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-06-19T00:00:00"
+      },
+      {
+        "PartidoId": "PS",
+        "Desde": "2018-03-11T00:00:00",
+        "Hasta": "2019-06-18T23:59:59"
+      }
+    ]
   },
   {
     "Id": "a7efcea2eb347545c713cd894dc440d253136ef2",
     "Nombre": "Gastón René Saavedra Chandía",
     "Nacio": "1955-11-22",
-    "DiputadoId": 1071
+    "DiputadoId": 1071,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "cba749c2737acba362487b621fddd431dc19977e",
     "Nombre": "Gustavo Adolfo Sanhueza Dueñas",
     "Nacio": "1966-12-10",
-    "DiputadoId": 1072
+    "DiputadoId": 1072,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "993f1791f847b959519b483c66211c000674d652",
     "Nombre": "Juan Rubén Santana Castillo",
     "Nacio": "1989-09-20",
-    "DiputadoId": 1073
+    "DiputadoId": 1073,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "ae8acb6b389e0f549151b44a655c760210791e86",
     "Nombre": "Marisela del Carmen Santibáñez Novoa",
     "Nacio": "1975-04-24",
-    "DiputadoId": 1074
+    "DiputadoId": 1074,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-04-17T00:00:00",
+        "Hasta": "2019-10-13T23:59:59"
+      },
+      {
+        "PartidoId": "PC",
+        "Desde": "2019-10-14T00:00:00",
+        "Hasta": "2019-04-16T23:59:59"
+      }
+    ]
   },
   {
     "Id": "89fa2938fd3634ef3be96cc3c23a2d1a2a549367",
     "Nombre": "Luis Alberto Rocafull López",
     "Nacio": "1958-09-17",
-    "DiputadoId": 1000
+    "DiputadoId": 1000,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "21edd53c438e9cb74a0335fe3d379de35465e522",
     "Nombre": "Alexis Edgardo Sepúlveda Soto",
     "Nacio": "1969-12-29",
-    "DiputadoId": 1076
+    "DiputadoId": 1076,
+    "Militancias": [
+      {
+        "PartidoId": "PRSD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e455bb4c64976893199838b9cd820d1cf890fe0b",
     "Nombre": "Jenny Paola Álvarez Vera",
     "Nacio": "1974-03-30",
-    "DiputadoId": 968
+    "DiputadoId": 968,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "b9a313a9882d3e9a64ea9c1323502db6d300c5ad",
     "Nombre": "Jorge Elías Brito Hasbún",
     "Nacio": "1990-01-12",
-    "DiputadoId": 1015
+    "DiputadoId": 1015,
+    "Militancias": [
+      {
+        "PartidoId": "RD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "315b8697519177e013cbd017c3975179b9e248ef",
     "Nombre": "Daniella Valentina Cicardini Milla",
     "Nacio": "1987-12-31",
-    "DiputadoId": 975
+    "DiputadoId": 975,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "3d88ffd940d25acf7fb592bece5a77cf0f8ce1d5",
     "Nombre": "Miguel Ernesto Crispi Serrano",
     "Nacio": "1985-04-09",
-    "DiputadoId": 1023
+    "DiputadoId": 1023,
+    "Militancias": [
+      {
+        "PartidoId": "RD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "2f93674b76c174a3d6810992ac42f7e1dee06aa1",
     "Nombre": "Eduardo Alfredo Durán Salinas",
     "Nacio": "1972-01-01",
-    "DiputadoId": 1028
+    "DiputadoId": 1028,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "79879bee8dfb473d54de2385833bb05fc974c7e4",
     "Nombre": "Raúl Humberto Soto Mardones",
     "Nacio": "1987-11-20",
-    "DiputadoId": 1077
+    "DiputadoId": 1077,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2018-03-11T00:00:00",
+        "Hasta": "2019-08-25T23:59:59"
+      },
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-08-26T00:00:00"
+      }
+    ]
   },
   {
     "Id": "86f42b80700730da9879fd1adc7f894ca8488fc6",
     "Nombre": "Jaime Manuel Tohá González",
     "Nacio": "1938-06-16",
-    "DiputadoId": 1078
+    "DiputadoId": 1078,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "497e7fbc5f76e18e26aee8de51c489a20caf3a2c",
     "Nombre": "Sebastián Torrealba Alvarado",
     "Nacio": "1981-02-06",
-    "DiputadoId": 1079
+    "DiputadoId": 1079,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "8521ae6e3dd42bb096e14ae4e2155487c1c67c76",
     "Nombre": "Virginia Eugenia Troncoso Hellman",
     "Nacio": "1951-02-18",
-    "DiputadoId": 1080
+    "DiputadoId": 1080,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "c55ec6d5e472a90ef45d1823cfc49380770408db",
     "Nombre": "Juan Francisco Undurraga Gazitúa",
     "Nacio": "1965-09-29",
-    "DiputadoId": 1081
+    "DiputadoId": 1081,
+    "Militancias": [
+      {
+        "PartidoId": "EVOPOLI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e2e87a66636766293ff36f6e2507101fd9e9eb7c",
     "Nombre": "Cristóbal Ignacio de Loyola Urruticoechea Ríos",
     "Nacio": "1975-11-21",
-    "DiputadoId": 1082
+    "DiputadoId": 1082,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "366b671de54fa9f9d72d781b0152ff9c04694a59",
     "Nombre": "Esteban Jorge Velásquez Núñez",
     "Nacio": "1962-12-26",
-    "DiputadoId": 1083
+    "DiputadoId": 1083,
+    "Militancias": [
+      {
+        "PartidoId": "FREVS",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "84c609878b9bdfb53f57161a6b815c8d35c4dd99",
     "Nombre": "Daniel Ángel Verdessi Belemmi",
     "Nacio": "1952-12-15",
-    "DiputadoId": 1084
+    "DiputadoId": 1084,
+    "Militancias": [
+      {
+        "PartidoId": "DC",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "534e80c6e34ce50a5b878292486c1a72b2eeb8e8",
     "Nombre": "Pablo Esteban Vidal Rojas",
     "Nacio": "1983-06-24",
-    "DiputadoId": 1085
+    "DiputadoId": 1085,
+    "Militancias": [
+      {
+        "PartidoId": "RD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "a187609375333f2f38148fc9763aa4018bf5c84f",
     "Nombre": "Gonzalo Rodolfo Winter Etcheberry",
     "Nacio": "1987-01-06",
-    "DiputadoId": 1086
+    "DiputadoId": 1086,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2018-04-05T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e18e87814bf4b4afb0d1cfa64fd7b2201ddafcae",
     "Nombre": "Gael Fernanda Yeomans Araya",
     "Nacio": "1988-12-04",
-    "DiputadoId": 1087
+    "DiputadoId": 1087,
+    "Militancias": [
+      {
+        "PartidoId": "IND",
+        "Desde": "2019-04-17T00:00:00"
+      }
+    ]
   },
   {
     "Id": "b973b5dce1d3fbce0efd2a977c050d3356f13102",
     "Nombre": "Félix Marcelo González Gatica",
     "Nacio": "1972-05-26",
-    "DiputadoId": 1034
+    "DiputadoId": 1034,
+    "Militancias": [
+      {
+        "PartidoId": "PEV",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "d13423e8310281553a8a5b4078b27adcc4e3ed9a",
     "Nombre": "Marcos Artemio Ilabaca Cerda",
     "Nacio": "1970-10-05",
-    "DiputadoId": 1038
+    "DiputadoId": 1038,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "534851c47e9d747f2fb0b46e6c8548642949f5b4",
     "Nombre": "Pablo Andrés Kast Sommerhoff",
     "Nacio": "1973-08-24",
-    "DiputadoId": 1041
+    "DiputadoId": 1041,
+    "Militancias": [
+      {
+        "PartidoId": "EVOPOLI",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "894a366ad83524e8b6ffa53ddd64ad9635472c23",
     "Nombre": "Amaro Jamil Jesús Labra Sepúlveda",
     "Nacio": "1949-10-25",
-    "DiputadoId": 1043
+    "DiputadoId": 1043,
+    "Militancias": [
+      {
+        "PartidoId": "PC",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "483550fa5e69ebff4f7bece7f4425ae98853063e",
     "Nombre": "Vlado Mirosevic Verdugo",
     "Nacio": "1987-05-23",
-    "DiputadoId": 991
+    "DiputadoId": 991,
+    "Militancias": [
+      {
+        "PartidoId": "PL",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "a7134dd1ab48f00d28a3096b6e70767dd983d624",
     "Nombre": "Maite Orsini Pascal",
     "Nacio": "1988-02-23",
-    "DiputadoId": 1058
+    "DiputadoId": 1058,
+    "Militancias": [
+      {
+        "PartidoId": "RD",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "e11be9fea8e2477ffd3b25411f3a7d3833f52a04",
     "Nombre": "Jorge Evaldo Rathgeb Schifferli",
     "Nacio": "1967-12-28",
-    "DiputadoId": 999
+    "DiputadoId": 999,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "efb185c9a7e3ef170802dae0393a77587bbe347f",
     "Nombre": "Raúl Fernando Saldívar Auger",
     "Nacio": "1951-06-02",
-    "DiputadoId": 1001
+    "DiputadoId": 1001,
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Desde": "2014-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "c54e2ef031e99d5ec17372eb58f25dbb0162dc83",
     "Nombre": "Diego Ignacio Schalper Sepúlveda",
     "Nacio": "1985-03-14",
-    "DiputadoId": 1075
+    "DiputadoId": 1075,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "f957e80efafd2c96001de8ea463482b806183cf6",
     "Nombre": "Alejandro Javier Bernales Maldonado",
     "Nacio": "1979-02-02",
-    "DiputadoId": 1013
+    "DiputadoId": 1013,
+    "Militancias": [
+      {
+        "PartidoId": "PL",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "f2970a814d9aa08b583a8f99b182efc44d067b7d",
     "Nombre": "José Miguel Castro Bascuñán",
     "Nacio": "1974-08-05",
-    "DiputadoId": 1019
+    "DiputadoId": 1019,
+    "Militancias": [
+      {
+        "PartidoId": "RN",
+        "Desde": "2018-03-11T00:00:00"
+      }
+    ]
   },
   {
     "Id": "875875b355eb4284b335e92cd9312c62bd6c56b5",
     "Nombre": "Juan Enrique Castro Prieto",
     "Nacio": "1959-11-01",
-    "SenadorId": 1218
+    "SenadorId": 1218,
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "3ac86c7211e55e354c5d67073786a1d13fd47392",
     "Nombre": "Cristhian Patricio Moreira Barros",
     "Nacio": "1961-09-05",
     "DiputadoId": 1053,
-    "SenadorId": 1117
+    "SenadorId": 1117,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   }
 ];
 
-//TODO borrar esta data dummy
-const ppIds = Object.keys(politicalParties);
-
 const aux: FigurasPublicas = {};
 for(const pf of publicFigureList) {
-  aux[pf.Id] = Object.assign(pf, {Militancias: [{PartidoId: ppIds[Math.floor(Math.random() * ppIds.length)]}]});
+  aux[pf.Id] = pf;
 }
 
 export const publicFigures = aux;
