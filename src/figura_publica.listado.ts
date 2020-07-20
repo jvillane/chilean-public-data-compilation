@@ -821,18 +821,18 @@ export const publicFigureList: FiguraPublica[] = [
     "Militancias": [
       {
         "PartidoId": "DC",
-        "Desde": "1998-03-11T00:00:00",
-        "Hasta": "2002-03-10T23:59:59"
-      },
-      {
-        "PartidoId": "DC",
-        "Desde": "2002-03-11T00:00:00",
+        "Desde": "1980-01-01T00:00:00",
         "Hasta": "2006-03-10T23:59:59"
       },
       {
         "PartidoId": "PRI",
         "Desde": "2006-03-11T00:00:00",
         "Hasta": "2010-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "FREVS",
+        "Desde": "2017-04-25T00:00:00",
+        "Hasta": "2022-03-10T23:59:59"
       }
     ]
   },
@@ -983,6 +983,11 @@ export const publicFigureList: FiguraPublica[] = [
     "DiputadoId": 897,
     "Militancias": [
       {
+        "PartidoId": "DC",
+        "Desde": "2002-03-11T00:00:00",
+        "Hasta": "2006-03-10T23:59:59"
+      },
+      {
         "PartidoId": "IND",
         "Desde": "2006-03-11T00:00:00",
         "Hasta": "2010-03-10T23:59:59"
@@ -993,14 +998,14 @@ export const publicFigureList: FiguraPublica[] = [
         "Hasta": "2014-03-10T23:59:59"
       },
       {
-        "PartidoId": "DC",
-        "Desde": "2002-03-11T00:00:00",
-        "Hasta": "2006-03-10T23:59:59"
-      },
-      {
         "PartidoId": "IND",
         "Desde": "2014-03-11T00:00:00",
         "Hasta": "2018-03-10T23:59:59"
+      },
+      {
+        "PartidoId": "FREVS",
+        "Desde": "2018-03-11T00:00:00",
+        "Hasta": "2022-03-10T23:59:59"
       }
     ]
   },
@@ -1056,13 +1061,8 @@ export const publicFigureList: FiguraPublica[] = [
     "Militancias": [
       {
         "PartidoId": "UDI",
-        "Desde": "2006-03-11T00:00:00",
-        "Hasta": "2010-03-10T23:59:59"
-      },
-      {
-        "PartidoId": "UDI",
-        "Desde": "2010-03-11T00:00:00",
-        "Hasta": "2014-03-10T23:59:59"
+        "Desde": "2002-03-11T00:00:00",
+        "Hasta": "2019-04-23T23:59:59"
       },
       {
         "PartidoId": "IND",
@@ -1070,19 +1070,8 @@ export const publicFigureList: FiguraPublica[] = [
         "Hasta": "2019-11-16T23:59:59"
       },
       {
-        "PartidoId": "UDI",
-        "Desde": "2018-03-11T00:00:00",
-        "Hasta": "2019-04-23T23:59:59"
-      },
-      {
-        "PartidoId": "UDI",
-        "Desde": "2002-03-11T00:00:00",
-        "Hasta": "2006-03-10T23:59:59"
-      },
-      {
-        "PartidoId": "UDI",
-        "Desde": "2014-03-11T00:00:00",
-        "Hasta": "2018-03-10T23:59:59"
+        "PartidoId": "PRC",
+        "Desde": "2019-11-17T00:00:00"
       }
     ]
   },
@@ -4240,8 +4229,7 @@ export const publicFigureList: FiguraPublica[] = [
       },
       {
         "PartidoId": "PC",
-        "Desde": "2019-10-14T00:00:00",
-        "Hasta": "2019-04-16T23:59:59"
+        "Desde": "2019-10-14T00:00:00"
       }
     ]
   },
