@@ -454,7 +454,7 @@ export const publicFigureList: FiguraPublica[] = [
       {
         "Desde": "2013-12-31T23:59:59",
         "PartidoId": "RN"
-      },{
+      }, {
         "Desde": "2014-01-01T00:00:00",
         "PartidoId": "IND"
       }
@@ -974,7 +974,16 @@ export const publicFigureList: FiguraPublica[] = [
           "Nombre": "Carolina Monserrat Tohá Morales"
         }
       ]
-    }
+    },
+    "Militancias": [
+      {
+        "PartidoId": "PS",
+        "Hasta": "2015-12-31T23:59:59"
+      }, {
+        "PartidoId": "IND",
+        "Desde": "2016-01-01T00:00:00"
+      }
+    ]
   },
   {
     "Id": "203075b0247f44015a837d8cebbb08bfa15e1f04",
@@ -1138,7 +1147,12 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "33a1d2981a5fda7a7b200a1463d2b4707cf66e8b",
     "Nombre": "Patricio Arturo Walker Prieto",
     "Nacio": "1969-04-28",
-    "DiputadoId": 918
+    "DiputadoId": 918,
+    "Militancias": [
+      {
+        "PartidoId": "DC"
+      }
+    ]
   },
   {
     "Id": "41defd5c010955b2ea6758ba38a76abdb011a5af",
@@ -1939,7 +1953,12 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "eac42f3fa0fb1bd04e04ff7fcf5e056d13b8c1b3",
     "Nombre": "Alberto Miguel Espina Otero",
     "Nacio": "1956-11-04",
-    "DiputadoId": 30
+    "DiputadoId": 30,
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "f2a67e42a8bd881f0a2453fd1bc3b0eb53ff8292",
@@ -2972,7 +2991,16 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "18b4f57698bd8732410fb1ed5ab461c3f10b0455",
     "Nombre": "Jaime Antonio Orpis Bouchon",
     "Nacio": "1956-09-16",
-    "DiputadoId": 79
+    "DiputadoId": 79,
+    "Militancias": [
+      {
+        "PartidoId": "UDI",
+        "Hasta": "2015-12-31T23:59:59"
+      },{
+        "PartidoId": "IND",
+        "Hasta": "2016-01-01T00:00:00"
+      }
+    ]
   },
   {
     "Id": "777f16ab5de04e8078239098e1fc5f1bfcb3d98c",
@@ -4283,11 +4311,11 @@ export const publicFigureList: FiguraPublica[] = [
       {
         "PartidoId": "PRO",
         "Hasta": "2019-04-16T23:59:59"
-      },{
+      }, {
         "PartidoId": "IND",
         "Desde": "2019-04-17T00:00:00",
         "Hasta": "2019-10-13T23:59:59"
-      },{
+      }, {
         "PartidoId": "PC",
         "Desde": "2019-10-14T00:00:00"
       }
@@ -4499,7 +4527,7 @@ export const publicFigureList: FiguraPublica[] = [
       {
         "PartidoId": "CS",
         "Hasta": "2018-04-04T23:59:59"
-      },{
+      }, {
         "PartidoId": "IND",
         "Desde": "2018-04-05T00:00:00"
       }
@@ -4514,7 +4542,7 @@ export const publicFigureList: FiguraPublica[] = [
       {
         "PartidoId": "RD",
         "Hasta": "2019-04-16T23:59:59"
-      },{
+      }, {
         "PartidoId": "IND",
         "Desde": "2019-04-17T00:00:00"
       }
@@ -4678,7 +4706,7 @@ export const publicFigureList: FiguraPublica[] = [
 ];
 
 const aux: FigurasPublicas = {};
-for(const pf of publicFigureList) {
+for (const pf of publicFigureList) {
   aux[pf.Id] = pf;
 }
 
@@ -4709,7 +4737,7 @@ export const findPublicFigureIdByAlias = (name: string): string | undefined => {
 export const findPublicFigureIdByDeputyId = (deputyId: number): string => {
   for (const pfId in publicFigures) {
     const dId = publicFigures[pfId].DiputadoId;
-    if((Array.isArray(dId) && dId.includes(deputyId)) || (dId === deputyId))
+    if ((Array.isArray(dId) && dId.includes(deputyId)) || (dId === deputyId))
       return pfId;
   }
   return '404404';
@@ -4718,7 +4746,7 @@ export const findPublicFigureIdByDeputyId = (deputyId: number): string => {
 export const findPublicFigureIdBySenatorId = (senatorId: number): string => {
   for (const pfId in publicFigures) {
     const sId = publicFigures[pfId].SenadorId;
-    if((Array.isArray(sId) && sId.includes(senatorId)) || (sId === senatorId))
+    if ((Array.isArray(sId) && sId.includes(senatorId)) || (sId === senatorId))
       return pfId;
   }
   return '404404';
