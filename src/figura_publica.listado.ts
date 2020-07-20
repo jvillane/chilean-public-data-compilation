@@ -3729,8 +3729,7 @@ export const publicFigureList: FiguraPublica[] = [
     "Militancias": [
       {
         "PartidoId": "RD",
-        "Desde": "2018-03-11T00:00:00",
-        "Hasta": "2019-04-23T59:59:59"
+        "Hasta": "2019-04-23T23:59:59"
       }, {
         "PartidoId": "IND",
         "Desde": "2019-04-24T00:00:00"
