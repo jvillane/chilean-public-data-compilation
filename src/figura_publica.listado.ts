@@ -685,6 +685,10 @@ export const publicFigureList: FiguraPublica[] = [
       {
         "PartidoId": "IND",
         "Desde": "2019-12-19T00:00:00"
+      },
+      {
+        "PartidoId": "PRSD",
+        "Hasta": "2019-12-18T23:59:59"
       }
     ]
   },
@@ -3724,6 +3728,9 @@ export const publicFigureList: FiguraPublica[] = [
     "DiputadoId": 1033,
     "Militancias": [
       {
+        "PartidoId": "RD",
+        "Hasta": "2019-04-23T59:59:59"
+      }, {
         "PartidoId": "IND",
         "Desde": "2019-04-24T00:00:00"
       }
@@ -3748,6 +3755,9 @@ export const publicFigureList: FiguraPublica[] = [
     "DiputadoId": 1036,
     "Militancias": [
       {
+        "PartidoId": "PH",
+        "Hasta": "2020-05-05T23:59:59"
+      }, {
         "PartidoId": "IND",
         "Desde": "2020-05-06T00:00:00"
       }
@@ -4223,11 +4233,13 @@ export const publicFigureList: FiguraPublica[] = [
     "DiputadoId": 1074,
     "Militancias": [
       {
+        "PartidoId": "PRO",
+        "Hasta": "2019-04-16T23:59:59"
+      },{
         "PartidoId": "IND",
         "Desde": "2019-04-17T00:00:00",
         "Hasta": "2019-10-13T23:59:59"
-      },
-      {
+      },{
         "PartidoId": "PC",
         "Desde": "2019-10-14T00:00:00"
       }
@@ -4449,6 +4461,9 @@ export const publicFigureList: FiguraPublica[] = [
     "DiputadoId": 1087,
     "Militancias": [
       {
+        "PartidoId": "RD",
+        "Hasta": "2019-04-16T23:59:59"
+      },{
         "PartidoId": "IND",
         "Desde": "2019-04-17T00:00:00"
       }
