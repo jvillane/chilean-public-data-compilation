@@ -4449,6 +4449,9 @@ export const publicFigureList: FiguraPublica[] = [
     "DiputadoId": 1086,
     "Militancias": [
       {
+        "PartidoId": "CS",
+        "Hasta": "2018-04-04T23:59:59"
+      },{
         "PartidoId": "IND",
         "Desde": "2018-04-05T00:00:00"
       }
