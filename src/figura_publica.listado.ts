@@ -2998,7 +2998,7 @@ export const publicFigureList: FiguraPublica[] = [
         "Hasta": "2015-12-31T23:59:59"
       },{
         "PartidoId": "IND",
-        "Hasta": "2016-01-01T00:00:00"
+        "Desde": "2016-01-01T00:00:00"
       }
     ]
   },
