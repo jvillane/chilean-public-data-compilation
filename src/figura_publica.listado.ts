@@ -449,7 +449,16 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "affe819041bb5a899c44f207a4b139005af0b9b8",
     "Nombre": "Lily Jovanka Pérez San Martín",
     "Nacio": "1963-05-10",
-    "DiputadoId": 921
+    "DiputadoId": 921,
+    "Militancias": [
+      {
+        "Desde": "2013-12-31T23:59:59",
+        "PartidoId": "RN"
+      },{
+        "Desde": "2014-01-01T00:00:00",
+        "PartidoId": "IND"
+      }
+    ]
   },
   {
     "Id": "77b9f16862919da5f711818101a88525dad485b9",
@@ -815,7 +824,12 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "21b9d78f905fedf031c1fe4d907f1642eeba877d",
     "Nombre": "Iván Alejandro Moreira Barros",
     "Nacio": "1956-12-08",
-    "DiputadoId": 871
+    "DiputadoId": 871,
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "19394fb3f76df5d8c376938f9d9b3cff9ae0f7db",
@@ -1043,7 +1057,12 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "cc440cbcfb797a24497699647e2bc3e46b320c98",
     "Nombre": "Eugenio Tuma Zedan",
     "Nacio": "1945-07-29",
-    "DiputadoId": 904
+    "DiputadoId": 904,
+    "Militancias": [
+      {
+        "PartidoId": "PPD"
+      }
+    ]
   },
   {
     "Id": "6f4729bb734a6ca4436e9f2e56583e1b16a6e133",
@@ -1962,7 +1981,12 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "241ee9e0147b97224fd6edbec75a16eb7944e6c5",
     "Nombre": "Baldo Petar Prokuriça Prokuriça",
     "Nacio": "1958-07-02",
-    "DiputadoId": 93
+    "DiputadoId": 93,
+    "Militancias": [
+      {
+        "PartidoId": "RN"
+      }
+    ]
   },
   {
     "Id": "c20c3a91314d330890465809ad0cb4e15e12c52e",
@@ -1985,7 +2009,12 @@ export const publicFigureList: FiguraPublica[] = [
   {
     "Id": "7c8a4f5c3c3eb3fb810097e523f27de6de5fe7b1",
     "Nombre": "Jacqueline Van Rysselberghe Herrera",
-    "Nacio": "1965-02-03"
+    "Nacio": "1965-02-03",
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "404_09",
@@ -2009,7 +2038,12 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "c5351013dd25d571fd373ef214c734856fdd5f1c",
     "Nombre": "Ignacio Walker Prieto",
     "Nacio": "1956-01-01",
-    "DiputadoId": 119
+    "DiputadoId": 119,
+    "Militancias": [
+      {
+        "PartidoId": "DC"
+      }
+    ]
   },
   {
     "Id": "d360a0ee40199b7873c368e255fea01e8399aa01",
@@ -2496,7 +2530,12 @@ export const publicFigureList: FiguraPublica[] = [
   {
     "Id": "9d4496051a88fb7b8609e025e2eb43fc19421263",
     "Nombre": "José Andrés Rafael Zaldívar Larraín",
-    "Nacio": "1936-03-18"
+    "Nacio": "1936-03-18",
+    "Militancias": [
+      {
+        "PartidoId": "DC"
+      }
+    ]
   },
   {
     "Id": "ec88810e51361ac3de36694afcd165163c785cba",
@@ -2516,7 +2555,12 @@ export const publicFigureList: FiguraPublica[] = [
   {
     "Id": "2662735eed0ba02585802cb3d9eafe1cf9214fd8",
     "Nombre": "Hernán Larraín Fernández",
-    "Nacio": "1947-09-21"
+    "Nacio": "1947-09-21",
+    "Militancias": [
+      {
+        "PartidoId": "UDI"
+      }
+    ]
   },
   {
     "Id": "bfb0c1d21c74ed0076abf9db47a4122a4291ded3",
@@ -2867,7 +2911,12 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "c4806bac334f3c3f7a200442816344230b6662c4",
     "Nombre": "Guido Girardi Lavín",
     "Nacio": "1961-01-24",
-    "DiputadoId": 158
+    "DiputadoId": 158,
+    "Militancias": [
+      {
+        "PartidoId": "PPD"
+      }
+    ]
   },
   {
     "Id": "aabe64e25fb636af7577f1a0733dcc5d8f70ad6d",
