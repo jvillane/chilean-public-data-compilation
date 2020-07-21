@@ -19,7 +19,10 @@
     "regiones.listado": "npx ts-node src/regiones.listado.ts",
     "distritos.listado": "npx ts-node src/distritos.listado.ts",
     "senadores.listado": "npx ts-node src/senadores.listado.ts",
-    "senadores.proyectos": "npx ts-node src/senadores.proyectos.ts"
+    "senadores.proyectos": "npx ts-node src/senadores.proyectos.ts",
+    "senadores.periodos": "npx ts-node src/senadores.periodos.ts",
+    "destacados.votaciones.diputados": "npx ts-node src/destacados.votaciones.diputados.ts",
+    "destacados.votaciones.senadores": "npx ts-node src/destacados.votaciones.senadores.ts"
   },
   "author": "Julio Villane",
   "license": "ISC",
