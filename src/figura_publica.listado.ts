@@ -1864,7 +1864,6 @@ export const publicFigureList: FiguraPublica[] = [
     "Nombre": "Enrique Van Rysselberghe Herrera",
     "Nacio": "1976-09-17",
     "DiputadoId": 959,
-    "SenadorId": 1112,
     "Militancias": [
       {
         "PartidoId": "UDI"
@@ -2029,6 +2028,7 @@ export const publicFigureList: FiguraPublica[] = [
     "Id": "7c8a4f5c3c3eb3fb810097e523f27de6de5fe7b1",
     "Nombre": "Jacqueline Van Rysselberghe Herrera",
     "Nacio": "1965-02-03",
+    "SenadorId": 1112,
     "Militancias": [
       {
         "PartidoId": "UDI"
