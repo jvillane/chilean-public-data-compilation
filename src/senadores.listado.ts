@@ -59,4 +59,5 @@ async function main() {
   });
 }
 
-main();
+//Si se ejecuta se va a reemplazar el FiguraPublicaId que fue asignado manualmente
+//main();
