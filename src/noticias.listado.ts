@@ -5,7 +5,7 @@ export const politicalNews: Noticia[] = [
   {
     Fecha: "2020-07-14",
     Resumen: "Diputado Andrés Celis (RN) acusa extorsiones por parte del diputado Diego Schalper (RN) a la diputada Aracely Leuquén (RN) y otro diputado de Alto Hospicio",
-    Descripcion: "En entrevista con CNN Chile el diputado Andrés Celis (RN) habla de presiones para que Chile Vamos vote en contra del retiro del 10% de las AFP, e involucra directamente al diputado Diego Schalper, quién habría ofrecido beneficios de gracia y puestos de gobierno a sus pares Aracely Leuquén y a un diputado de Alto Hospicio (probablemente haciendo referencia al diputado Ramón Galleguillos)",
+    Descripcion: "En entrevista con CNN Chile el diputado Andrés Celis (RN) habla de presiones para que Chile Vamos vote en contra del retiro del 10% de las AFP, e involucra directamente al diputado Diego Schalper, quién habría ofrecido beneficios de gracia y puestos de gobierno a sus pares Aracely Leuquén y a un diputado de Alto Hospicio (haciendo referencia al diputado Ramón Galleguillos)",
     FigurasPublicas: [
       "4a9d66ff647febdfcd0be84d2021435b6e76fa3b",
       "c54e2ef031e99d5ec17372eb58f25dbb0162dc83",
