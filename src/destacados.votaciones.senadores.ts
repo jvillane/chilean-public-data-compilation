@@ -4,7 +4,7 @@ import {VotacionSenadoresDestacada} from "./destacados.model";
 export const destacadosVotacionesSenadores: VotacionSenadoresDestacada[] = [
   {
     Boletin: "12894-07",
-    Fecha: "2019-11-26",
+    Fecha: "2019-11-27",
     Resumen: "Proyecto generado a partir del estallido social de octubre del 2019 y que apinta a dar mayores herramientas a las fuerzan de orden público para dar persecución y poder castigar a quienes oculten su cara en público"
   }
 ]
