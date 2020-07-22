@@ -59,7 +59,7 @@ export const senadorPeriodos: SenadorPeriodos = {
     Termino: "2011-01-15T00:00:00"
   }],
   "10eaa7dbabd15539e4efd62e03bc98e71215cdd1": [periodosSenador["2014-2022"], periodosSenador["2006-2014"]],
-  "89108421e37a779419e7f1fafbf07fa9ebce4de1": [periodosSenador["2014-2022"], periodosSenador["2006-2014"]],
+  "c4806bac334f3c3f7a200442816344230b6662c4": [periodosSenador["2014-2022"], periodosSenador["2006-2014"]],
   "3291162677ed8d4c17f0f579b2fce4442481015d": [periodosSenador["2014-2022"], periodosSenador["2006-2014"]],
   "6a31dcdcd0205c85deafe31952eafe3ed0e9638c": [periodosSenador["2014-2022"], periodosSenador["2006-2014"]],
   "750e0ece12e42a4b98624599ab7673d9e6e00f9e": [periodosSenador["2014-2022"], periodosSenador["2006-2014"]],
