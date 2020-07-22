@@ -1315,7 +1315,6 @@ export const publicFigureList: FiguraPublica[] = [
     "Nombre": "Guido Juan Primo Girardi Briere",
     "Nacio": "1934-11-17",
     "DiputadoId": 845,
-    "SenadorId": 909,
     "Militancias": [
       {
         "PartidoId": "PPD"
@@ -2931,6 +2930,7 @@ export const publicFigureList: FiguraPublica[] = [
     "Nombre": "Guido Girardi Lavín",
     "Nacio": "1961-01-24",
     "DiputadoId": 158,
+    "SenadorId": 909,
     "Militancias": [
       {
         "PartidoId": "PPD"
