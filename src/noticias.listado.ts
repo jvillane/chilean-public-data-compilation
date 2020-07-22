@@ -18,6 +18,34 @@ export const politicalNews: Noticia[] = [
       adnradio: "https://www.adnradio.cl/politica/2020/07/14/andres-celis-y-extorsiones-en-el-marco-de-la-votacion-por-el-10-de-las-afp-nunca-imagine-el-nivel-de-llamados-de-insinuaciones-u-ofrecimientos-que-podian-ocurrir-quede-perplejo.html",
       cooperativa: "https://cooperativa.cl/noticias/sociedad/salud/coronavirus/pugna-de-diputados-rn-celis-acuso-a-schalper-de-ofrecer-puestos-de/2020-07-14/203528.html"
     }
+  }, {
+    Fecha: "2020-07-17",
+    Resumen: "La senadora Jacqueline Van Rysselberghe explica razones para enviar al tribunal supremo a diputados que aprobaron retiro del 10% de AFP",
+    Descripcion: "La senadora Jacqueline Van Rysselberghe (UDI) señaló: \"Nosotros, dentro de los estatutos, tenemos establecido que somos un partido que defiende la democracia y que, por lo mismo, combate cualquier forma de populismo\", indicando que es un camino que deteriora la institucionalidad. Por otra parte el diputado Iván Moreira, también de la UDI, criticó dicho actuar del partido, tildándolo como una lamentable e inaceptable amenaza previa a la votación del Senado. Adicionalmente el diputado Gabriel Silber (DCC) anuncia la presentación de una denuncia ante el Servicio Electoral (Servel), que busca una petición de investigación contra la UDI aludiendo a la Ley de los Partidos Políticos, indicando que los congresistas no pueden recibir órdenes para votaciones.",
+    FigurasPublicas: [
+      "7c8a4f5c3c3eb3fb810097e523f27de6de5fe7b1",
+      "218150a8a96f0e5437478186276888a6433ac681",
+      "21b9d78f905fedf031c1fe4d907f1642eeba877d"
+    ],
+    Links: {
+      "24horas": "https://www.24horas.cl/coronavirus/retiro-del-10-silber-denuncia-a-van-rysselberghe-ante-el-servel-por-ordenes-dadas-a-parlamentarios-4329678",
+      cnnchile: "https://www.cnnchile.com/lodijeronencnn/entrevista-jvr-senadores-voten-retiro-10-tribunal-supremo_20200721/",
+      latercera: "https://www.latercera.com/politica/noticia/van-rysselberghe-explica-razones-para-enviar-al-tribunal-supremo-a-diputados-que-aprobaron-retiro-del-10-de-afp-estan-avalando-un-camino-que-deteriora-la-institucionalidad/YLKS6AVAIFCXXGVI6OLG3RAIYM/"
+    }
+  }, {
+    Fecha: "2020-07-17",
+    Resumen: "Los diputados Álvaro Carter, Sandra Amar y Virginia Troncoso, tres de los 5 gremialistas que votaron a favor del retiro de fondos previsionales dejaron su militancia de la UDI",
+    Descripcion: "Las renuncias fueron motivados luego de que la comisión política de la colectividad anunciara que serían llevados al Tribunal Supremo por su respaldo al proyecto de retiro de fondos de AFP. Parte del comunicado indica \"Los firmantes no hemos cometido ninguna falta a los principios de la UDI, ni hemos cometido delito alguno. Solo hemos votado en conciencia. Nos duele que se nos trate como indeseables, y hoy estemos acusados frente al Tribunal Supremo\".",
+    FigurasPublicas: [
+      "fe8fe6dbcd0ff3fbdcd0b402dffa2b9435a145f2",
+      "aecf1bfe4d6b5f1ba89182695dc0f8bf931c6085",
+      "8521ae6e3dd42bb096e14ae4e2155487c1c67c76"
+    ],
+    Links: {
+      cooperativa: "https://cooperativa.cl/noticias/economia/sistema-previsional/afp/crisis-en-la-udi-por-afp-renuncian-diputados-y-moreira-apunta-a-kast/2020-07-17/172358.html",
+      eldesconcierto: "https://www.eldesconcierto.cl/2020/07/17/duro-golpe-sacude-a-la-udi-tres-diputados-que-votaron-a-favor-del-proyecto-del-10-de-las-afp-renuncian-al-partido/",
+      latercera: "https://www.latercera.com/politica/noticia/diputados-carter-amar-y-troncoso-renuncian-a-la-udi-tras-respaldar-proyecto-de-retiro-de-fondos-de-afp/NLOAJOJOEVBUZCF3GCH4HFVLFE/"
+    }
   }
 ]
 

@@ -1,0 +1,294 @@
+{
+  "13501-07": {
+    "BoletinNumero": "13501-07",
+    "Titulo": "Reforma constitucional que permite el retiro excepcional de los fondos acumulados de capitalización individual en las condiciones que indica",
+    "FechaIngreso": "2020-04-20",
+    "Iniciativa": "Moción",
+    "CamaraOrigen": "C.Diputados",
+    "UrgenciaActual": "Sin urgencia",
+    "Etapa": "Segundo trámite constitucional (Senado)",
+    "SubEtapa": "Primer informe de comisión de Constitución, Legislación, Justicia y Reglamento",
+    "LeyNumero": "",
+    "DiarioOficial": "",
+    "Estado": "En tramitación ",
+    "Refundidos": "13627-07 / 13617-07 ",
+    "LinkMensajeMocion": "http://www.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=14043&tipodoc=mensaje_mocion",
+    "Autores": [
+      "Alinco Bustos, René",
+      "Mulet Martínez, Jaime",
+      "Sepúlveda Orbenes, Alejandra",
+      "Velásquez Núñez, Esteban"
+    ],
+    "Tramitacion": [
+      {
+        "Fecha": "2020-04-20",
+        "Descripcion": "Ingreso de proyecto .  ",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "22/368",
+        "Fecha": "2020-05-13",
+        "Descripcion": "Cuenta de proyecto . Pasa a Comisión de Constitución, Legislación, Justicia y Reglamento",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "36/368",
+        "Fecha": "2020-07-02",
+        "Descripcion": "Oficio N° 15655. Autoriza refundir la moción con proyectos boletines 13617-07 y 13627-07.",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "36/368",
+        "Fecha": "2020-07-02",
+        "Descripcion": "Cuenta de oficio de la Comisión de Constitución, Legislación, Justicia y Reglamento (N°168-20), por el cual solicita recabar el acuerdo de la Sala para refundir los proyectos contenidos en los boletines N°s 13501-07, 13617-07 y 13627-07. ACORDADO.",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Fecha": "2020-07-08",
+        "Descripcion": "Primer informe de comisión de Constitución, Legislación, Justicia y Reglamento.  ",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "39/368",
+        "Fecha": "2020-07-08",
+        "Descripcion": "Cuenta de primer informe de comisión .  Queda para tabla.",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "39/368",
+        "Fecha": "2020-07-08",
+        "Descripcion": "Discusión general . Aprobado en general .",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "39/368",
+        "Fecha": "2020-07-08",
+        "Descripcion": "Oficio N° 15.669. Comunica aprobación en general del proyecto y remite indicaciones a Comisión para 2° informe.",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Fecha": "2020-07-09",
+        "Descripcion": "Segundo informe de comisión de Constitución, Legislación, Justicia y Reglamento.  ",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "41/368",
+        "Fecha": "2020-07-14",
+        "Descripcion": "Cuenta de segundo informe de comisión .  Queda para tabla.",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "43/368",
+        "Fecha": "2020-07-15",
+        "Descripcion": "Discusión particular . Aprobado . Se acordó también cambiar el nombre del proyecto por el que se consigna en la Suma.",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Fecha": "2020-07-15",
+        "Descripcion": "Oficio de ley a Cámara Revisora .  ",
+        "Etapa": "Primer trámite constitucional",
+        "Camara": "C.Diputados"
+      },
+      {
+        "Sesion": "50/368",
+        "Fecha": "2020-07-15",
+        "Descripcion": "Cuenta de proyecto . Pasa a Comisión de Constitución, Legislación, Justicia y Reglamento",
+        "Etapa": "Segundo trámite constitucional",
+        "Camara": "Senado"
+      }
+    ],
+    "Votaciones": [
+      {
+        "Sesion": "52/368",
+        "Fecha": "2020-07-22",
+        "Tema": "Reforma constitucional que permite el retiro excepcional de los fondos acumulados de capitalización individual en las condiciones que indica",
+        "Resultado": {
+          "Si": 37,
+          "No": 0,
+          "Abstencion": 0,
+          "Pareo": 0
+        },
+        "Tipo": "Discusión general",
+        "Etapa": "Segundo trámite constitucional",
+        "Detalle": {
+          "José Gilberto García Ruminot": "",
+          "f2a67e42a8bd881f0a2453fd1bc3b0eb53ff8292": "Si",
+
+          "Andrés Allamand Zavala": "",
+          "3887990645f3868ffc5e09772891ff4d86d650b8": "Si",
+
+          "Carlos Antonio Karim Bianchi Chelech": "",
+          "10eaa7dbabd15539e4efd62e03bc98e71215cdd1": "Si",
+
+          "Juan Pablo Letelier Morel": "",
+          "3291162677ed8d4c17f0f579b2fce4442481015d": "Si",
+
+          "Víctor Claudio José Pérez Varela": "",
+          "750e0ece12e42a4b98624599ab7673d9e6e00f9e": "Si",
+
+          "Francisco Javier Chahuán Chahuán": "",
+          "7c8f365b1dd473b637ffba6f9e0111304f1efed3": "Si",
+
+          "Jaime Daniel Quintana Leal": "",
+          "f93c3509c5abe71d8bda66f16a94af42835d17f7": "Si",
+
+          "Pedro Araya Guerrero": "",
+          "8087f501a599e8682fdf57fddd2bb2200f6ca500": "Si",
+
+          "Carolina Goic Boroevic": "",
+          "626a0c585f5d43482617a5b88eb0da4b56bb63ce": "Si",
+
+          "Felipe Harboe Bascuñán": "",
+          "533ab43952c3ae9143ef644e458fa8fb2f981913": "Si",
+
+          "Manuel José Ossandón Irarrázabal": "",
+          "a17a7c6d98aae836dcd1e7427d552863e0df4538": "Si",
+
+          "José Miguel Alberto Durana Semir": "",
+          "a9173ab6801df3a338ce46efa007be373dd8c4a9": "Si",
+
+          "Luz Eliana Ebensperger Orrego": "",
+          "f276159a3442acfba23a4ec8689468d857f67a3f": "Si",
+
+          "Jorge Alejandro Soria Quiroga": "",
+          "d5c802468dd9380b26a9de59b6654c1dd3dccb50": "Si",
+
+          "Juan Enrique Castro Prieto": "",
+          "875875b355eb4284b335e92cd9312c62bd6c56b5": "Si",
+
+          "Álvaro Antonio Elizalde Soto": "",
+          "a450d1bd3674a5b12f787a0875cda8b1e2bb0e74": "Si",
+
+          "Felipe Kast Sommerhoff": "",
+          "3df3793b589bd887c8c9d59d4bb5b2a3e47c9134": "Si",
+
+          "Ximena Loreto Órdenes Neira": "",
+          "efa5e5b88c81fc2514a64a4b65612747923bb175": "Si",
+
+          "Jorge Esteban Pizarro Soto": "",
+          "079eae6d5c36fed844f0b0371e3f6bd913c813b4": "Si",
+
+          "Juan Antonio Coloma Correa": "",
+          "df2e563fec34c046ac79f34ef5b57c4173315900": "Si",
+
+          "Alejandro Navarro Brain": "",
+          "6a31dcdcd0205c85deafe31952eafe3ed0e9638c": "Si",
+
+          "Isabel Allende Bussi": "",
+          "fd0e672d2b699e4008c15d887aaf5f989afaddc8": "Si",
+
+          "Ricardo Andrés Lagos Weber": "",
+          "4b266191e27aaa403af840804cc7e772d05db6ac": "Si",
+
+          "Ximena Cecilia Rincón González": "",
+          "3455d9899f8888ea5580b64835cda9f109e897be": "Si",
+
+          "Alejandro García-Huidobro Sanfuentes": "",
+          "fd4d76a64774dccdd03f2e1fddd9a6e929e7520a": "Si",
+
+          "Ena Anglein Von Baer Jahn": "",
+          "30be367b938325b57d5667ceeea568c2ee47ed4b": "Si",
+
+          "Jacqueline Van Rysselberghe Herrera": "",
+          "7c8a4f5c3c3eb3fb810097e523f27de6de5fe7b1": "Si",
+
+          "Rabindranath Vladimir Quinteros Lara": "",
+          "408e365d727326693228935c06274e05bb5a1140": "Si",
+
+          "Iván Alejandro Moreira Barros": "",
+          "21b9d78f905fedf031c1fe4d907f1642eeba877d": "Si",
+
+          "José Miguel Insulza Salinas": "",
+          "35344e95a9303ce44617ce1b7b25178d344250d2": "Si",
+
+          "Rafael Prohens Espinosa": "",
+          "566295064a20813edffeb2ad6db719a857cf21e3": "Si",
+
+          "Yasna Provoste Campillay": "",
+          "d4750b7f5aac4c2bc392d74e09c0fb825fdb068e": "Si",
+
+          "Juan Ignacio Latorre Riveros": "",
+          "487177432aa32631f71ccbcf48a94e3bde36d88b": "Si",
+
+          "Rodrigo Galilea Vial": "",
+          "6ffb37d9342660192a0446231d77e3e9dc677c6c": "Si",
+
+          "Carmen Gloria Aravena Acuña": "",
+          "39524e6919a31d9a1d1fd3a7a89fd7c40af0afdd": "Si",
+
+          "Francisco Segundo Huenchumilla Jaramillo": "",
+          "875b7552f8c510f100222eb80bb1d3d2a054e326": "Si",
+
+          "David Sergio Sandoval Plaza": "",
+          "9888b9956a2e2ed1191778d26421bed34b995b8d": "Si"
+        }
+      }
+    ],
+    "Urgencias": [],
+    "Informes": [
+      {
+        "Tramite": "Primer informe de comisión de Constitución, Legislación, Justicia y Reglamento ",
+        "Etapa": "Primer trámite constitucional",
+        "Link": "http://www.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=22694&tipodoc=info"
+      },
+      {
+        "Tramite": "Segundo informe de comisión de Constitución, Legislación, Justicia y Reglamento ",
+        "Etapa": "Primer trámite constitucional",
+        "Link": "http://www.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=22708&tipodoc=info"
+      }
+    ],
+    "Comparados": [],
+    "Oficios": [
+      {
+        "Fecha": "2020-07-02",
+        "Tramite": "Primer informe de comisión",
+        "Etapa": "Primer trámite constitucional",
+        "Tipo": "Otros oficios",
+        "Camara": "C. Diputados",
+        "Link": "http://www.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=27094&tipodoc=ofic"
+      },
+      {
+        "Fecha": "2020-07-08",
+        "Tramite": "Segundo informe de comisión",
+        "Etapa": "Primer trámite constitucional",
+        "Tipo": "Otros oficios",
+        "Camara": "C. Diputados",
+        "Link": "http://www.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=27125&tipodoc=ofic"
+      },
+      {
+        "Fecha": "2020-07-15",
+        "Tramite": "Oficio de ley a Cámara Revisora",
+        "Etapa": "Primer trámite constitucional",
+        "Tipo": "Ley",
+        "Camara": "C. Diputados",
+        "Link": "http://www.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=27154&tipodoc=ofic"
+      },
+      {
+        "Fecha": "2020-07-15",
+        "Tramite": "Oficio de ley a Cámara Revisora",
+        "Etapa": "Primer trámite constitucional",
+        "Tipo": "Ley",
+        "Camara": "C. Diputados",
+        "Link": "http://www.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=27157&tipodoc=ofic"
+      }
+    ],
+    "Indicaciones": [],
+    "Observaciones": [],
+    "Materias": [
+      "CORONAVIRUS",
+      "CORONAVIRUS COVID-19",
+      "COVID-19"
+    ]
+  }
+}
