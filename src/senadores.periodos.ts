@@ -92,7 +92,7 @@ export const senadorPeriodos: SenadorPeriodos = {
   "533ab43952c3ae9143ef644e458fa8fb2f981913": [periodosSenador["2014-2022"]],
   "ed64df3d9777e1446a529dbdfb8bea43e0eda7f6": [periodosSenador["2014-2022"]],
   "408e365d727326693228935c06274e05bb5a1140": [periodosSenador["2014-2022"]],
-  "3ac86c7211e55e354c5d67073786a1d13fd47392": [periodosSenador["2014-2022"]],
+  "21b9d78f905fedf031c1fe4d907f1642eeba877d": [periodosSenador["2014-2022"]],
   "1d4303b4f9e90759a0a543956acc55eb98cab3bb": [periodosSenador["2014-2022"]],
   "f06efcc2f42908724ff6cba0317f5d831292d9f7": [periodosSenador["2014-2022"]],
   "a17a7c6d98aae836dcd1e7427d552863e0df4538": [periodosSenador["2014-2022"]],
