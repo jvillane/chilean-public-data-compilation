@@ -2,11 +2,7 @@ import {writeFile} from "fs";
 import {VotacionSenadoresDestacada} from "./destacados.model";
 
 export const destacadosVotacionesSenadores: VotacionSenadoresDestacada[] = [
-  {
-    Boletin: "12894-07",
-    Fecha: "2019-11-27",
-    Resumen: "Apunta a dar mayores herramientas a las fuerzan de orden público para dar persecución y poder castigar a quienes oculten su cara en público, motivado por el desorden público generado a partir del estallido social de octubre de 2019"
-  },
+  { Boletin: '12894-07', Fecha: '2019-09-04', Resumen: 'Proyecto de ley que establece el ocultamiento de la identidad como tipo penal, circunstancia agravante y caso de flagrancia.' }, 
   { Boletin: '9692-07', Fecha: '2014-11-04', Resumen: 'Determina conductas terroristas y su penalidad y modifica los Códigos Penal y Procesal Penal.' }, 
   { Boletin: '9470-07', Fecha: '2014-07-23', Resumen: 'Modifica ley N° 20.000, con el objeto de despenalizar el auto cultivo, cosecha, porte o consumo, regulados a escala individual, de plantas vegetales del genero cannabis, cuando esas conductas se funden en razones de índole personal, terapéutica o espiritual.' }, 
   { Boletin: '12148-11', Fecha: '2018-10-02', Resumen: 'Establece derechos en el ámbito de la gestación, preparto, parto, postparto, aborto, salud ginecólogica y sexual, y sanciona la violencia gineco-obstétrica' }, 
