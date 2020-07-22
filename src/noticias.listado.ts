@@ -12,12 +12,12 @@ export const politicalNews: Noticia[] = [
       "4f656281076bb5e318d0a4ceb54dae105a08465d",
       "c18c7acf221e69cb950b0d40ee5848b9ab4f1eab"
     ],
-    Links: [
-      "https://www.cnnchile.com/lodijeronencnn/entrevista-andres-celis-acusa-extorsiones-rechazar-retiro-fondos-afp_20200714/",
-      "https://www.t13.cl/noticia/politica/diputado-andres-celis-diego-schalper-beneficios-rechazar-proyecto-14-07-2020",
-      "https://www.adnradio.cl/politica/2020/07/14/andres-celis-y-extorsiones-en-el-marco-de-la-votacion-por-el-10-de-las-afp-nunca-imagine-el-nivel-de-llamados-de-insinuaciones-u-ofrecimientos-que-podian-ocurrir-quede-perplejo.html",
-      "https://cooperativa.cl/noticias/sociedad/salud/coronavirus/pugna-de-diputados-rn-celis-acuso-a-schalper-de-ofrecer-puestos-de/2020-07-14/203528.html"
-    ]
+    Links: {
+      cnnchile: "https://www.cnnchile.com/lodijeronencnn/entrevista-andres-celis-acusa-extorsiones-rechazar-retiro-fondos-afp_20200714/",
+      t13: "https://www.t13.cl/noticia/politica/diputado-andres-celis-diego-schalper-beneficios-rechazar-proyecto-14-07-2020",
+      adnradio: "https://www.adnradio.cl/politica/2020/07/14/andres-celis-y-extorsiones-en-el-marco-de-la-votacion-por-el-10-de-las-afp-nunca-imagine-el-nivel-de-llamados-de-insinuaciones-u-ofrecimientos-que-podian-ocurrir-quede-perplejo.html",
+      cooperativa: "https://cooperativa.cl/noticias/sociedad/salud/coronavirus/pugna-de-diputados-rn-celis-acuso-a-schalper-de-ofrecer-puestos-de/2020-07-14/203528.html"
+    }
   }
 ]
 
