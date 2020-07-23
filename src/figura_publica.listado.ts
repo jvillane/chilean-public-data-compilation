@@ -825,6 +825,7 @@ export const publicFigureList: FiguraPublica[] = [
     "Nombre": "Iván Alejandro Moreira Barros",
     "Nacio": "1956-12-08",
     "DiputadoId": 871,
+    "SenadorId": 1117,
     "Militancias": [
       {
         "PartidoId": "UDI"
@@ -4696,7 +4697,6 @@ export const publicFigureList: FiguraPublica[] = [
     "Nombre": "Cristhian Patricio Moreira Barros",
     "Nacio": "1961-09-05",
     "DiputadoId": 1053,
-    "SenadorId": 1117,
     "Militancias": [
       {
         "PartidoId": "UDI"
