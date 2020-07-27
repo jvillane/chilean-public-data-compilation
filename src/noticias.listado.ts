@@ -46,6 +46,18 @@ export const politicalNews: Noticia[] = [
       eldesconcierto: "https://www.eldesconcierto.cl/2020/07/17/duro-golpe-sacude-a-la-udi-tres-diputados-que-votaron-a-favor-del-proyecto-del-10-de-las-afp-renuncian-al-partido/",
       latercera: "https://www.latercera.com/politica/noticia/diputados-carter-amar-y-troncoso-renuncian-a-la-udi-tras-respaldar-proyecto-de-retiro-de-fondos-de-afp/NLOAJOJOEVBUZCF3GCH4HFVLFE/"
     }
+  }, {
+    Fecha: "2020-07-24",
+    Resumen: "Avanza en el Senado la iniciativa que busca reducir la exigencia en compra de bonos y ampliar la capacidad de inversión de las AFP",
+    Descripcion: "Las críticas a esta iniciativa han apuntado a que los dineros de los afiliados de la AFP podrían ser utilizados en búsqueda de beneficiar a grandes grupos económicos, en perjuicio de los trabajadores.",
+    FigurasPublicas: [
+      "533ab43952c3ae9143ef644e458fa8fb2f981913",
+      "4b266191e27aaa403af840804cc7e772d05db6ac",
+      "079eae6d5c36fed844f0b0371e3f6bd913c813b4"
+    ],
+    Links: {
+      radiousach: "https://www.radiousach.cl/mauricio-daza-por-norma-que-modifica-mercado-financiero-permite-que",
+    }
   }
 ]
 
