@@ -85,7 +85,6 @@ interface LawProjectRaw {
 
 async function main() {
   const lawProjects: ProyectosLey = (lawProjectsNow as unknown as { default: ProyectosLey }).default;
-
   const from = 2020, to = 2020;
   const years = Array.from({length: (to - from + 1)}, (v, k) => k + from)
 

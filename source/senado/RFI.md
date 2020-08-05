@@ -9,6 +9,11 @@
 MTI4OTMxMA==
 ```
 
+**Id Solicitud**
+```
+SOL0012893
+```
+
 **Consulta**
 ```
 Solicito el detalle MENSUAL de las dietas parlamentarias y detalle de asignaciones separadas por personal de apoyo, asesorías externas, pasajes aéreos nacionales, oficinas parlamentarias y otros (cualquier asignación que no califique en los puntos anteriores), desde marzo de 1990 hasta mayo 2020
@@ -30,3 +35,24 @@ Solicito que el excel contenga las columnas:
 ```
 
 **Formato entrega**: Excel
+
+### 2020-07-28
+
+#### Actualización Información Portal Open Data 
+
+**Código Solicitud**
+```
+MTMwNzkxMA==
+```
+
+**Id Solicitud**
+```
+SOL0013079
+```
+
+**Consulta**
+```
+¿Cuál es la periodicidad de actualización de la información que se puede obtener desde http://opendata.camara.cl/?
+
+Lo pregunto porque la votación del 22 de julio aún no aparece disponible en el servicio que entrega los proyectos de ley con movimientos de los últimos 30 días, sin embargo en el portal del senado el resultado está actualizado desde hace días.
+```

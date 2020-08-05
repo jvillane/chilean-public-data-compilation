@@ -4,6 +4,11 @@
 
 #### Detalle Gastos Parlamentarios
 
+**Folio**
+```
+CD001W11227
+```
+
 **Consulta**
 ```
 Solicito el detalle MENSUAL de las dietas parlamentarias y detalle de asignaciones separadas por personal de apoyo, asesorías externas, pasajes aéreos nacionales, oficinas parlamentarias y otros (cualquier asignación que no califique en los puntos anteriores), desde marzo de 1990 hasta mayo 2020
